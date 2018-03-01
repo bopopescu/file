@@ -1,7 +1,7 @@
 # files 
 |src|des|
 | :---- | :----|
-|.conf|server|
+|.conf,lh,san|server|
 |.so|mamp|
 |..tar|html|
 
