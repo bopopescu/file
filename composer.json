@@ -1,7 +1,7 @@
 {
-     "name":"z3/Util",
+     "name":"infynity/file",
      "autoload":{
-        "psr-4": {"z3\\util\\": "src/"}     
+        "psr-4": {"z3\\util\\": "go/"}     
      }
 
 }
