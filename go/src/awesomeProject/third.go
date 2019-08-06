@@ -26,7 +26,7 @@ func main(){
 		e,d=5,6
 	)
 
-	var gg = grade(80)
+	var gg = grade(81)
 	fmt.Println(gg)
 	const a,b=3,4
 
