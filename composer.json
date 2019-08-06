@@ -1,0 +1,7 @@
+{
+     "name":"infynity/files",
+     "autoload":{
+        "psr-4": {"z3\\util\\": "go/"}     
+     }
+
+}
