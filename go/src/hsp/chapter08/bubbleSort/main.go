@@ -5,12 +5,13 @@ import (
 
 func Bubble( arr *[5]int){
 
+	// 0 1 2 3 4
 	fmt.Println("befor arr=", *arr)
 	temp:=0
-	lens := len(*arr)-1   //4   冒泡4次   
-	for i:=0;i<lens;i++{
-		for j:=0;j<lens-i;j++{
-
+	lens := len(*arr)-1   //4   冒泡4次
+	for i:=0;i<lens;i++{  //3  last
+		for j:=0;j<lens-i;j++{  //1 last
+ 			//j到3 时 用到了 j+1  所以不需要再下一个循环
 			if(*arr)[j]>(*arr)[j+1]{
 				temp = (*arr)[j]
 				(*arr)[j] = (*arr)[j+1]
