@@ -45,6 +45,8 @@ func main() {
 			Name : "悟空",
 		},
 	}
+
+	fmt.Println(monkey)
 	monkey.climbing()
 	monkey.Flying()
 	monkey.Swimming()

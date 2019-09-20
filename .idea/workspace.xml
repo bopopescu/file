@@ -2,12 +2,46 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/go/src/hsp/chapter11/exercise/main.go" line="18" />
-    <bookmark url="file://$PROJECT_DIR$/go/src/hsp/customerManage/view/customerView.go" line="131" />
+    <bookmark url="file://$PROJECT_DIR$/go/src/hsp/customerManage/view/customerView.go" line="183" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf171847-546e-45c6-8188-933db182542c" name="Default" comment="test git">
-      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter11/exercise02_my/main.go" />
-      <change beforePath="$PROJECT_DIR$/go/src/hsp/chapter08/bubbleSort/main.go" afterPath="$PROJECT_DIR$/go/src/hsp/chapter08/bubbleSort/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/mayn.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190828/panic_go/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190828/reflect_first/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190828/select/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190831/Const/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190831/reflect/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190831/reflect_better/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190903/tcpdemo/client/client.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190903/tcpdemo/server/server.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/main/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/process/server.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/process/smsProcess.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/process/userProcess.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/utils/utils.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/common/message/message.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/main/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/main/processer.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/process/smsProcess.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/process/userProcess.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/utils/utils.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/redis/huanchong.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/redis/redis_pool.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/go_channel/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/goroexcercise/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/goroutine/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/re__goroexcercise_correct/main.exe" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/re__goroexcercise_correct/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go/src/hsp/chapter_bu/realchannel/main.go" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/go/pkg/windows_amd64/hsp/customerManage/service.a" afterPath="$PROJECT_DIR$/go/pkg/windows_amd64/hsp/customerManage/service.a" />
+      <change beforePath="$PROJECT_DIR$/go/src/gopl.io" afterPath="$PROJECT_DIR$/go/src/gopl.io" />
+      <change beforePath="$PROJECT_DIR$/go/src/hsp/chapter10/structcreate/main.go" afterPath="$PROJECT_DIR$/go/src/hsp/chapter10/structcreate/main.go" />
+      <change beforePath="$PROJECT_DIR$/go/src/hsp/chapter11/interfacevsextends/main.go" afterPath="$PROJECT_DIR$/go/src/hsp/chapter11/interfacevsextends/main.go" />
+      <change beforePath="$PROJECT_DIR$/go/src/hsp/customerManage/service/customerService.go" afterPath="$PROJECT_DIR$/go/src/hsp/customerManage/service/customerService.go" />
+      <change beforePath="$PROJECT_DIR$/go/src/hsp/customerManage/view/customerView.go" afterPath="$PROJECT_DIR$/go/src/hsp/customerManage/view/customerView.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,39 +65,60 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="customerView.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go/src/hsp/customerManage/view/customerView.go">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="userProcess.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/process/userProcess.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+            <state relative-caret-position="280">
+              <caret line="107" column="21" lean-forward="false" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
               <folding>
-                <element signature="e#14#89#0" expanded="true" />
-                <element signature="n#!!block;n#delete#0" expanded="false" />
+                <element signature="e#17#183#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customerService.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/go/src/hsp/customerManage/service/customerService.go">
+      <file leaf-file-name="server.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/process/server.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="38" column="15" lean-forward="true" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
+            <state relative-caret-position="454">
+              <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
               <folding>
-                <element signature="e#16#55#0" expanded="true" />
+                <element signature="e#17#95#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customer.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go/src/hsp/customerManage/model/customer.go">
+      <file leaf-file-name="utils.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/utils/utils.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="120">
+              <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="processer.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/main/processer.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="41">
+              <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
               <folding>
-                <element signature="e#14#31#0" expanded="true" />
+                <element signature="e#14#192#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/main/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1200">
+              <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+              <folding>
+                <element signature="e#14#87#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,29 +135,47 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>get</find>
-      <find>Num1</find>
-      <find>请输入打印</find>
-      <find>q</find>
-      <find>转换错误</find>
-      <find>arr3</find>
-      <find>arr3|0|0</find>
-      <find>rand</find>
+      <find>done</find>
+      <find>exitchan</find>
+      <find>primechan</find>
+      <find>exitchan2</find>
+      <find>intchan</find>
+      <find>pani</find>
+      <find>只读</find>
+      <find>dead</find>
+      <find>close</find>
+      <find>read wr</find>
+      <find>byte</find>
+      <find>pool</find>
+      <find>pool str</find>
+      <find>rune</find>
+      <find>int64</find>
       <find>make</find>
-      <find>[...]</find>
-      <find>methoduti</find>
-      <find>rand.Seed</find>
-      <find>monkey</find>
-      <find>customerService</find>
-      <find>NewCustomer2</find>
+      <find>b</find>
+      <find>type</find>
+      <find>BigEndian</find>
+      <find>读取失败</find>
+      <find>login fail wrong pwd</find>
+      <find>login fail</find>
+      <find>Read</find>
+      <find>conn.Read</find>
+      <find>Loginmesrestype</find>
+      <find>resMes</find>
+      <find>LoginMesRes</find>
+      <find>UserProcess</find>
+      <find>RegMesType</find>
+      <find>wrong</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\mayn\Desktop\file\go\src\awesomeProject</dir>
       <dir>C:\Users\mayn\Desktop\file\go\src\hsp\chapter08</dir>
-      <dir>C:\Users\mayn\Desktop\file\go\src\hsp\chapter07</dir>
       <dir>C:\Users\mayn\Desktop\file\go\src\hsp\chapter10</dir>
-      <dir>C:\Users\mayn\Desktop\file\go\src\hsp</dir>
       <dir>C:\Users\mayn\Desktop\file\go\src\hsp\chapter11</dir>
+      <dir>C:\Users\mayn\Desktop\file\go\src\hsp\go_code</dir>
+      <dir>C:\Users\mayn\Desktop\file\go\src\hsp\go_code\channel</dir>
+      <dir>C:\Users\mayn\Desktop\file\go\src\hsp</dir>
+      <dir>C:\Users\mayn\Desktop\file\go\src\hsp\chapter07</dir>
+      <dir>C:\Users\mayn\Desktop\file\go\src\hsp\chapter_bu\20190907\project</dir>
     </dirStrings>
   </component>
   <component name="GOROOT" path="C:\Go" />
@@ -112,38 +185,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter07/arraydemo02/tst.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter07/forrange/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter07/arrayExercise/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter07/slicedemo01/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter07/stringslice/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter07/fbnexercise/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter07/sliceforrange/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter08/bubbleSort/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter08/finddemo/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter08/binaryfind/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter08/multiarray/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter08/exercise/main(1).go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter07/sliceuse/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter09/mapdemo01/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter09/mapcrud/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter09/maptraverse/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter09/mapslice/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter09/mapsort/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter09/mapdetails/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter10/structdemo01/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter10/fielddetails/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter10/structcreate/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter10/exercise/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter10/structdetails/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter10/structdetails2/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter10/methodDemo/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter10/methoddetails/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter10/methodexercise02/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter07/arraydemo02/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter10/methodvsfunc/main.go" />
         <option value="$PROJECT_DIR$/go/src/hsp/chapter10/oopexercise/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter10/structassign/main.go" />
         <option value="$PROJECT_DIR$/go/src/hsp/chapter10/factory/main/main.go" />
         <option value="$PROJECT_DIR$/go/src/hsp/chapter10/factory/model/student.go" />
         <option value="$PROJECT_DIR$/go/src/hsp/chapter11/encapsulate/model/person.go" />
@@ -155,14 +197,45 @@
         <option value="$PROJECT_DIR$/go/src/hsp/chapter11/interfaceDetails/main.go" />
         <option value="$PROJECT_DIR$/go/src/hsp/chapter11/exercise/main.go" />
         <option value="$PROJECT_DIR$/go/src/hsp/chapter11/exercise02_my/main.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/chapter11/interfacevsextends/main.go" />
         <option value="$PROJECT_DIR$/go/src/hsp/chapter11/poly/main.go" />
         <option value="$PROJECT_DIR$/go/src/hsp/chapter11/assert/main.go" />
         <option value="$PROJECT_DIR$/go/src/hsp/chapter11/assertapply01/main.go" />
         <option value="$PROJECT_DIR$/go/src/hsp/chapter11/assertapply02/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/customerManage/model/customer.go" />
         <option value="$PROJECT_DIR$/go/src/hsp/customerManage/view/customerView.go" />
         <option value="$PROJECT_DIR$/go/src/hsp/customerManage/service/customerService.go" />
-        <option value="$PROJECT_DIR$/go/src/hsp/customerManage/model/customer.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter11/interfacevsextends/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/goroutine/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/go_channel/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/realchannel/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/goroexcercise/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/goroexcercise_correct/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190828/select/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190828/panic_go/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190831/Const/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190828/reflect_first/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190831/reflect_better/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190831/reflect/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190903/tcpdemo/server/server.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190903/tcpdemo/client/client.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter10/structassign/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter10/structcreate/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/redis/redis.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/redis/redis_pool.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/test.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/utils.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/login.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/common/message/message.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/process/smsProcess.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/utils/utils.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/process/userProcess.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/main/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/main/processer.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/main/main.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/process/userProcess.go" />
+        <option value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/process/server.go" />
       </list>
     </option>
   </component>
@@ -172,11 +245,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="418" />
-    <option name="y" value="113" />
-    <option name="width" value="1111" />
-    <option name="height" value="882" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="208" />
+    <option name="y" value="292" />
+    <option name="width" value="1366" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -194,7 +270,147 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Changed Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="file" type="cbb8eebc:String" user="file" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="file" type="cbb8eebc:String" user="file" />
+              <item name="go" type="cbb8eebc:String" user="go" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="file" type="cbb8eebc:String" user="file" />
+              <item name="go" type="cbb8eebc:String" user="go" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="file" type="cbb8eebc:String" user="file" />
+              <item name="go" type="cbb8eebc:String" user="go" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="hsp" type="cbb8eebc:String" user="hsp" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="file" type="cbb8eebc:String" user="file" />
+              <item name="go" type="cbb8eebc:String" user="go" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="hsp" type="cbb8eebc:String" user="hsp" />
+              <item name="chapter_bu" type="cbb8eebc:String" user="chapter_bu" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="file" type="cbb8eebc:String" user="file" />
+              <item name="go" type="cbb8eebc:String" user="go" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="hsp" type="cbb8eebc:String" user="hsp" />
+              <item name="chapter_bu" type="cbb8eebc:String" user="chapter_bu" />
+              <item name="20190907" type="cbb8eebc:String" user="20190907" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="file" type="cbb8eebc:String" user="file" />
+              <item name="go" type="cbb8eebc:String" user="go" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="hsp" type="cbb8eebc:String" user="hsp" />
+              <item name="chapter_bu" type="cbb8eebc:String" user="chapter_bu" />
+              <item name="20190907" type="cbb8eebc:String" user="20190907" />
+              <item name="project" type="cbb8eebc:String" user="project" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="file" type="cbb8eebc:String" user="file" />
+              <item name="go" type="cbb8eebc:String" user="go" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="hsp" type="cbb8eebc:String" user="hsp" />
+              <item name="chapter_bu" type="cbb8eebc:String" user="chapter_bu" />
+              <item name="20190907" type="cbb8eebc:String" user="20190907" />
+              <item name="project" type="cbb8eebc:String" user="project" />
+              <item name="server" type="cbb8eebc:String" user="server" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Default">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="file" type="cbb8eebc:String" user="file" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="file" type="cbb8eebc:String" user="file" />
+              <item name="go" type="cbb8eebc:String" user="go" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="file" type="cbb8eebc:String" user="file" />
+              <item name="go" type="cbb8eebc:String" user="go" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="file" type="cbb8eebc:String" user="file" />
+              <item name="go" type="cbb8eebc:String" user="go" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="hsp" type="cbb8eebc:String" user="hsp" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="file" type="cbb8eebc:String" user="file" />
+              <item name="go" type="cbb8eebc:String" user="go" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="hsp" type="cbb8eebc:String" user="hsp" />
+              <item name="chapter_bu" type="cbb8eebc:String" user="chapter_bu" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="file" type="cbb8eebc:String" user="file" />
+              <item name="go" type="cbb8eebc:String" user="go" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="hsp" type="cbb8eebc:String" user="hsp" />
+              <item name="chapter_bu" type="cbb8eebc:String" user="chapter_bu" />
+              <item name="20190907" type="cbb8eebc:String" user="20190907" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="file" type="cbb8eebc:String" user="file" />
+              <item name="go" type="cbb8eebc:String" user="go" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="hsp" type="cbb8eebc:String" user="hsp" />
+              <item name="chapter_bu" type="cbb8eebc:String" user="chapter_bu" />
+              <item name="20190907" type="cbb8eebc:String" user="20190907" />
+              <item name="project" type="cbb8eebc:String" user="project" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="file" type="cbb8eebc:String" user="file" />
+              <item name="go" type="cbb8eebc:String" user="go" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="hsp" type="cbb8eebc:String" user="hsp" />
+              <item name="chapter_bu" type="cbb8eebc:String" user="chapter_bu" />
+              <item name="20190907" type="cbb8eebc:String" user="20190907" />
+              <item name="project" type="cbb8eebc:String" user="project" />
+              <item name="server" type="cbb8eebc:String" user="server" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="file" type="cbb8eebc:String" user="file" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,7 +442,7 @@
               <item name="go" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hsp" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter11" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter_bu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="file" type="b2602c69:ProjectViewProjectNode" />
@@ -234,8 +450,8 @@
               <item name="go" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hsp" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter11" type="462c0819:PsiDirectoryNode" />
-              <item name="interfacedemo" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter_bu" type="462c0819:PsiDirectoryNode" />
+              <item name="20190907" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="file" type="b2602c69:ProjectViewProjectNode" />
@@ -243,7 +459,9 @@
               <item name="go" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hsp" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter12" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter_bu" type="462c0819:PsiDirectoryNode" />
+              <item name="20190907" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="file" type="b2602c69:ProjectViewProjectNode" />
@@ -251,7 +469,10 @@
               <item name="go" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hsp" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter14" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter_bu" type="462c0819:PsiDirectoryNode" />
+              <item name="20190907" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="file" type="b2602c69:ProjectViewProjectNode" />
@@ -259,7 +480,11 @@
               <item name="go" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hsp" type="462c0819:PsiDirectoryNode" />
-              <item name="customerManage" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter_bu" type="462c0819:PsiDirectoryNode" />
+              <item name="20190907" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="file" type="b2602c69:ProjectViewProjectNode" />
@@ -267,8 +492,11 @@
               <item name="go" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hsp" type="462c0819:PsiDirectoryNode" />
-              <item name="customerManage" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter_bu" type="462c0819:PsiDirectoryNode" />
+              <item name="20190907" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="process" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="file" type="b2602c69:ProjectViewProjectNode" />
@@ -276,8 +504,10 @@
               <item name="go" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hsp" type="462c0819:PsiDirectoryNode" />
-              <item name="customerManage" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter_bu" type="462c0819:PsiDirectoryNode" />
+              <item name="20190907" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="file" type="b2602c69:ProjectViewProjectNode" />
@@ -285,8 +515,11 @@
               <item name="go" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hsp" type="462c0819:PsiDirectoryNode" />
-              <item name="customerManage" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter_bu" type="462c0819:PsiDirectoryNode" />
+              <item name="20190907" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="process" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="file" type="b2602c69:ProjectViewProjectNode" />
@@ -294,29 +527,11 @@
               <item name="go" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hsp" type="462c0819:PsiDirectoryNode" />
-              <item name="oa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="file" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="file" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.12.2" type="20ee2d1f:SyntheticLibraryElementNode" />
-            </path>
-            <path>
-              <item name="file" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.12.2" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="file" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.12.2" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter_bu" type="462c0819:PsiDirectoryNode" />
+              <item name="20190907" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -326,17 +541,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../chatroom" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="GO_FMT" value="false" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="SearchEverywhereHistoryKey" value="Message&#9;FILE&#9;file://C:/Users/mayn/Desktop/file/go/pkg/windows_amd64/hsp/chapter_bu/20190907/project/common/message.a&#10;Loginmestype&#9;null&#9;null&#10;Loginmesrestype&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mayn\Desktop\file\go\src\hsp\chapter_bu" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\mayn\Desktop\file\go\src\hsp\chapter11" />
-      <recent name="C:\Users\mayn\Desktop\file\go\src\hsp" />
+      <recent name="C:\Users\mayn\Desktop\file\go\src\hsp\chapter_bu\20190907\project\client\process" />
+      <recent name="C:\Users\mayn\Desktop\file\go\src\hsp\chapter_bu\20190907\project\client\main" />
+      <recent name="C:\Users\mayn\Desktop\file\go\src\hsp\chapter_bu\20190907\project\client\utils" />
+      <recent name="C:\Users\mayn\Desktop\file\go\src\hsp\chapter_bu\20190907\project\server\main" />
+      <recent name="C:\Users\mayn\Desktop\file\go\src\hsp\chapter_bu\20190907\project\server" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -351,13 +573,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build customerView.go">
-    <configuration name="go build customerView.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+  <component name="RunManager" selected="Go Build.go build main.go (2)">
+    <configuration name="go build hsp/chapter_bu/20190907/project" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="file" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/go/src/hsp/customerManage/view/customerView.go" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="hsp/chapter_bu/20190907/project" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
+    <configuration name="go build hsp/chapter_bu/20190907/project/client" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="file" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="hsp/chapter_bu/20190907/project/client" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
@@ -365,7 +597,7 @@
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/go/src/hsp/chapter11/assert/main.go" />
+      <filePath value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/main.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
     <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
@@ -373,38 +605,30 @@
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/go/src/hsp/chapter11/assertapply02/main.go" />
+      <filePath value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/main/main.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
-    <configuration name="go build main.go (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+    <configuration name="go build test.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="file" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/go/src/gopl.io/ch1/lissajous/main.go" />
-      <directory value="$PROJECT_DIR$/" />
-    </configuration>
-    <configuration name="go build main.go (5)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
-      <module name="file" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/go/src/hsp/chapter11/assertapply01/main.go" />
+      <filePath value="$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/test.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go (1)" />
-      <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go (5)" />
-      <item index="2" class="java.lang.String" itemvalue="Go Build.go build main.go (2)" />
-      <item index="3" class="java.lang.String" itemvalue="Go Build.go build main.go (3)" />
-      <item index="4" class="java.lang.String" itemvalue="Go Build.go build customerView.go" />
+      <item index="0" class="java.lang.String" itemvalue="Go Build.go build hsp/chapter_bu/20190907/project/client" />
+      <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Go Build.go build hsp/chapter_bu/20190907/project" />
+      <item index="3" class="java.lang.String" itemvalue="Go Build.go build test.go" />
+      <item index="4" class="java.lang.String" itemvalue="Go Build.go build main.go (2)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Go Build.go build customerView.go" />
-        <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go (3)" />
-        <item index="2" class="java.lang.String" itemvalue="Go Build.go build main.go (2)" />
-        <item index="3" class="java.lang.String" itemvalue="Go Build.go build main.go (5)" />
+        <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go (2)" />
+        <item index="1" class="java.lang.String" itemvalue="Go Build.go build hsp/chapter_bu/20190907/project/client" />
+        <item index="2" class="java.lang.String" itemvalue="Go Build.go build test.go" />
+        <item index="3" class="java.lang.String" itemvalue="Go Build.go build hsp/chapter_bu/20190907/project" />
         <item index="4" class="java.lang.String" itemvalue="Go Build.go build main.go (1)" />
       </list>
     </recent_temporary>
@@ -412,23 +636,28 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="TestHistory">
+    <history-entry file="gobench_client - 2019.09.09 at 14h 38m 58s.xml">
+      <configuration name="gobench client" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20788912" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17750533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46815643" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4677223" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.078296706" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4256983" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33982947" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915073" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39783493" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -436,24 +665,24 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35456476" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14895834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46815643" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27771157" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35200846" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.078296706" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915073" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39783493" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,456 +701,422 @@
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/go/src/hsp/chapter04/demo02/main.go</url>
           <line>17</line>
-          <properties />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/go/src/hsp/chapter_bu/goroexcercise/main.go</url>
+          <line>94</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/redis/huanchong.go</url>
+          <line>22</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="2" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter09/mapsort/main.go">
+    <entry file="file://C:/Go/src/bufio/bufio.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="14010">
+          <caret line="472" column="17" lean-forward="false" selection-start-line="472" selection-start-column="17" selection-end-line="472" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter09/mapdetails/main.go">
+    <entry file="file://$PROJECT_DIR$/go/src/github.com/garyburd/redigo/redis/log.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter09/exercise/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-998">
+        <state relative-caret-position="-990">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter09/mapuse/main.go">
+    <entry file="file://$PROJECT_DIR$/go/src/github.com/garyburd/redigo/redis/pubsub.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="29" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="-630">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter10/fielddetails/main.go">
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter10/structassign/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="60" column="19" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter10/structcreate/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1522">
-          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter10/exercise/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2122">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter10/structdetails/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1006">
-          <caret line="46" column="52" lean-forward="false" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
-          <folding />
+        <state relative-caret-position="690">
+          <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter10/structdemo01/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-854">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="-16">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter10/structdetails/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="45" column="15" lean-forward="false" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter10/structcreate/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/goroexcercise/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Go/src/encoding/json/decode.go">
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/go_channel/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="94" column="5" lean-forward="false" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="690">
+          <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter10/structdetails2/main.go">
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/redis/huanchong.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding>
             <element signature="e#14#49#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter10/methodDemo/main.go">
+    <entry file="file://$PROJECT_DIR$/go/src/github.com/garyburd/redigo/redis/conn.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="56" column="12" lean-forward="true" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
-          <folding>
-            <element signature="e#14#32#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="160">
+          <caret line="169" column="5" lean-forward="false" selection-start-line="169" selection-start-column="5" selection-end-line="169" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter10/methoddetails/main.go">
+    <entry file="file://$PROJECT_DIR$/go/src/github.com/garyburd/redigo/redis/pool.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="44" column="23" lean-forward="false" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+        <state relative-caret-position="-30">
+          <caret line="121" column="5" lean-forward="false" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/github.com/garyburd/redigo/redis/redis.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/github.com/garyburd/redigo/redis/reply.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-740">
+          <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/redis/redis_pool.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/fmt/scan.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="81" column="1" lean-forward="true" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/net/dial.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="308" column="5" lean-forward="false" selection-start-line="308" selection-start-column="5" selection-end-line="308" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/forth.go">
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter05/fordemo/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-921">
+        <state relative-caret-position="360">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="76" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/os/proc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190903/tcpdemo/client/client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter07/slicedemo01/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter10/methodexercise02/main.go">
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter07/sliceExercise/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="155" column="32" lean-forward="false" selection-start-line="155" selection-start-column="32" selection-end-line="155" selection-end-column="32" />
-          <folding>
-            <element signature="e#14#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter10/methodexercise/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1071">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter07/arraydemo02/main.go">
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter07/sliceforrange/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="57" column="20" lean-forward="false" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="-810">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter07/arrayExercise/main.go">
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter07/sliceuse/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2469">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-150">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter07/arraydetails/main.go">
+    <entry file="file://C:/Go/src/crypto/tls/conn.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="889">
-          <caret line="54" column="4" lean-forward="false" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="175">
+          <caret line="1245" column="16" lean-forward="false" selection-start-line="1245" selection-start-column="16" selection-end-line="1245" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter10/methodvsfunc/main.go">
+    <entry file="file://C:/Go/src/bytes/reader.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="58" column="1" lean-forward="false" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="343">
+          <caret line="44" column="10" lean-forward="true" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter10/oopexercise/main.go">
+    <entry file="file://C:/Go/src/encoding/json/encode.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-321">
-          <caret line="82" column="10" lean-forward="false" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
-          <folding>
-            <element signature="e#14#31#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="212">
+          <caret line="156" column="5" lean-forward="false" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter10/structassign/main.go">
+    <entry file="file://C:/Go/src/encoding/binary/binary.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter10/factory/main/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="e#13#61#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter10/factory/model/student.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter11/abstract/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="73" column="24" lean-forward="false" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter11/encapsulate/main/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#13#65#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter11/encapsulate/model/person.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter11/encapexercise/main/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter11/encapexercise/model/account.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-          <folding>
-            <element signature="e#15#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter11/extendsdetails2/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding>
-            <element signature="e#13#30#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter11/exercise/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="e#13#25#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter11/exercise02/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="e#13#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/sort/sort.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="306" column="5" lean-forward="false" selection-start-line="306" selection-start-column="5" selection-end-line="306" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/math/rand/rand.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="294" column="5" lean-forward="false" selection-start-line="294" selection-start-column="5" selection-end-line="294" selection-end-column="5" />
+        <state relative-caret-position="3360">
+          <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Go/src/builtin/builtin.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="133" column="5" lean-forward="false" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
+        <state relative-caret-position="501">
+          <caret line="260" column="5" lean-forward="false" selection-start-line="260" selection-start-column="5" selection-end-line="260" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Go/src/container/heap/heap.go">
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="108" column="37" lean-forward="false" selection-start-line="108" selection-start-column="37" selection-end-line="108" selection-end-column="37" />
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter11/exercise02_my/main.go">
+    <entry file="file://C:/Go/src/fmt/print.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+        <state relative-caret-position="196">
+          <caret line="273" column="5" lean-forward="false" selection-start-line="273" selection-start-column="5" selection-end-line="273" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190903/tcpdemo/server/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/encoding/json/decode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1080">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding>
-            <element signature="e#14#60#0" expanded="false" />
+            <element signature="e#280#403#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter11/interfaceDetails/main.go">
+    <entry file="file://C:/Go/src/time/time.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="55" column="22" lean-forward="false" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+        <state relative-caret-position="196">
+          <caret line="659" column="4" lean-forward="false" selection-start-line="659" selection-start-column="4" selection-end-line="659" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter11/extendsdemo/main.go">
+    <entry file="file://C:/Go/src/net/net.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state relative-caret-position="188">
+          <caret line="116" column="4" lean-forward="false" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter11/interfacevsextends/main.go">
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/chatroom/client/login.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        <state relative-caret-position="282">
+          <caret line="81" column="15" lean-forward="true" selection-start-line="81" selection-start-column="15" selection-end-line="81" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="45" column="26" lean-forward="false" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/common/message/message.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/utils/utils.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding>
-            <element signature="e#13#30#0" expanded="false" />
+            <element signature="e#15#136#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter11/interfacedetails2/main.go">
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
+        <state relative-caret-position="119">
+          <caret line="68" column="22" lean-forward="false" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/main/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/utils.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/login.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/process/userProcess.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#17#156#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/process/smsProcess.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/main/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+          <folding>
+            <element signature="e#14#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/process/smsProcess.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter11/poly/main.go">
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/server/main/processer.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/gopl.io/ch1/lissajous/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-690">
-          <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter11/interfacedemo/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1739">
-          <caret line="64" column="20" lean-forward="false" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+        <state relative-caret-position="41">
+          <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
           <folding>
-            <element signature="e#13#30#0" expanded="false" />
+            <element signature="e#14#192#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter11/assert/main.go">
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/utils/utils.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        <state relative-caret-position="120">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter11/assertapply01/main.go">
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/process/userProcess.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter11/assertapply02/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="51" column="56" lean-forward="false" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter12/testMyAccount.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        <state relative-caret-position="280">
+          <caret line="107" column="21" lean-forward="false" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
           <folding>
-            <element signature="e#13#30#0" expanded="true" />
+            <element signature="e#17#183#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/customerManage/model/customer.go">
+    <entry file="file://$PROJECT_DIR$/go/src/hsp/chapter_bu/20190907/project/client/process/server.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="454">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
           <folding>
-            <element signature="e#14#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/customerManage/view/customerView.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
-          <folding>
-            <element signature="e#14#89#0" expanded="true" />
-            <element signature="n#!!block;n#delete#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/hsp/customerManage/service/customerService.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="38" column="15" lean-forward="true" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
-          <folding>
-            <element signature="e#16#55#0" expanded="true" />
+            <element signature="e#17#95#0" expanded="true" />
           </folding>
         </state>
       </provider>

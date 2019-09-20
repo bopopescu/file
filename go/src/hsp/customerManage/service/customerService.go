@@ -2,6 +2,7 @@ package service
 import (
 	"hsp/customerManage/model"
 
+	"fmt"
 )
 
 //该CustomerService， 完成对Customer的操作,包括
@@ -28,6 +29,25 @@ func (this *CustomerService) List() []model.Customer {
 	return this.customers
 }
 
+
+func (this *CustomerService) Update(id int) (bool,int){
+	index := this.FindById(id)
+	//如果index == -1, 说明没有这个客户
+	if index == -1 {
+		return false , 0
+	}
+	return true , index
+
+}
+
+func (this *CustomerService) DoUpdate(customer model.Customer,index int,id int) bool{
+	customer.Id = id
+
+	this.customers[index] =customer
+	//this.customers[index].Email =customer.Email
+	return true
+}
+
 //添加客户到customers切片
 //!!!
 func (this *CustomerService) Add(customer model.Customer) bool {
@@ -35,7 +55,9 @@ func (this *CustomerService) Add(customer model.Customer) bool {
 	//我们确定一个分配id的规则,就是添加的顺序
 	this.customerNum++
 	customer.Id = this.customerNum
+	fmt.Println(customer)
 	this.customers = append(this.customers, customer)
+	fmt.Println(this.customers)
 	return true
 }
 
@@ -46,7 +68,8 @@ func (this *CustomerService) Delete(id int) bool {
 	if index == -1 {
 		return false 
 	}
-	//如何从切片中删除一个元素
+	//如何从切片中删除一个元素 todo
+
 	this.customers = append(this.customers[:index], this.customers[index+1:]...)
 	return true
 }

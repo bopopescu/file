@@ -60,6 +60,57 @@ func (this *customerView) add() {
 	}
 }
 
+func (this *customerView) doup(index int,id int) {
+	fmt.Println("---------------------修改客户---------------------")
+	fmt.Println("index=>",index)
+	fmt.Println("姓名:")
+	name := ""
+	fmt.Scanln(&name)
+	fmt.Println("性别:")
+	gender := ""
+	fmt.Scanln(&gender)
+	fmt.Println("年龄:")
+	age := 0
+	fmt.Scanln(&age)
+	fmt.Println("电话:")
+	phone := ""
+	fmt.Scanln(&phone)
+	fmt.Println("电邮:")
+	email := ""
+	fmt.Scanln(&email)
+	//构建一个新的Customer实例
+	//注意: id号，没有让用户输入，id是唯一的，需要系统分配
+	customer := model.NewCustomer2(name, gender, age, phone, email)
+	//调用
+	if this.customerService.DoUpdate(customer,index,id) {
+		fmt.Println("---------------------修改完成---------------------")
+	} else {
+		fmt.Println("---------------------修改失败---------------------")
+	}
+}
+
+func (this *customerView) update() {
+	fmt.Println("---------------------修改客户---------------------")
+	fmt.Println("请选择修改客户编号(-1退出)：")
+	id := -1
+	fmt.Scanln(&id)
+	if id == -1 {
+		return //放弃修改操作
+	}
+
+
+	var res,index = this.customerService.Update(id)
+	if(res ){
+		this.doup(index,id)
+		fmt.Println("---------------------开始修改---------------------")
+
+	}else{
+		fmt.Println("---------------------修改失败，输入的id号不存在----")
+
+	}
+
+}
+
 //得到用户的输入id，删除该id对应的客户
 func (this *customerView) delete() {
 	fmt.Println("---------------------删除客户---------------------")
@@ -122,6 +173,7 @@ func (this *customerView) mainMenu() {
 				this.add()
 			case "2" :
 				fmt.Println("修 改 客 户")
+				this.update()
 			case "3" :
 				this.delete()
 			case "4" :
