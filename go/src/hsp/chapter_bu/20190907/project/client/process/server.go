@@ -52,10 +52,7 @@ func serverProcessmes(conn net.Conn){
 	for{
 		fmt.Println("客户端阻塞读取中")
 		mes,err :=tf.Readpkg()
-		if err!=nil{
-			fmt.Println("read err",err)
-			return
-		}
+
 
 		fmt.Println(mes)
 	}

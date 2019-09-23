@@ -32,6 +32,32 @@ func raw(rawdata chan int){
 }
 
 
+
+func calprime22(rawdata chan int,dealdata chan int,endchan chan bool){
+
+	for{
+		v,ok:=<-rawdata
+		if(ok){
+			if v%2==0{
+				dealdata<-v
+
+			}
+		}else{
+			break
+		}
+	}
+
+	time.Sleep(time.Second*2)
+	endchan<-true
+
+	//if(len(endchan)==4){
+	//	close(endchan)
+	//}
+
+
+}
+
+
 func calprime(rawdata chan int,dealdata chan int,endchan chan bool){
 
 	for{
@@ -95,7 +121,7 @@ func main01(){
 }
 
 
-func main0(){
+func main(){
 	btime:=time.Now().UnixNano()
 	rawdata:= make(chan int ,2000)
 
@@ -106,19 +132,22 @@ func main0(){
 	go calprime(rawdata,dealdata,endchan)
 	go calprime(rawdata,dealdata,endchan)
 	go calprime(rawdata,dealdata,endchan)
-	go calprime(rawdata,dealdata,endchan)
+	go calprime22(rawdata,dealdata,endchan)
 
 
 
-
+	times:=1
 	for{
 		abc := len(endchan)
+		times++
+
+		fmt.Println(abc,"---",times,"----",time.Now().UnixNano())
 		if abc==4{
 			close(dealdata)
 			fmt.Println("asdasdasd",dealdata)
-			//for v:=range dealdata{
-			//	fmt.Println(v)
-			//}
+			for v:=range dealdata{
+				fmt.Println(v)
+			}
 			fmt.Println(123)
 			break
 		}

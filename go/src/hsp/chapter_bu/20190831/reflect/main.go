@@ -26,7 +26,7 @@ func main(){
 	fmt.Println(*num4)
 }
 
-func reflectModify(b interface{}){
+func  reflectModify(b interface{}){
 
 
 	rVal:=reflect.ValueOf(b)
