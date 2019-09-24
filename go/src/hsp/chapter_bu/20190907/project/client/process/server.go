@@ -2,9 +2,9 @@ package process
 
 import (
 	"fmt"
-	"os"
-	"net"
 	"hsp/chapter_bu/20190907/project/client/utils"
+	"net"
+	"os"
 )
 
 //显示登录成功后的界面..
@@ -53,8 +53,8 @@ func serverProcessmes(conn net.Conn){
 		fmt.Println("客户端阻塞读取中")
 		mes,err :=tf.Readpkg()
 
+		fmt.Println(mes,err)
 
-		fmt.Println(mes)
 	}
 
 
