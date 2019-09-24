@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"encoding/binary"
 	"net"
-	"go_code/chatroom/common/message"
+	"hsp/chapter_bu/chatroomhsp/common/message"
 )
 
 //写一个函数，完成登录

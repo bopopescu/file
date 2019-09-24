@@ -2,8 +2,8 @@ package process2
 import (
 	"fmt"
 	"net"
-	"go_code/chatroom/common/message"
-	"go_code/chatroom/server/utils"
+	"hsp/chapter_bu/chatroomhsp/common/message"
+	"hsp/chapter_bu/chatroomhsp/server/utils"
 	
 	"encoding/json"
 )

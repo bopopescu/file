@@ -1,7 +1,7 @@
 package process
 import (
 	"fmt"
-	"go_code/chatroom/common/message"
+	"hsp/chapter_bu/chatroomhsp/common/message"
 	"encoding/json"
 )
 

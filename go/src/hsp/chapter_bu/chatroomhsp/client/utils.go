@@ -2,7 +2,7 @@ package main
 import (
 	"fmt"
 	"net"
-	"go_code/chatroom/common/message"
+	"hsp/chapter_bu/chatroomhsp/common/message"
 	"encoding/binary"
 	"encoding/json"
 )

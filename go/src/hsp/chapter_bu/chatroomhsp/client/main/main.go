@@ -2,7 +2,7 @@ package main
 import (
 	"fmt"
 	"os"
-	"go_code/chatroom/client/process"
+	"hsp/chapter_bu/chatroomhsp/client/process"
 )
 
 //定义两个变量，一个表示用户id, 一个表示用户密码

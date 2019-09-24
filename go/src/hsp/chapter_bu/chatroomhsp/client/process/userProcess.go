@@ -2,8 +2,8 @@ package process
 import (
 	"fmt"
 	"net"
-	"go_code/chatroom/common/message"
-	"go_code/chatroom/client/utils"
+	"hsp/chapter_bu/chatroomhsp/common/message"
+	"hsp/chapter_bu/chatroomhsp/client/utils"
 	"encoding/binary"
 	"encoding/json"
 	"os"

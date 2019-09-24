@@ -3,7 +3,7 @@ import (
 	"fmt"
 	"net"
 	"time"
-	"hsp/chapter_bu/chatroom/server/model"
+	"hsp/chapter_bu/chatroomhsp/server/model"
 )
 
 

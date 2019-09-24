@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"encoding/json"
 	"github.com/garyburd/redigo/redis"
-	"hsp/chapter_bu/chatroom/common/message"
+	"hsp/chapter_bu/chatroomhsp/common/message"
 )
 
 //我们在服务器启动后，就初始化一个userDao实例，

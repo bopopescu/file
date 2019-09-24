@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 	"net"
-	"go_code/chatroom/common/message"
-	"go_code/chatroom/server/utils"
-	"go_code/chatroom/server/process"
+	"hsp/chapter_bu/chatroomhsp/common/message"
+	"hsp/chapter_bu/chatroomhsp/server/utils"
+	"hsp/chapter_bu/chatroomhsp/server/process"
 	"io"
 )
 
