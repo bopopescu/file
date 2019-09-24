@@ -23,6 +23,8 @@ func init(){
 
 func main(){
 
+
+
 	conn := pool.Get()
 	fmt.Println(conn)
 	fmt.Printf("%T,%v",conn,conn)
