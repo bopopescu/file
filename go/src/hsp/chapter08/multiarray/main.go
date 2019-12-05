@@ -39,6 +39,9 @@ func main() {
 	var test int =323
 	fmt.Println(&test)
 
+
+	var testMultiArr [3][3]int
+	fmt.Println(testMultiArr)
 	fmt.Printf("arr2[0]的地址%p\n", &arr2[0])
 	fmt.Printf("arr2[1]的地址%p\n", &arr2[1])
 

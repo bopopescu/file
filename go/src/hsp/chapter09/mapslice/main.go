@@ -12,6 +12,13 @@ func main() {
 	//1. 声明一个map切片
 	var monsters []map[string]string
 	monsters = make([]map[string]string, 2) //准备放入两个妖怪
+
+	 var testslice  []int
+	 var testslice2 = make([]int ,10)
+	fmt.Println(testslice)
+	fmt.Println(testslice2)
+
+	fmt.Println(monsters)
 	//2. 增加第一个妖怪的信息
 	if monsters[0] == nil {
 		monsters[0] = make(map[string]string, 2)

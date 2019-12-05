@@ -111,7 +111,7 @@ func (this *UserProcess) Login(userId int, userPwd string) (err error) {
 	loginMes.UserId = userId
 	loginMes.UserPwd = userPwd
 
-	//4. 将loginMes 序列化
+	//4. 将loginMes 序列化sdadas
 	data, err := json.Marshal(loginMes)
 	if err != nil {
 		fmt.Println("json.Marshal err=", err)

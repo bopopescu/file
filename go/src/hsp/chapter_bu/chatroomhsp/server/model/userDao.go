@@ -80,15 +80,18 @@ func (this *UserDao) Register(user *message.User) (err error) {
 	conn := this.pool.Get() 
 	defer conn.Close()
 	_, err = this.getUserById(conn, user.UserId)
+
 	if err == nil {
 		err = ERROR_USER_EXISTS
 		return 
 	}
+
 	//这时，说明id在redis还没有，则可以完成注册
 	data, err := json.Marshal(user) //序列化
 	if err != nil {
-		return 
+		return
 	}
+
 	//入库
 	_, err = conn.Do("HSet", "users", user.UserId, string(data))
 	if err != nil {

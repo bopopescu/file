@@ -9,6 +9,10 @@ func test(char byte) byte {
 	return char + 1
 }
 
+func testchar(char byte)byte{
+	return char+1
+}
+
 func main() {
 
 	// 	案例：
@@ -21,7 +25,9 @@ func main() {
 	//1. 定义一个变量接收字符
 	//2. 使用switch完成
 	 var key byte
-	 fmt.Println("请输入一个字符 a,b,c,d,e,f,g")
+	fmt.Println(string(97),byte('a'),string(99))
+
+	fmt.Println("请输入一个字符 a,b,c,d,e,f,g")
 	 fmt.Scanf("%c", &key)
 
 	 switch test(key)+1 { //将语法现象
@@ -33,7 +39,7 @@ func main() {
 	 		fmt.Println("周三，猴子爬雪山")
 	 	//...
 	 	default:
-	 		fmt.Println("输入有误...")
+	 		fmt.Println("输入有误...",test(key)+1)
 	 }
 
 

@@ -40,6 +40,9 @@ type LoginResMes struct {
 type RegisterMes struct {
 	User User `json:"user"`//类型就是User结构体.
 }
+
+
+
 type RegisterResMes struct {
 	Code int  `json:"code"` // 返回状态码 400 表示该用户已经占有 200表示注册成功
 	Error string `json:"error"` // 返回错误信息
@@ -57,4 +60,4 @@ type SmsMes struct {
 	User //匿名结构体，继承
 }
 
-// SmsReMes
+// SmsReMessdasd

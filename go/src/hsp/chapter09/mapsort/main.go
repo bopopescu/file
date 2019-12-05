@@ -27,9 +27,10 @@ func main() {
 	}
 	//排序
 	sort.Ints(keys)
-	fmt.Println(keys)
+	fmt.Println(666,keys)
 
-	for _, k := range keys{
+	for i, k := range keys{
+		fmt.Println(i)
 		fmt.Printf("map1[%v]=%v \n", k, map1[k])
 	}
 	

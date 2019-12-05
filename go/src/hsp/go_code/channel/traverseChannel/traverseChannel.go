@@ -15,14 +15,40 @@ func closeChannel(){
 }
 
 func traverseChannel(){
+	////1.定义一个管道，可放10个int类型的数据
+	//intChan := make(chan int, 10)
+	//for i := 0; i < 10; i++ {
+	//	intChan<- i
+	//}
+	//
+	////2.定义一个管道，可以放5个string类型的数据
+	//stringChan := make(chan string, 5)
+	//for i := 0; i < 5; i++ {
+	//	fmt.Println(<-intChan)
+	//	stringChan<- "hello" + fmt.Sprintf("%d",i)
+	//}
+	//return
+
+
+
 	intchan := make(chan int,100)
 	for i:=0;i<100;i++{
-		intchan <- i*2
+		intchan <- i*3
 	}
 	// 遍历时要先关闭,否则会报死锁的错误
 	close(intchan)
+
+	for{
+		i,ok:=<-intchan
+		if ok==false{
+			return
+		}
+		fmt.Println(i)
+	}
+	//return
 	for v := range intchan{
 		fmt.Print("\t",v)
+		fmt.Println("ssss")
 	}
 	
 }
@@ -50,13 +76,13 @@ func traverseChanne2(){
 	
 }
 func main(){
-	// closeChannel()
+	closeChannel()
 
 	// 遍历
-	//traverseChannel()
+	traverseChannel()
 
 	// 遍历
-	traverseChanne2()
+	//traverseChanne2()
 	
 
 	

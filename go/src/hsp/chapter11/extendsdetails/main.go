@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/studygolang/studygolang/http"
 )
 
 type A struct {
@@ -9,6 +10,9 @@ type A struct {
 	age int
 }
 
+func (fuck *A) who() {
+	http.AccessControl("")
+}
 func (a *A) SayOk() {
 	fmt.Println("A SayOk", a.Name)
 }

@@ -28,7 +28,7 @@ func syncMethod(n int){
 	}
 	// 加锁
 	lock.Lock()
-	myMap[n]=res;
+	myMap[n]=res
 	lock.Unlock()
 }
 

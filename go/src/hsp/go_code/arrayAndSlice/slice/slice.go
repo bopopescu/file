@@ -6,7 +6,7 @@ import (
 )
 func slideCreat1(){
 	var i [5]int = [5]int{2,15,55,25,35}
-	sli := i[1:3]
+	sli := i[1:4]
 	fmt.Println("slice元素是",sli)
 	fmt.Println("slice元素的个数是",len(sli))
 	fmt.Println("slice元素的容量是",cap(sli))
@@ -63,7 +63,7 @@ func sliceCoppy(){
 func main(){
 	// 切片最明显不同于数组的地方是:切片没有长度.它是引用类型,切片底层的数组是不可见的.所以改变slice也会改变数组的值
 	// 切片底层是一个结构体(首地址,长度,容量),有3部分组成
-	// slideCreat1()
+	slideCreat1()
 	// slideCreat2()
 	//slideCreat3()
 

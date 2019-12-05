@@ -156,22 +156,31 @@ func (this *UserProcess) ServerProcessLogin(mes *message.Message) (err error) {
 			loginResMes.Error = err.Error()
 		} else {
 			loginResMes.Code = 505
-			loginResMes.Error = "服务器内部错误..."
+			loginResMes.Error = "服务器内部错误... " + err.Error()
 		}
 
 	} else {
 		loginResMes.Code = 200
+
+
 		//这里，因为用户登录成功，我们就把该登录成功的用放入到userMgr中
 		//将登录成功的用户的userId 赋给 this
 		this.UserId = loginMes.UserId
 		userMgr.AddOnlineUser(this)
+
+
+
 		//通知其它的在线用户， 我上线了
 		this.NotifyOthersOnlineUser(loginMes.UserId)
+
+
 		//将当前在线用户的id 放入到loginResMes.UsersId
 		//遍历 userMgr.onlineUsers
 		for id, _ := range userMgr.onlineUsers {
 			loginResMes.UsersId = append(loginResMes.UsersId, id)
 		}
+
+		
 		fmt.Println(user, "登录成功")
 	}
 	// //如果用户id= 100， 密码=123456, 认为合法，否则不合法

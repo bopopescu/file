@@ -1,4 +1,4 @@
-package main
+ package main
 
 import (
 
@@ -6,11 +6,13 @@ import (
 
 	//"time"
 	"sync"
+	"time"
 )
 
 var myMap = make(map[int]int,10)
 //
 var lock sync.Mutex  //todo 加一把锁 全局互斥
+
 func calJc(n int)int{
 
 	res:=1
@@ -31,7 +33,7 @@ func main(){
 	}
 
 	//todo 如果不休眠  则主线程退出  协程也退出
-	//time.Sleep(time.Second *10 )
+	time.Sleep(time.Second *10 )
 
 	// todo 如果不休眠  则主线程退出  协程也退出
 

@@ -1,6 +1,7 @@
 package main
 import (
 	"fmt"
+	"io"
 	"net"
 	"time"
 	"hsp/chapter_bu/chatroomhsp/server/model"
@@ -135,8 +136,12 @@ func process(conn net.Conn) {
 	}
 	err := processor.process2()
 	if err != nil {
-		fmt.Println("客户端和服务器通讯协程错误=err", err)
-		return 
+
+		if err != io.EOF{
+			fmt.Println("客户端和服务器通讯协程错误=err", err)
+
+		}
+		return
 	}
 }
 

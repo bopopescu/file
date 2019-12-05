@@ -18,6 +18,10 @@ func main() {
 	//return
 	fmt.Println("cities 有", len(cities), " 对 key-value")
 
+
+
+
+
 	//使用for-range遍历一个结构比较复杂的map
 	studentMap := make(map[string]map[string]string)
 	
@@ -34,8 +38,9 @@ func main() {
 	}
 
 	studentMap["stu03"] = sda
-	fmt.Println(sda,studentMap)
-	return
+	fmt.Println(sda)
+	fmt.Println(studentMap)
+	//return
 	studentMap["stu02"] =  make(map[string]string, 3) //这句话不能少!!
 	studentMap["stu02"]["name"] = "mary"
 	studentMap["stu02"]["sex"] = "女"
