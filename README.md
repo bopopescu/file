@@ -1,9 +1,8 @@
-# files 
-|src|des|
-| :---- | :----|
-|.conf,lh,san|server|
-|.so|mamp|
-|..tar|html|
+# files  go    src 
+ 
+# crawler 
+
+# go life
 
 
 
