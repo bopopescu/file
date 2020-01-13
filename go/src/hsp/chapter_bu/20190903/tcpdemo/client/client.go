@@ -1,57 +1,55 @@
 package main
 
 import (
-	"net"
-	"fmt"
 	"bufio"
+	"fmt"
+	"net"
 	"os"
 	"strings"
 )
 
-func main(){
+func main() {
 
-	conn,err := net.Dial("tcp","127.0.0.1:52889")
+	conn, err := net.Dial("tcp", "127.0.0.1:52889")
 
-	if err!=nil{
-		fmt.Println("dial err",err)
+	if err != nil {
+		fmt.Println("dial err", err)
 		return
 	}
 
-	fmt.Println("dial succ",conn)
+	fmt.Println("dial succ", conn)
 
 	defer conn.Close()
-	reader :=bufio.NewReader(os.Stdin)
+	reader := bufio.NewReader(os.Stdin)
 
-	for{
+	for {
 
-		content,err := reader.ReadString('\n')
+		content, err := reader.ReadString('\n')
 
-		if err!=nil{
+		if err != nil {
 
-			fmt.Println("getcontent wrong,",err)
+			fmt.Println("getcontent wrong,", err)
 		}
 
-		fmt.Println("your type is " ,content	)
+		fmt.Println("your type is ", content)
 
-		content = strings.Trim(content," \r\n")
-		if string(content)=="exit"{
+		content = strings.Trim(content, " \r\n")
+		if string(content) == "exit" {
 			//conn.Close()
 			return
 		}
 
-		contetns :="exit"
-		fmt.Printf("%T %v %v %v\n ",content ,content=="exit",contetns=="exit",content==contetns)
+		contetns := "exit"
+		fmt.Printf("%T %v %v %v\n ", content, content == "exit", contetns == "exit", content == contetns)
 
-		n,err :=conn.Write([]byte(content + "\n"))
+		n, err := conn.Write([]byte(content + "\n"))
 
-			if err!=nil{
+		if err != nil {
 
-			fmt.Println("write wrong,",err)
+			fmt.Println("write wrong,", err)
 		}
 
-		fmt.Println("send byte  num",n)
+		fmt.Println("send byte  num", n)
 	}
-
-
 
 }

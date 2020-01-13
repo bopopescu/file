@@ -12,11 +12,11 @@ func main() {
 	for i := 0; i < 10; i++ {
 		wg.Add(1)
 		go func(num int, close <-chan struct{}) {
-			fmt.Println("begin",num)
+			fmt.Println("begin", num)
 
 			defer wg.Done()
-			fuck,ok:=<-close
-			fmt.Println(num,fuck,ok)
+			fuck, ok := <-close
+			fmt.Println(num, fuck, ok)
 		}(i, c)
 	}
 
@@ -24,7 +24,6 @@ func main() {
 		close(c)
 		fmt.Println("timeout exit")
 	}
-
 
 	time.Sleep(time.Second * 10)
 	fmt.Println("done")
@@ -46,5 +45,5 @@ func WaitTimeouts(wg *sync.WaitGroup, timeout time.Duration) bool {
 		ch <- false
 	}()
 
-	return <- ch
+	return <-ch
 }

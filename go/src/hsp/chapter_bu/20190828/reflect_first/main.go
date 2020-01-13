@@ -6,13 +6,11 @@ import (
 	"fmt"
 )
 
-
-func reflectTest(b interface{}){
+func reflectTest(b interface{}) {
 
 	//testv := b.(string)
 	//testv := b.(int)
 	//fmt.Println(testv)
-
 
 	//first ref.type
 
@@ -20,36 +18,33 @@ func reflectTest(b interface{}){
 
 	fmt.Println(rtype)
 
-	rval:= reflect.ValueOf(b)
-
+	rval := reflect.ValueOf(b)
 
 	rkind := rval.Kind()
-	fmt.Println(rkind,123)
+	fmt.Println(rkind, 123)
 
 	fmt.Println(rval)
 
 	//n2:=2+rval  //wrong
-	n2:=2+rval.Int()  //wrong todo thisis 取值
+	n2 := 2 + rval.Int() //wrong todo thisis 取值
 
 	fmt.Println(n2)
-	fmt.Printf("%T\n",rval)
+	fmt.Printf("%T\n", rval)
 
-	iv :=rval.Interface()
+	iv := rval.Interface()
 
-	fmt.Printf("%T\n",iv)
+	fmt.Printf("%T\n", iv)
 
-	n3:=10+iv.(int)  //todo thisis 断言
+	n3 := 10 + iv.(int) //todo thisis 断言
 	//n5:=10+iv
-	num2:=iv.(int)
-	fmt.Println(num2,n3)
-
-
+	num2 := iv.(int)
+	fmt.Println(num2, n3)
 
 }
 
-func main(){
+func main() {
 
-	var num int =232
+	var num int = 232
 
 	reflectTest(num)
 

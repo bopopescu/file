@@ -1,7 +1,8 @@
 package main
+
 import "fmt"
 
-func main(){
+func main() {
 
 	//使用while方式输出10句 "hello,world"
 	//循环变量初始化
@@ -16,7 +17,6 @@ func main(){
 
 	fmt.Println("i=", i)
 
-
 	//使用的do...while实现完成输出10句”hello,ok“
 	var j int = 1
 	for {
@@ -27,5 +27,4 @@ func main(){
 		}
 	}
 
-	
 }

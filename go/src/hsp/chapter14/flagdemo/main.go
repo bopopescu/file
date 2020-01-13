@@ -1,7 +1,8 @@
 package main
+
 import (
-	"fmt"
 	"flag"
+	"fmt"
 )
 
 func main() {
@@ -24,7 +25,7 @@ func main() {
 	flag.Parse()
 
 	//输出结果
-	fmt.Printf("user=%v pwd=%v host=%v port=%v", 
+	fmt.Printf("user=%v pwd=%v host=%v port=%v",
 		user, pwd, host, port)
 
 }

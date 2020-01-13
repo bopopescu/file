@@ -1,9 +1,10 @@
 package main
+
 import (
+	"bufio"
 	"fmt"
-	"os"
 	"io"
-	"bufio" 
+	"os"
 )
 
 //自己编写一个函数，接收两个文件路径 srcFileName dstFileName
@@ -18,10 +19,10 @@ func CopyFile(dstFileName string, srcFileName string) (written int64, err error)
 	reader := bufio.NewReader(srcFile)
 
 	//打开dstFileName
-	dstFile, err := os.OpenFile(dstFileName, os.O_WRONLY | os.O_CREATE, 0666)
+	dstFile, err := os.OpenFile(dstFileName, os.O_WRONLY|os.O_CREATE, 0666)
 	if err != nil {
 		fmt.Printf("open file err=%v\n", err)
-		return 
+		return
 	}
 
 	//通过dstFile, 获取到 Writer
@@ -29,7 +30,6 @@ func CopyFile(dstFileName string, srcFileName string) (written int64, err error)
 	defer dstFile.Close()
 
 	return io.Copy(writer, reader)
-
 
 }
 
@@ -46,5 +46,5 @@ func main() {
 	} else {
 		fmt.Printf("拷贝错误 err=%v\n", err)
 	}
-	
+
 }

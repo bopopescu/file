@@ -95,17 +95,15 @@ func queryMulti(DB *sql.DB) {
 	testlove := &testval
 
 	fmt.Println(testlove)
-	*testlove =32
+	*testlove = 32
 
-	fmt.Println(testval,testlove)
-
+	fmt.Println(testval, testlove)
 
 	for i := range vals {
 		scans[i] = &vals[i]
 	}
 
-
-	fmt.Println(777, scans ,vals,"\n")
+	fmt.Println(777, scans, vals, "\n")
 
 	var results []map[string]string
 
@@ -117,7 +115,7 @@ func queryMulti(DB *sql.DB) {
 			log.Fatalln(err)
 		}
 
-		fmt.Println(213, scans,*scans[0].(*[]byte), vals,"\n")
+		fmt.Println(213, scans, *scans[0].(*[]byte), vals, "\n")
 		row := make(map[string]string)
 		for k, v := range vals {
 			key := cols[k]
@@ -126,7 +124,7 @@ func queryMulti(DB *sql.DB) {
 		results = append(results, row)
 	}
 
-	fmt.Println(999, results,"\n")
+	fmt.Println(999, results, "\n")
 	for k, v := range results {
 		fmt.Println(k, v)
 	}

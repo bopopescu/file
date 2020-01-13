@@ -1,6 +1,7 @@
 package main
+
 import (
-	"fmt" 
+	"fmt"
 )
 
 func main() {
@@ -9,12 +10,11 @@ func main() {
 	var n2 int = 8
 	fmt.Println(n1 == n2) //false
 	fmt.Println(n1 != n2) //true
-	fmt.Println(n1 > n2) //true
+	fmt.Println(n1 > n2)  //true
 	fmt.Println(n1 >= n2) //true
-	fmt.Println(n1 < n2) //flase
+	fmt.Println(n1 < n2)  //flase
 	fmt.Println(n1 <= n2) //flase
 	flag := n1 > n2
 	fmt.Println("flag=", flag)
 
-	
 }

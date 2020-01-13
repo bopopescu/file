@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 )
@@ -26,7 +27,6 @@ type LittleMonkey struct {
 	Monkey //继承
 }
 
-
 //让LittleMonkey实现BirdAble
 func (this *LittleMonkey) Flying() {
 	fmt.Println(this.Name, " 通过学习，会飞翔...")
@@ -41,8 +41,8 @@ func main() {
 
 	//创建一个LittleMonkey 实例
 	monkey := LittleMonkey{
-		Monkey {
-			Name : "悟空",
+		Monkey{
+			Name: "悟空",
 		},
 	}
 

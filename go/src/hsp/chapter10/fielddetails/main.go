@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 )
@@ -6,20 +7,19 @@ import (
 //如果结构体的字段类型是: 指针，slice，和map的零值都是 nil ，即还没有分配空间
 //如果需要使用这样的字段，需要先make，才能使用.
 
-type Person struct{
-	Name string
-	Age int
+type Person struct {
+	Name   string
+	Age    int
 	Scores [5]float64
-	ptr *int //指针 
-	slice []int //切片
-	map1 map[string]string //map
+	ptr    *int              //指针
+	slice  []int             //切片
+	map1   map[string]string //map
 }
 
-type Monster struct{
+type Monster struct {
 	Name string
-	Age int
+	Age  int
 }
-
 
 func main() {
 
@@ -46,7 +46,7 @@ func main() {
 
 	//使用map, 一定要先make
 	p1.map1 = make(map[string]string)
-	p1.map1["key1"] = "tom~" 
+	p1.map1["key1"] = "tom~"
 	p1.map1["2sd"] = "tom~"
 	fmt.Println(p1)
 

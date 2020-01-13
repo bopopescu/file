@@ -1,22 +1,22 @@
 package main
-import (
-	"fmt" 
-)
 
+import (
+	"fmt"
+)
 
 //写一个非常简单的函数
 func test(char byte) byte {
 	return char + 1
 }
 
-func testchar(char byte)byte{
-	return char+1
+func testchar(char byte) byte {
+	return char + 1
 }
 
 func main() {
 
 	// 	案例：
-	// 请编写一个程序，该程序可以接收一个字符，比如: a,b,c,d,e,f,g  
+	// 请编写一个程序，该程序可以接收一个字符，比如: a,b,c,d,e,f,g
 	// a表示星期一，b表示星期二 …  根据用户的输入显示相依的信息.
 
 	// 要求使用 switch 语句完成
@@ -24,35 +24,33 @@ func main() {
 	//分析思路
 	//1. 定义一个变量接收字符
 	//2. 使用switch完成
-	 var key byte
-	fmt.Println(string(97),byte('a'),string(99))
+	var key byte
+	fmt.Println(string(97), byte('a'), string(99))
 
 	fmt.Println("请输入一个字符 a,b,c,d,e,f,g")
-	 fmt.Scanf("%c", &key)
+	fmt.Scanf("%c", &key)
 
-	 switch test(key)+1 { //将语法现象
-	 	case 'a':
-	 		fmt.Println("周一, 猴子穿新衣")
-	 	case 'b':
-	 		fmt.Println("周二，猴子当小二")
-	 	case 'c':
-	 		fmt.Println("周三，猴子爬雪山")
-	 	//...
-	 	default:
-	 		fmt.Println("输入有误...",test(key)+1)
-	 }
-
+	switch test(key) + 1 { //将语法现象
+	case 'a':
+		fmt.Println("周一, 猴子穿新衣")
+	case 'b':
+		fmt.Println("周二，猴子当小二")
+	case 'c':
+		fmt.Println("周三，猴子爬雪山")
+	//...
+	default:
+		fmt.Println("输入有误...", test(key)+1)
+	}
 
 	// var n1 int32 = 51
 	// var n2 int32 = 20
 	// switch n1 {
 	// 	case n2, 10, 5 :  // case 后面可以有多个表达式
 	// 		fmt.Println("ok1")
-	// 	case 90 : 
+	// 	case 90 :
 	// 		fmt.Println("ok2~")
-		
-	// }
 
+	// }
 
 	//switch 后也可以不带表达式，类似 if --else分支来使用。【案例演示】
 	//var age int = 10

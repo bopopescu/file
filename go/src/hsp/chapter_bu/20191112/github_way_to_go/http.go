@@ -1,11 +1,9 @@
-
-
 package main
 
 import (
-"fmt"
-"log"
-"net/http"
+	"fmt"
+	"log"
+	"net/http"
 )
 
 func HelloServer(w http.ResponseWriter, req *http.Request) {

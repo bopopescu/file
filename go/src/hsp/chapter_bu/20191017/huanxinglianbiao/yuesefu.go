@@ -83,7 +83,6 @@ func PlayGame(first *Boy, startNo int, countNum int) {
 
 	//first 可能会被干掉 所以不需要辅助节点了  直接用first节点不断改变
 
-
 	//4. 让 first 移动到 startNo [后面我们删除小孩，就以 first 为准]
 	for i := 1; i <= startNo-1; i++ {
 		first = first.Next
@@ -91,10 +90,9 @@ func PlayGame(first *Boy, startNo int, countNum int) {
 	}
 	fmt.Println()
 
-//deprecated
+	//deprecated
 	//5. 开始数 countNum, 然后就删除 first 指向的小孩
 	for {
-
 
 		//开始数 countNum-1 次
 		for i := 1; i <= countNum-1; i++ {
@@ -109,78 +107,64 @@ func PlayGame(first *Boy, startNo int, countNum int) {
 			break
 		}
 
-
-
-
 		fmt.Println(first.Next == first)
 
 	}
 	fmt.Printf("小孩小孩编号为%d 出圈 \n", first.No)
-		fmt.Println(first.Next == first)
+	fmt.Println(first.Next == first)
 }
 
 func main() {
 
-
-
-
-
-
 	first := AddBoy(500) //显示
 	ShowBoy(first)
-	PlayGame(first, 1, 1 )
+	PlayGame(first, 1, 1)
 
-
-
-
-//	first := &Boy{}    //空结点
-//	curBoy := &Boy{}   //空结点
-//
-//
-//
-//	boy := &Boy{No: 1} //分析构成循环链表，需要一个辅助指针[帮忙的] //1. 因为第一个小孩比较特殊
-//	fmt.Printf("%+v\n", boy)
-//	return
-//	first = boy        //不要动
-//	curBoy = boy
-//	fmt.Println(boy.Next)
-//
-//	curBoy.Next=first
-//	fmt.Println(boy.Next)
-//	fmt.Println(curBoy == first)
-//
-//	fmt.Println(first.No,first.Next,33)
-//	fmt.Println(curBoy.No,curBoy,44)
-//
-//
-//
-//	boy2 := &Boy{No: 2} //分析构成循环链表，需要一个辅助指针[帮忙的] //1. 因为第一个小孩比较特殊
-//	curBoy.No=3 //fmt.Println(curBoy == first)  true
-//
-//	curBoy= boy2  //fmt.Println(curBoy == first)  false
-//fmt.Println(curBoy == first)
-//
-//	curBoy.Next = boy2
-//	curBoy = boy2
-//	curBoy.Next = first //构造环形链表
-//	return
-//
-//
-//	fmt.Println((&first))
-//	fmt.Println((&curBoy))
-//	fmt.Printf("%p", first)
-//	fmt.Println()
-//	fmt.Printf("%p", curBoy)
-//
-//
-//	return
-
+	//	first := &Boy{}    //空结点
+	//	curBoy := &Boy{}   //空结点
+	//
+	//
+	//
+	//	boy := &Boy{No: 1} //分析构成循环链表，需要一个辅助指针[帮忙的] //1. 因为第一个小孩比较特殊
+	//	fmt.Printf("%+v\n", boy)
+	//	return
+	//	first = boy        //不要动
+	//	curBoy = boy
+	//	fmt.Println(boy.Next)
+	//
+	//	curBoy.Next=first
+	//	fmt.Println(boy.Next)
+	//	fmt.Println(curBoy == first)
+	//
+	//	fmt.Println(first.No,first.Next,33)
+	//	fmt.Println(curBoy.No,curBoy,44)
+	//
+	//
+	//
+	//	boy2 := &Boy{No: 2} //分析构成循环链表，需要一个辅助指针[帮忙的] //1. 因为第一个小孩比较特殊
+	//	curBoy.No=3 //fmt.Println(curBoy == first)  true
+	//
+	//	curBoy= boy2  //fmt.Println(curBoy == first)  false
+	//fmt.Println(curBoy == first)
+	//
+	//	curBoy.Next = boy2
+	//	curBoy = boy2
+	//	curBoy.Next = first //构造环形链表
+	//	return
+	//
+	//
+	//	fmt.Println((&first))
+	//	fmt.Println((&curBoy))
+	//	fmt.Printf("%p", first)
+	//	fmt.Println()
+	//	fmt.Printf("%p", curBoy)
+	//
+	//
+	//	return
 
 	//first := AddBoy(500) //显示
 	//ShowBoy(first)
 	//PlayGame(first, 20, 31)
-
-
 
 	//return
 	//first := &Boy{}    //空结点

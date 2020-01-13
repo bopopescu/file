@@ -6,32 +6,31 @@ import (
 	"strings"
 )
 
-func buildin(){
+func buildin() {
 	var str string = "hello我"
 	// 含有中文的话要转成切片[]rune
 	v := []rune(str)
-	fmt.Println("字符串的长度是",len(v))
+	fmt.Println("字符串的长度是", len(v))
 
 	// new用来给基本类型分配地址,make用来给引用类型分配地址
 	num := new(int)
 	fmt.Printf("num的类型是%T num的值是%v num的地址是%v num这个指针指向的值是%v",
-		num,num,&num,*num)
-
+		num, num, &num, *num)
 
 }
-func str2int(){
-	n,err := strconv.Atoi("123q")
+func str2int() {
+	n, err := strconv.Atoi("123q")
 	if err != nil {
-		fmt.Println("转换出错",err)
-	}else {
-		fmt.Println("结果是",n)
+		fmt.Println("转换出错", err)
+	} else {
+		fmt.Println("结果是", n)
 	}
 }
-func int2str(){
+func int2str() {
 	n := strconv.Itoa(123)
-	fmt.Println("结果是",n)
+	fmt.Println("结果是", n)
 }
-func main(){
+func main() {
 	// 1,内嵌函数buildin,不用导包可以直接使用的
 	buildin()
 	// 2,字符串转整形
@@ -87,11 +86,11 @@ func main(){
 	// fmt.Printf("str=%v",t)
 
 	// 15,将左边指定的字符去掉,同理也可以去掉右边的
-	s1 := strings.TrimLeft("!he!llo!","!")
-	fmt.Printf("str=%v",s1)
+	s1 := strings.TrimLeft("!he!llo!", "!")
+	fmt.Printf("str=%v", s1)
 
 	// 16,判断字符串是否以指定的字符开始或者结尾.HasSuffix
-	b1 := strings.HasPrefix("hello","h")
-	fmt.Printf("str=%v",b1)
+	b1 := strings.HasPrefix("hello", "h")
+	fmt.Printf("str=%v", b1)
 
 }

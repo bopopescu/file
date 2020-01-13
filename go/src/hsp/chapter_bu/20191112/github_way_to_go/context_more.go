@@ -8,7 +8,6 @@ import (
 
 func main() {
 
-
 	//ctx, cancel := context.WithTimeout(context.TODO(), time.Second*3)
 	ctx, cancel := context.WithTimeout(context.TODO(), time.Second*1)
 
@@ -33,18 +32,18 @@ func task(ctx context.Context) {
 		ch <- struct{}{}
 	}()
 
-	for{
+	for {
 		select {
-		case k,ko:=<-ch:
-			fmt.Println("done",k,ko)
+		case k, ko := <-ch:
+			fmt.Println("done", k, ko)
 			return
-		case i,ok:=<-ctx.Done():
-			if ok{
-				fmt.Println("timeout",i,ok)
+		case i, ok := <-ctx.Done():
+			if ok {
+				fmt.Println("timeout", i, ok)
 				return
-			}else{
+			} else {
 				//说明 context的 给关闭掉了
-				fmt.Println("timeout22",i,ok)
+				fmt.Println("timeout22", i, ok)
 
 			}
 		default:

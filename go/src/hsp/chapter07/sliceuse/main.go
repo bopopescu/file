@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 )
@@ -21,7 +22,6 @@ func main() {
 	fmt.Println("slice的cap=", cap(slice))
 	fmt.Printf("slice的tpye=%T", slice)
 
-
 	//方式3
 	fmt.Println()
 	//第3种方式：定义一个切片，直接就指定具体数组，使用原理类似make的方式
@@ -31,6 +31,6 @@ func main() {
 	fmt.Printf("slice的tpye=%T\n", strSlice)
 
 	fmt.Println("strSlice size=", len(strSlice)) //3
-	fmt.Println("strSlice cap=", cap(strSlice)) // ?
+	fmt.Println("strSlice cap=", cap(strSlice))  // ?
 
 }

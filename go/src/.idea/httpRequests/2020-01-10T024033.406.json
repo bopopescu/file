@@ -1,0 +1,4 @@
+{
+  "error": "Content-Type header [*/*; charset=GBK] is not supported",
+  "status": 406
+}

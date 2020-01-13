@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 )
@@ -8,12 +9,12 @@ func main() {
 
 	var b map[string]string
 
-	b=make(map[string]string,10)
+	b = make(map[string]string, 10)
 
-	b["1"]="asd"
-	b["12"]="asd"
-	b["124"]="asd"
-	b["1234"]="asd"
+	b["1"] = "asd"
+	b["12"] = "asd"
+	b["124"] = "asd"
+	b["1234"] = "asd"
 	fmt.Println(b)
 
 	var a map[string]string

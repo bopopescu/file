@@ -7,22 +7,17 @@ import (
 
 func main() {
 
-
-
-
-	test := make(chan int,3)
-	test<-1
-	test<-13
-
+	test := make(chan int, 3)
+	test <- 1
+	test <- 13
 
 	//close(test)  //不关闭的话就会阻塞哦
 	//
 	// todo  如果 不在协程里  for range  底层就会判断 爆出deadclock
 	fmt.Println("asdd")
 
-
 	go func() {
-		for i:=range(test){
+		for i := range test {
 			fmt.Println(i)
 
 		}

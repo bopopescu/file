@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 )
@@ -20,7 +21,7 @@ func main() {
 	}
 
 	slice2 := slice[1:2] //  slice [ 20, 30, 40]    [30]
-	slice2[0] = 100  // 因为arr , slice 和slice2 指向的数据空间是同一个，因此slice2[0]=100，其它的都变化
+	slice2[0] = 100      // 因为arr , slice 和slice2 指向的数据空间是同一个，因此slice2[0]=100，其它的都变化
 
 	fmt.Println("slice2=", slice2)
 	fmt.Println("slice=", slice)
@@ -38,13 +39,12 @@ func main() {
 	slice3 = append(slice3, slice3...) // 100, 200, 300,400, 500, 600 100, 200, 300,400, 500, 600
 	fmt.Println("slice3", slice3)
 
-
 	//切片的拷贝操作
 	//切片使用copy内置函数完成拷贝，举例说明
 	fmt.Println()
 	var slice4 []int = []int{1, 2, 3, 4, 5}
 	var slice5 = make([]int, 10)
 	copy(slice5, slice4)
-	fmt.Println("slice4=", slice4)// 1, 2, 3, 4, 5
+	fmt.Println("slice4=", slice4) // 1, 2, 3, 4, 5
 	fmt.Println("slice5=", slice5) // 1, 2, 3, 4, 5, 0 , 0 ,0,0,0
 }

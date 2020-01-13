@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"	
+	"fmt"
 )
 
-type Person struct{
+type Person struct {
 	Name string
 }
 
@@ -13,7 +13,7 @@ func (p Person) speak() {
 	fmt.Println(p.Name, "是一个goodman~")
 }
 
-//给Person结构体添加jisuan 方法,可以计算从 1+..+1000的结果, 
+//给Person结构体添加jisuan 方法,可以计算从 1+..+1000的结果,
 //说明方法体内可以函数一样，进行各种运算
 
 func (p Person) jisuan() {
@@ -45,19 +45,18 @@ func (person Person) test() {
 }
 
 type Dog struct {
-
 }
 
 func main() {
 
 	var p Person
 	p.Name = "tom"
-	p.test() //调用方法
+	p.test()                              //调用方法
 	fmt.Println("main() p.Name=", p.Name) //输出 tom
 	//return
 
 	//下面的使用方式都是错误的
-	// var dog Dog	
+	// var dog Dog
 	// dog.test()
 	// test()
 

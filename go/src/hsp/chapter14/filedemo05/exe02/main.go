@@ -1,8 +1,9 @@
 package main
+
 import (
-	"fmt"
 	"bufio"
-	"os" 
+	"fmt"
+	"os"
 )
 
 func main() {
@@ -11,10 +12,10 @@ func main() {
 	//创建一个新文件，写入内容 5句 "hello, Gardon"
 	//1 .打开文件已经存在文件, d:/abc.txt
 	filePath := "d:/abc.txt"
-	file, err := os.OpenFile(filePath, os.O_WRONLY | os.O_TRUNC, 0666)
+	file, err := os.OpenFile(filePath, os.O_WRONLY|os.O_TRUNC, 0666)
 	if err != nil {
 		fmt.Printf("open file err=%v\n", err)
-		return 
+		return
 	}
 	//及时关闭file句柄
 	defer file.Close()

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"strconv"
 	"fmt"
+	"strconv"
 	"time"
 )
 
@@ -24,7 +24,7 @@ func main() {
 
 		select {
 		case v := <-chan1:
-			time.Sleep(time.Second * 1 /2 )
+			time.Sleep(time.Second * 1 / 2)
 
 			fmt.Println("632", v)
 

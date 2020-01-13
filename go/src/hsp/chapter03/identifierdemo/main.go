@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 
 //演示golang中标识符的使用

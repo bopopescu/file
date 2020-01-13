@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 )
@@ -15,7 +16,6 @@ func main() {
 	var heroName = ""
 	fmt.Println("请输入要查找的人名...")
 	fmt.Scanln(&heroName)
-
 
 	//顺序查找:第一种方式
 	// for i := 0; i < len(names); i++ {
@@ -34,13 +34,12 @@ func main() {
 		if heroName == names[i] {
 			index = i //将找到的值对应的下标赋给 index
 			break
-		} 
+		}
 	}
 	if index != -1 {
 		fmt.Printf("找到%v , 下标%v \n", heroName, index)
 	} else {
 		fmt.Println("没有找到", heroName)
 	}
-
 
 }

@@ -11,11 +11,10 @@ import (
 	"go_code/package/utils"
 )
 
+func main() {
+	i := utils.Calculate(5, 10)
+	fmt.Printf("运算结果是%.2f \n", i)
 
-func main(){
-	i := utils.Calculate(5,10)
-	fmt.Printf("运算结果是%.2f \n",i)
+	fmt.Println("全局变量是", utils.Money)
 
-	fmt.Println("全局变量是",utils.Money)
-	
-}   
+}

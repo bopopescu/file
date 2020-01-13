@@ -25,6 +25,5 @@ func main() {
 	fmt.Printf("p1的地址%p\n", &p1)
 	fmt.Printf("p2的地址%p p2的值%p\n", &p2, p2.Age)
 
-
 	fmt.Println(&p2.Age)
 }

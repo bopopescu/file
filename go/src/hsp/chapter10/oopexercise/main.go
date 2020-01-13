@@ -12,14 +12,14 @@ import (
 
 */
 type Student struct {
-	name string
+	name   string
 	gender string
-	age int
-	id int
-	score float64
+	age    int
+	id     int
+	score  float64
 }
 
-func (student *Student) say()  string {
+func (student *Student) say() string {
 
 	infoStr := fmt.Sprintf("student的信息 name=[%v] gender=[%v], age=[%v] id=[%v] score=[%v]",
 		student.name, student.gender, student.age, student.id, student.score)
@@ -33,8 +33,8 @@ func (student *Student) say()  string {
 3)创建一个Box结构体变量，打印给定尺寸的立方体的体积
 */
 type Box struct {
-	len float64
-	width float64
+	len    float64
+	width  float64
 	height float64
 }
 
@@ -43,7 +43,6 @@ func (box *Box) getVolumn() float64 {
 	return box.len * box.width * box.height
 }
 
-
 // 景区门票案例
 
 // 一个景区根据游人的年龄收取不同价格的门票，比如年龄大于18，收费20元，其它情况门票免费.
@@ -51,13 +50,13 @@ func (box *Box) getVolumn() float64 {
 
 type Visitor struct {
 	Name string
-	Age int
+	Age  int
 }
 
 func (visitor *Visitor) showPrice() {
-	if visitor.Age >= 90 || visitor.Age <=8 {
+	if visitor.Age >= 90 || visitor.Age <= 8 {
 		fmt.Println("考虑到安全，就不要玩了")
-		return 
+		return
 	}
 	if visitor.Age > 18 {
 		fmt.Printf("游客的名字为 %v 年龄为 %v 收费20元 \n", visitor.Name, visitor.Age)
@@ -66,17 +65,15 @@ func (visitor *Visitor) showPrice() {
 	}
 }
 
-
-
 func main() {
 	//测试
 	//创建一个Student实例变量
-	var stu Student= Student{
-		name : "tom",
-		gender : "male",
-		age : 18,
-		id : 1000,
-		score : 99.98,
+	var stu Student = Student{
+		name:   "tom",
+		gender: "male",
+		age:    18,
+		id:     1000,
+		score:  99.98,
 	}
 	fmt.Println(stu.say())
 
@@ -87,7 +84,6 @@ func main() {
 	box.height = 3.0
 	volumn := box.getVolumn()
 	fmt.Printf("体积为=%.2f", volumn)
-
 
 	//测试
 	var v Visitor
@@ -100,7 +96,6 @@ func main() {
 		}
 		fmt.Println("请输入你的年龄")
 		fmt.Scanln(&v.Age)
-
 
 		v.showPrice()
 		fmt.Println(v)

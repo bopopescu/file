@@ -1,18 +1,18 @@
 package process
 
 import (
-	"net"
 	"encoding/json"
 	"fmt"
 	"hsp/chapter_bu/20190907/project/common/message"
 	"hsp/chapter_bu/20190907/project/server/utils"
+	"net"
 )
 
 type UserProcess struct {
 	Conn net.Conn
-
 }
-func (this *UserProcess)ServerProcessLogin( mes *message.Message) (err error) {
+
+func (this *UserProcess) ServerProcessLogin(mes *message.Message) (err error) {
 	var loginMes message.LoginMes
 	err = json.Unmarshal([]byte(mes.Data), &loginMes)
 
@@ -51,10 +51,10 @@ func (this *UserProcess)ServerProcessLogin( mes *message.Message) (err error) {
 		return
 	}
 
-	tf:= &utils.Transfer{
-		Conn:this.Conn,
+	tf := &utils.Transfer{
+		Conn: this.Conn,
 	}
-	err = tf.WritePkg( data)
+	err = tf.WritePkg(data)
 	return
 
 }

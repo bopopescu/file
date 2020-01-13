@@ -20,7 +20,6 @@ func main() {
 
 		conn, err := listen.Accept()
 
-
 		if err != nil {
 			fmt.Println("accept wrong", err)
 		}
@@ -29,22 +28,18 @@ func main() {
 		go processmr(conn)
 	}
 
-
 }
-
 
 func processmr(conn net.Conn) {
 	//循环读客户端发送的信息
 	defer conn.Close()
 
 	thepr := &Processor{
-		Conn:conn,
+		Conn: conn,
 	}
 	err := thepr.processmr()
-	if err!=nil{
-		fmt.Println("sever wrong",err)
+	if err != nil {
+		fmt.Println("sever wrong", err)
 		return
 	}
 }
-
-

@@ -1,7 +1,9 @@
 package main
+
 import (
-	"fmt" 
+	"fmt"
 )
+
 func main() {
 
 	//求两个数的最大值

@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 	"sort"
@@ -18,7 +19,7 @@ func main() {
 	//return
 	//如果按照map的key的顺序进行排序输出
 	//1. 先将map的key 放入到 切片中
-	//2. 对切片排序 
+	//2. 对切片排序
 	//3. 遍历切片，然后按照key来输出map的值
 
 	var keys []int
@@ -27,11 +28,11 @@ func main() {
 	}
 	//排序
 	sort.Ints(keys)
-	fmt.Println(666,keys)
+	fmt.Println(666, keys)
 
-	for i, k := range keys{
+	for i, k := range keys {
 		fmt.Println(i)
 		fmt.Printf("map1[%v]=%v \n", k, map1[k])
 	}
-	
+
 }

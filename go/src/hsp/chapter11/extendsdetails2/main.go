@@ -1,14 +1,15 @@
 package main
+
 import (
 	"fmt"
 )
 
 type A struct {
 	Name string
-	age int
+	age  int
 }
 type B struct {
-	Name string
+	Name  string
 	Score float64
 }
 type C struct {
@@ -21,30 +22,29 @@ type D struct {
 	a A //有名结构体
 }
 
-
 type Goods struct {
-	Name string
+	Name  string
 	Price float64
 }
 
 type Brand struct {
-	Name string
+	Name    string
 	Address string
 }
 
 type TV struct {
 	Goods
-	Brand	
+	Brand
 }
 
 type TV2 struct {
 	*Goods
-	*Brand	
+	*Brand
 }
 
-type Monster struct  {
+type Monster struct {
 	Name string
-	Age int
+	Age  int
 }
 
 type E struct {
@@ -61,48 +61,46 @@ func main() {
 	fmt.Println("c")
 
 	//如果D 中是一个有名结构体，则访问有名结构体的字段时，就必须带上有名结构体的名字
-	//比如 d.a.Name 
-	var d D 
+	//比如 d.a.Name
+	var d D
 	d.a.Name = "jack"
 
-
 	//嵌套匿名结构体后，也可以在创建结构体变量(实例)时，直接指定各个匿名结构体字段的值
-	tv := TV{ Goods{"电视机001", 5000.99},  Brand{"海尔", "山东"}, }
+	tv := TV{Goods{"电视机001", 5000.99}, Brand{"海尔", "山东"}}
 
 	//演示访问Goods的Name
 	fmt.Println(tv.Goods.Name)
-	fmt.Println(tv.Price) 
+	fmt.Println(tv.Price)
 
-	tv2 := TV{ 
+	tv2 := TV{
 		Goods{
-			Price : 5000.99,
-			Name : "电视机002", 
-		},  
+			Price: 5000.99,
+			Name:  "电视机002",
+		},
 		Brand{
-			Name : "夏普", 
-			Address :"北京",
-		}, 
+			Name:    "夏普",
+			Address: "北京",
+		},
 	}
 
 	fmt.Println("tv", tv)
 	fmt.Println("tv2", tv2)
 
-	tv3 := TV2{ &Goods{"电视机003", 7000.99},  &Brand{"创维", "河南"}, }
+	tv3 := TV2{&Goods{"电视机003", 7000.99}, &Brand{"创维", "河南"}}
 
-	tv4 := TV2{ 
-			&Goods{
-				Name : "电视机004", 
-				Price : 9000.99,
-			},  
-			&Brand{
-				Name : "长虹", 
-				Address : "四川",
-			}, 
-		}
+	tv4 := TV2{
+		&Goods{
+			Name:  "电视机004",
+			Price: 9000.99,
+		},
+		&Brand{
+			Name:    "长虹",
+			Address: "四川",
+		},
+	}
 
 	fmt.Println("tv3", *tv3.Goods, *tv3.Brand)
 	fmt.Println("tv4", *tv4.Goods, *tv4.Brand)
-
 
 	//演示一下匿名字段时基本数据类型的使用
 	var e E

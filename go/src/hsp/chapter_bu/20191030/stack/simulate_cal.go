@@ -139,7 +139,7 @@ func main() {
 					operStack.Push(temp)
 				}
 			}
-		 } else { //说明是数
+		} else { //说明是数
 			//处理多位数的思路
 			//1.定义一个变量 keepNum string, 做拼接
 			keepNum += ch

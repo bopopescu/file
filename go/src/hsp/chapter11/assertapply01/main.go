@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 )
@@ -12,7 +13,7 @@ type Usb interface {
 
 type Phone struct {
 	name string
-}  
+}
 
 //让Phone 实现 Usb接口的方法
 func (p Phone) Start() {
@@ -26,10 +27,10 @@ func (p Phone) Call() {
 	fmt.Println("手机 在打电话..")
 }
 
-
 type Camera struct {
 	name string
 }
+
 //让Camera 实现   Usb接口的方法
 func (c Camera) Start() {
 	fmt.Println("相机开始工作。。。")
@@ -39,7 +40,6 @@ func (c Camera) Stop() {
 }
 
 type Computer struct {
-
 }
 
 func (computer Computer) Working(usb Usb) {
@@ -64,7 +64,7 @@ func main() {
 	//Phone还有一个特有的方法call()，请遍历Usb数组，如果是Phone变量，
 	//除了调用Usb 接口声明的方法外，还需要调用Phone 特有方法 call. =》类型断言
 	var computer Computer
-	for _, v := range usbArr{
+	for _, v := range usbArr {
 		computer.Working(v)
 		fmt.Println()
 	}

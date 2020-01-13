@@ -1,4 +1,5 @@
 package service
+
 import (
 	"hsp/customerManage/model"
 
@@ -11,7 +12,7 @@ type CustomerService struct {
 	customers []model.Customer
 	//声明一个字段，表示当前切片含有多少个客户
 	//该字段后面，还可以作为新客户的id+1
-	customerNum int 
+	customerNum int
 }
 
 //编写一个方法，可以返回 *CustomerService
@@ -29,21 +30,20 @@ func (this *CustomerService) List() []model.Customer {
 	return this.customers
 }
 
-
-func (this *CustomerService) Update(id int) (bool,int){
+func (this *CustomerService) Update(id int) (bool, int) {
 	index := this.FindById(id)
 	//如果index == -1, 说明没有这个客户
 	if index == -1 {
-		return false , 0
+		return false, 0
 	}
-	return true , index
+	return true, index
 
 }
 
-func (this *CustomerService) DoUpdate(customer model.Customer,index int,id int) bool{
+func (this *CustomerService) DoUpdate(customer model.Customer, index int, id int) bool {
 	customer.Id = id
 
-	this.customers[index] =customer
+	this.customers[index] = customer
 	//this.customers[index].Email =customer.Email
 	return true
 }
@@ -66,7 +66,7 @@ func (this *CustomerService) Delete(id int) bool {
 	index := this.FindById(id)
 	//如果index == -1, 说明没有这个客户
 	if index == -1 {
-		return false 
+		return false
 	}
 	//如何从切片中删除一个元素 todo
 
@@ -75,7 +75,7 @@ func (this *CustomerService) Delete(id int) bool {
 }
 
 //根据id查找客户在切片中对应下标,如果没有该客户，返回-1
-func (this *CustomerService) FindById(id int)  int {
+func (this *CustomerService) FindById(id int) int {
 	index := -1
 	//遍历this.customers 切片
 	for i := 0; i < len(this.customers); i++ {

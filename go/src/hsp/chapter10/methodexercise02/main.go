@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"	
+	"fmt"
 )
 
 type MethodUtils struct {
@@ -18,9 +18,10 @@ func (mu MethodUtils) Print() {
 	}
 }
 
-func (test MethodUtils) Test(){
+func (test MethodUtils) Test() {
 
 }
+
 //2)编写一个方法，提供m和n两个参数，方法中打印一个m*n的矩形
 func (mu MethodUtils) Print2(m int, n int) {
 	for i := 1; i <= m; i++ {
@@ -32,11 +33,11 @@ func (mu MethodUtils) Print2(m int, n int) {
 }
 
 /*
-编写一个方法算该矩形的面积(可以接收长len，和宽width)， 
+编写一个方法算该矩形的面积(可以接收长len，和宽width)，
 将其作为方法返回值。在main方法中调用该方法，接收返回的面积值并打印
 */
 
-func (mu MethodUtils) area(len float64, width float64) (float64) {
+func (mu MethodUtils) area(len float64, width float64) float64 {
 	return len * width
 }
 
@@ -45,27 +46,28 @@ func (mu MethodUtils) area(len float64, width float64) (float64) {
 
 */
 
-func (mu *MethodUtils) JudgeNum(num int)  {
-	if num % 2 == 0 {
-		fmt.Println(num, "是偶数..")	
+func (mu *MethodUtils) JudgeNum(num int) {
+	if num%2 == 0 {
+		fmt.Println(num, "是偶数..")
 	} else {
-		fmt.Println(num, "是奇数..")	
+		fmt.Println(num, "是奇数..")
 	}
 
-	if num%2 ==0{
+	if num%2 == 0 {
 		fmt.Println(num, "还是是偶数..")
 
 	}
 }
+
 /*
 根据行、列、字符打印 对应行数和列数的字符，
 比如：行：3，列：2，字符*,则打印相应的效果
 
 */
 
-func (mu *MethodUtils) Print3(n int, m int, key string)  {
-	
-	for i := 1; i <= n ; i++ {
+func (mu *MethodUtils) Print3(n int, m int, key string) {
+
+	for i := 1; i <= n; i++ {
 		for j := 1; j <= m; j++ {
 			fmt.Print(key)
 		}
@@ -77,12 +79,12 @@ func (mu *MethodUtils) Print3(n int, m int, key string)  {
 定义小小计算器结构体(Calcuator)，
 实现加减乘除四个功能
 实现形式1：分四个方法完成: , 分别计算 + - * /
-实现形式2：用一个方法搞定, 需要接收两个数，还有一个运算符 
+实现形式2：用一个方法搞定, 需要接收两个数，还有一个运算符
 
 */
 //实现形式1
 
-type Calcuator struct{
+type Calcuator struct {
 	Num1 float64
 	Num2 float64
 }
@@ -105,25 +107,24 @@ func (calcuator *Calcuator) getRes(operator byte) float64 {
 	res := 0.0
 	switch operator {
 	case '+':
-			res = calcuator.Num1 + calcuator.Num2
+		res = calcuator.Num1 + calcuator.Num2
 	case '-':
-			res = calcuator.Num1 - calcuator.Num2
+		res = calcuator.Num1 - calcuator.Num2
 	case '*':
-			res = calcuator.Num1 * calcuator.Num2
+		res = calcuator.Num1 * calcuator.Num2
 	case '/':
-			res = calcuator.Num1 / calcuator.Num2
+		res = calcuator.Num1 / calcuator.Num2
 	default:
-			fmt.Println("运算符输入有误...")
-			
+		fmt.Println("运算符输入有误...")
+
 	}
 	return res
 }
 
-
 func main() {
 	/*
-	1)编写结构体(MethodUtils)，编程一个方法，方法不需要参数，
-	在方法中打印一个10*8 的矩形，在main方法中调用该方法。
+		1)编写结构体(MethodUtils)，编程一个方法，方法不需要参数，
+		在方法中打印一个10*8 的矩形，在main方法中调用该方法。
 	*/
 	var mu MethodUtils
 	mu.Print()
@@ -138,21 +139,18 @@ func main() {
 
 	mu.Print3(7, 20, "@")
 
-
 	//测试一下:
 	var calcuator Calcuator
 	calcuator.Num1 = 1.2
 	calcuator.Num2 = 2.2
-	fmt.Printf("sum=%v\n", fmt.Sprintf("%.2f",calcuator.getSum()))
-	fmt.Printf("sub=%v\n",fmt.Sprintf("%.2f",calcuator.getSub()))
-
+	fmt.Printf("sum=%v\n", fmt.Sprintf("%.2f", calcuator.getSum()))
+	fmt.Printf("sub=%v\n", fmt.Sprintf("%.2f", calcuator.getSub()))
 
 	res := calcuator.getRes('9')
-	fmt.Printf("res=%v\n",fmt.Sprintf("%.2f",res))
+	fmt.Printf("res=%v\n", fmt.Sprintf("%.2f", res))
 
 	fmt.Println("res=", res)
 
-
-	var arr  = [...]int{1,3,6,2}
+	var arr = [...]int{1, 3, 6, 2}
 	fmt.Println(arr)
-	}
+}

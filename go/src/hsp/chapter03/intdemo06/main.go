@@ -1,4 +1,5 @@
 package main
+
 // import "fmt"
 // import "unsafe"
 import (
@@ -6,11 +7,9 @@ import (
 	"unsafe"
 )
 
-
-
 //演示golang中整数类型使用
 func main() {
-	
+
 	var i int = 1
 	fmt.Println("i=", i)
 
@@ -36,12 +35,9 @@ func main() {
 	//fmt.Printf() 可以用于做格式化输出。
 	fmt.Printf("n1 的 类型 %T \n", n1)
 
-
 	//如何在程序查看某个变量的占用字节大小和数据类型 （使用较多）
 	var n2 int64 = 10
 	//unsafe.Sizeof(n1) 是unsafe包的一个函数，可以返回n1变量占用的字节数
 	fmt.Printf("n2 的 类型 %T  n2占用的字节数是 %d ", n2, unsafe.Sizeof(n2))
-
-	
 
 }

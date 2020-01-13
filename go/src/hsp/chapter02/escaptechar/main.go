@@ -15,12 +15,12 @@ func main() {
 	// \r 回车,从当前行的最前面开始输出，覆盖掉以前内容
 	fmt.Println("天龙八部雪山飞狐\r张飞厉害")
 
-	fmt.Println("helloworldhelloworldhelloworldhelloworl\n", 
-		"dhelloworldhelloworldhelloworldhelloworldhelloworldhellowor\n", 
-		"ldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworl\n", 
-		"dhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhel\n", 
-		"loworldhelloworldhelloworldhelloworldhelloworldhelloworldhellowor\n", 
+	fmt.Println("helloworldhelloworldhelloworldhelloworl\n",
+		"dhelloworldhelloworldhelloworldhelloworldhelloworldhellowor\n",
+		"ldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworl\n",
+		"dhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhel\n",
+		"loworldhelloworldhelloworldhelloworldhelloworldhelloworldhellowor\n",
 		"ldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld")
 
-	//var num = 2 + 4 * 5 
+	//var num = 2 + 4 * 5
 }

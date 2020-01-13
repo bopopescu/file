@@ -2,38 +2,38 @@ package main
 
 import (
 	"fmt"
+	"runtime"
 	"strconv"
 	"time"
-	"runtime"
 )
 
-func test(){
-	for i:=0;i<10;i++{
-		fmt.Println("go() -> hello" + strconv.Itoa(i) ,"world")
+func test() {
+	for i := 0; i < 10; i++ {
+		fmt.Println("go() -> hello"+strconv.Itoa(i), "world")
 		time.Sleep(time.Second)
 	}
 
 }
 
-func main(){
+func main() {
 
-	cpus:=runtime.NumCPU()
+	cpus := runtime.NumCPU()
 	fmt.Println(cpus)
 	runtime.GOMAXPROCS(3)
 	fmt.Println(123)
 	return
-	fmt.Println("hello" + string("asd"),"is thar goroutine  ")
+	fmt.Println("hello"+string("asd"), "is thar goroutine  ")
 
-	btime:= time.Now().Unix()
-	fmt.Println(btime,666)
+	btime := time.Now().Unix()
+	fmt.Println(btime, 666)
 
-	 go test()
-	for i:=0;i<10;i++{
+	go test()
+	for i := 0; i < 10; i++ {
 		fmt.Println("main () ->hello php")
 		time.Sleep(time.Second)
 	}
-	etime:=time.Now().Unix()
+	etime := time.Now().Unix()
 	fmt.Println(etime)
 
-	fmt.Printf("%v",etime-btime)
+	fmt.Printf("%v", etime-btime)
 }

@@ -1,15 +1,17 @@
 package main
+
 import (
 	"fmt"
 )
+
 func modify(map1 map[int]int) {
 	map1[10] = 900
 }
 
 //定义一个学生结构体
 type Stu struct {
-	Name string
-	Age int
+	Name    string
+	Age     int
 	Address string
 }
 

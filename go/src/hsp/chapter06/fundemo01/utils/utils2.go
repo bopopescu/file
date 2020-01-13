@@ -1,6 +1,7 @@
 package utils
+
 import "fmt"
-func SayOk(){
+
+func SayOk() {
 	fmt.Println("say ok")
 }
-

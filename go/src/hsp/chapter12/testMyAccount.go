@@ -1,7 +1,9 @@
 package main
+
 import (
 	"fmt"
 )
+
 func main() {
 	//声明一个变量，保存接收用户输入的选项
 	key := ""
@@ -30,59 +32,59 @@ func main() {
 		fmt.Scanln(&key)
 
 		switch key {
-			case "1":
-				fmt.Println("-----------------当前收支明细记录-----------------")
-				if flag {
-					fmt.Println(details)
-				} else {
-					fmt.Println("当前没有收支明细... 来一笔吧!")
-				}
-				
-			case "2":
-				fmt.Println("本次收入金额:")
-				fmt.Scanln(&money)
-				balance += money // 修改账户余额
-				fmt.Println("本次收入说明:")
-				fmt.Scanln(&note)
-				//将这个收入情况，拼接到details变量
-				//收入    11000           1000            有人发红包
-				details += fmt.Sprintf("\n收入\t%v\t%v\t%v", balance, money, note)
-				flag = true
+		case "1":
+			fmt.Println("-----------------当前收支明细记录-----------------")
+			if flag {
+				fmt.Println(details)
+			} else {
+				fmt.Println("当前没有收支明细... 来一笔吧!")
+			}
 
-			case "3":
-				fmt.Println("本次支出金额:")
-				fmt.Scanln(&money)
-				//这里需要做一个必要的判断
-				if money > balance {
-					fmt.Println("余额的金额不足")
+		case "2":
+			fmt.Println("本次收入金额:")
+			fmt.Scanln(&money)
+			balance += money // 修改账户余额
+			fmt.Println("本次收入说明:")
+			fmt.Scanln(&note)
+			//将这个收入情况，拼接到details变量
+			//收入    11000           1000            有人发红包
+			details += fmt.Sprintf("\n收入\t%v\t%v\t%v", balance, money, note)
+			flag = true
+
+		case "3":
+			fmt.Println("本次支出金额:")
+			fmt.Scanln(&money)
+			//这里需要做一个必要的判断
+			if money > balance {
+				fmt.Println("余额的金额不足")
+				break
+			}
+			balance -= money
+			fmt.Println("本次支出说明:")
+			fmt.Scanln(&note)
+			details += fmt.Sprintf("\n支出\t%v\t%v\t%v", balance, money, note)
+			flag = true
+		case "4":
+			fmt.Println("你确定要退出吗? y/n")
+			choice := ""
+			for {
+
+				fmt.Scanln(&choice)
+				if choice == "y" || choice == "n" {
 					break
 				}
-				balance -= money
-				fmt.Println("本次支出说明:")
-				fmt.Scanln(&note)
-				details += fmt.Sprintf("\n支出\t%v\t%v\t%v", balance, money, note)
-				flag = true
-			case "4":
-				fmt.Println("你确定要退出吗? y/n")
-				choice := ""
-				for {
+				fmt.Println("你的输入有误，请重新输入 y/n")
+			}
 
-					fmt.Scanln(&choice)
-					if choice == "y" || choice == "n" {
-						break
-					}
-					fmt.Println("你的输入有误，请重新输入 y/n")
-				}
-
-				if choice == "y" {
-					loop = false
-				}
-			default :
-				fmt.Println("请输入正确的选项..")		
+			if choice == "y" {
+				loop = false
+			}
+		default:
+			fmt.Println("请输入正确的选项..")
 		}
 
 		if !loop {
-			break 
+			break
 		}
 	}
 	fmt.Println("你退出家庭记账软件的使用...")

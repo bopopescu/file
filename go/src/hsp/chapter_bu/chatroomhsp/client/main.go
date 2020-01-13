@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 	"os"
@@ -24,18 +25,18 @@ func main() {
 
 		fmt.Scanf("%d\n", &key)
 		switch key {
-			case 1 :
-				fmt.Println("登陆聊天室")
-				loop = false
-			case 2 :
-				fmt.Println("注册用户")
-				loop = false
-			case 3 :
-				fmt.Println("退出系统")
-				//loop = false
-				os.Exit(0)
-			default :
-				fmt.Println("你的输入有误，请重新输入")
+		case 1:
+			fmt.Println("登陆聊天室")
+			loop = false
+		case 2:
+			fmt.Println("注册用户")
+			loop = false
+		case 3:
+			fmt.Println("退出系统")
+			//loop = false
+			os.Exit(0)
+		default:
+			fmt.Println("你的输入有误，请重新输入")
 		}
 
 	}

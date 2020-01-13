@@ -1,8 +1,9 @@
- package main
+package main
+
 import (
 	"fmt"
-	_ "unsafe"
 	"strconv"
+	_ "unsafe"
 )
 
 //演示golang中基本数据练习转成string使用
@@ -28,14 +29,14 @@ func main() {
 	str = fmt.Sprintf("%c", myChar)
 	fmt.Printf("str type %T str=%q\n", str, str)
 
-	//第二种方式 strconv 函数 
+	//第二种方式 strconv 函数
 	var num3 int = 99
 	var num4 float64 = 23.456
 	var b2 bool = true
 
 	str = strconv.FormatInt(int64(num3), 10)
 	fmt.Printf("str type %T str=%q\n", str, str)
-	
+
 	// strconv.FormatFloat(num4, 'f', 10, 64)
 	// 说明： 'f' 格式 10：表示小数位保留10位 64 :表示这个小数是float64
 	str = strconv.FormatFloat(num4, 'f', 10, 64)

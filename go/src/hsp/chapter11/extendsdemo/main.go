@@ -4,14 +4,11 @@ import (
 	"fmt"
 )
 
-
-
-
 //编写一个学生考试系统
 
 type Student struct {
-	Name string
-	Age int
+	Name  string
+	Age   int
 	Score int
 }
 
@@ -30,7 +27,7 @@ func (stu *Student) GetSum(n1 int, n2 int) int {
 }
 
 //小学生
-type Pupil struct { 
+type Pupil struct {
 	Student //嵌入了Student匿名结构体
 }
 
@@ -42,7 +39,6 @@ func (p *Pupil) testing() {
 }
 
 //大学生, 研究生。。
-
 
 //大学生
 type Graduate struct {
@@ -63,7 +59,7 @@ func main() {
 	pupil := &Pupil{}
 	pupil.Student.Name = "tom~"
 	pupil.Student.Age = 8
-	pupil.testing() 
+	pupil.testing()
 	pupil.Student.SetScore(70)
 	pupil.Student.ShowInfo()
 	fmt.Println("res=", pupil.Student.GetSum(1, 2))
@@ -71,7 +67,7 @@ func main() {
 	graduate := &Graduate{}
 	graduate.Student.Name = "mary~"
 	graduate.Student.Age = 28
-	graduate.testing() 
+	graduate.testing()
 	graduate.Student.SetScore(90)
 	graduate.Student.ShowInfo()
 	fmt.Println("res=", graduate.Student.GetSum(10, 20))

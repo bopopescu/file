@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 )
@@ -6,27 +7,27 @@ import (
 //函数
 func test01(arr [3]int) {
 	arr[0] = 88
-} 
+}
 
 //函数
 func test02(arr *[3]int) {
 	fmt.Printf("arr指针的地址=%p", &arr)
 	(*arr)[0] = 88 //!!
-} 
+}
 
 func main() {
-	
-	/*
-	//数组是多个相同类型数据的组合,一个数组一旦声明/定义了,其长度是固定的, 不能动态变化。
-	var arr01 [3]int
-	arr01[0] = 1
-	arr01[1] = 30
-	//这里会报错
-	arr01[2] = 1.1  
-	//其长度是固定的, 不能动态变化,否则报越界
-	arr01[3] = 890
 
-	fmt.Println(arr01)
+	/*
+		//数组是多个相同类型数据的组合,一个数组一旦声明/定义了,其长度是固定的, 不能动态变化。
+		var arr01 [3]int
+		arr01[0] = 1
+		arr01[1] = 30
+		//这里会报错
+		arr01[2] = 1.1
+		//其长度是固定的, 不能动态变化,否则报越界
+		arr01[3] = 890
+
+		fmt.Println(arr01)
 	*/
 
 	//数组创建后，如果没有赋值，有默认值(零值)
@@ -50,7 +51,6 @@ func main() {
 	// arr := [3]int{11, 22, 33}
 	// test01(arr)
 	// fmt.Println("main arr=", arr) //
-
 
 	arr := [3]int{11, 22, 33}
 	fmt.Printf("arr 的地址=%p", &arr)

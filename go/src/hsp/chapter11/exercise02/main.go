@@ -1,14 +1,15 @@
 package main
+
 import (
 	"fmt"
-	"sort"
 	"math/rand"
+	"sort"
 )
 
 //1.声明Hero结构体
-type  Hero struct{
+type Hero struct {
 	Name string
-	Age int
+	Age  int
 }
 
 //2.声明一个Hero结构体切片类型
@@ -36,11 +37,10 @@ func (hs HeroSlice) Swap(i, j int) {
 	hs[i], hs[j] = hs[j], hs[i]
 }
 
-
 //1.声明Student结构体
-type  Student struct{
-	Name string
-	Age int
+type Student struct {
+	Name  string
+	Age   int
 	Score float64
 }
 
@@ -52,8 +52,8 @@ func main() {
 	var intSlice = []int{0, -1, 10, 7, 90}
 	//要求对 intSlice切片进行排序
 	//1. 冒泡排序...
-	//2. 也可以使用系统提供的方法 
-	sort.Ints(intSlice) 
+	//2. 也可以使用系统提供的方法
+	sort.Ints(intSlice)
 	fmt.Println(intSlice)
 
 	//请大家对结构体切片进行排序
@@ -62,17 +62,17 @@ func main() {
 
 	//测试看看我们是否可以对结构体切片进行排序
 	var heroes HeroSlice
-	for i := 0; i < 10 ; i++ {
+	for i := 0; i < 10; i++ {
 		hero := Hero{
-			Name : fmt.Sprintf("英雄|%d", rand.Intn(100)),
-			Age : rand.Intn(100),
+			Name: fmt.Sprintf("英雄|%d", rand.Intn(100)),
+			Age:  rand.Intn(100),
 		}
 		//将 hero append到 heroes切片
 		heroes = append(heroes, hero)
 	}
 
 	//看看排序前的顺序
-	for _ , v := range heroes {
+	for _, v := range heroes {
 		fmt.Println(v)
 	}
 
@@ -80,7 +80,7 @@ func main() {
 	sort.Sort(heroes)
 	fmt.Println("-----------排序后------------")
 	//看看排序后的顺序
-	for _ , v := range heroes {
+	for _, v := range heroes {
 		fmt.Println(v)
 	}
 

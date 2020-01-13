@@ -7,7 +7,7 @@ var Money int = 520
 
 // 怎么把它打包成 .a静态库文件以便给同事使用
 // 什么是编译器的逃逸分析
-func Calculate(a float32,b float32) float32 {
-	c := a +b
+func Calculate(a float32, b float32) float32 {
+	c := a + b
 	return c
-}   
+}

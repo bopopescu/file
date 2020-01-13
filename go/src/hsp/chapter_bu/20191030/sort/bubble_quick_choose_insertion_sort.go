@@ -6,31 +6,28 @@ import (
 	"time"
 )
 
-
 //冒泡排序
 func BubbleSort(arr *[8]int) {
 
 	fmt.Println("排序前arr=", (*arr))
 
-	jkl:=0
+	jkl := 0
 	//冒泡排序..一步一步推导出来的
-	for i :=0; i < len(*arr) - 1; i++ {
-		for j := 0; j < len(*arr) - 1 - i; j++ {
+	for i := 0; i < len(*arr)-1; i++ {
+		for j := 0; j < len(*arr)-1-i; j++ {
 			jkl++
-			if (*arr)[j] > (*arr)[j + 1] {
+			if (*arr)[j] > (*arr)[j+1] {
 				//交换
-				arr[j],arr[j+1] = arr[j+1],arr[j]
+				arr[j], arr[j+1] = arr[j+1], arr[j]
 
 			}
 		}
 
 	}
 
-
-	fmt.Println("排序后arr=", (*arr),jkl,"次")
+	fmt.Println("排序后arr=", (*arr), jkl, "次")
 
 }
-
 
 //从da到dxiao排序  todo 选择排序
 func choose_sort(arr *[7]int) {
@@ -56,7 +53,6 @@ func choose_sort(arr *[7]int) {
 
 }
 
-
 //TODO 插入排序
 
 func insertion(arr *[7]int) {
@@ -65,6 +61,7 @@ func insertion(arr *[7]int) {
 
 		fmt.Println("本次数组", arr)
 		fmt.Println()
+
 		idx := i - 1
 		val := arr[i]
 
@@ -86,24 +83,21 @@ func insertion(arr *[7]int) {
 	}
 }
 
-
-func speed(){
+func speed() {
 	var arr [80000]int
 
-	for i:=0;i<80000;i++{
+	for i := 0; i < 80000; i++ {
 		arr[i] = rand.Intn(90000)
 	}
 
-
 	start := time.Now().Unix()
 
-		// sort here
+	// sort here
 
-	end  :=time.Now().Unix()
+	end := time.Now().Unix()
 
-	fmt.Println(start-end)
+	fmt.Println(start - end)
 }
-
 
 func main() {
 
@@ -136,21 +130,15 @@ func main() {
 
 	fmt.Println("快速排序如下")
 
-
-
-
 	//快速排序   递归  这个比较难以理解
-	crr  := [9]int{-1,-3233,144,123,434,3231,0,-10,23}
-	quick_sort(0,8,&crr)
+	crr := [9]int{-1, -3233, 144, 123, 434, 3231, 0, -10, 23}
+	quick_sort(0, 8, &crr)
 	fmt.Println(crr)
 
-
-
-	drr :=[8]int{2,3,1,5,11,144,32,12}
+	drr := [8]int{2, 3, 1, 5, 11, 144, 32, 12}
 	BubbleSort(&drr)
 	fmt.Println(drr)
 }
-
 
 //快速排序    有点像二叉树？
 
@@ -180,8 +168,7 @@ func quick_sort(left int, right int, array *[9]int) {
 		}
 		//交换
 
-
-		array[l],array[r] = array[r],array[l]
+		array[l], array[r] = array[r], array[l]
 
 		if array[l] == pivot {
 			r--
@@ -190,7 +177,6 @@ func quick_sort(left int, right int, array *[9]int) {
 			l++
 		}
 	}
-
 
 	// 如果
 	if l == r {

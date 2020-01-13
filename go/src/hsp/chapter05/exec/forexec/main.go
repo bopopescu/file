@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 
 func main() {
@@ -13,7 +14,7 @@ func main() {
 	var sum uint64 = 0
 	var i uint64 = 1
 	for ; i <= max; i++ {
-		if i % 9 == 0 {
+		if i%9 == 0 {
 			count++
 			sum += i
 		}
@@ -24,6 +25,6 @@ func main() {
 	//完成下面的表达式输出 ，6是可变的
 	var n int = 60
 	for i := 0; i <= n; i++ {
-		fmt.Printf("%v + %v = %v \n", i, n - i, n)
+		fmt.Printf("%v + %v = %v \n", i, n-i, n)
 	}
 }

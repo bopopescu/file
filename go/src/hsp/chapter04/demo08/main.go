@@ -1,13 +1,13 @@
 package main
-import (
-	"fmt" 
-)
 
+import (
+	"fmt"
+)
 
 func main() {
 
 	var i int = 5
-	//二进制输出 
+	//二进制输出
 	fmt.Printf("%b \n", i)
 
 	//八进制：0-7 ，满8进1. 以数字0开头表示

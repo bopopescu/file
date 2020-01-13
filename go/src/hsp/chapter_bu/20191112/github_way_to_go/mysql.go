@@ -1,13 +1,13 @@
 package main
 
 import (
-	"database/sql"
-	"fmt"
 	"crypto/md5"
+	"database/sql"
 	"encoding/hex"
-	"time"
+	"fmt"
+	_ "github.com/go-sql-driver/mysql"
 	"strconv"
-	_"github.com/go-sql-driver/mysql"
+	"time"
 	//"github.com/go-sql-driver/mysql"
 )
 
@@ -18,7 +18,7 @@ const (
 func main() {
 	//mysql.Config{}
 	opend, db := OpenDB()
-	fmt.Println(opend,db)
+	fmt.Println(opend, db)
 	if opend {
 		fmt.Println("open success")
 	} else {
@@ -60,7 +60,7 @@ func OpenDB() (success bool, db *sql.DB) {
 func insertToDB(db *sql.DB) {
 	stmt, err := db.Prepare("insert test1 set name=?")
 	CheckErr(err)
-	res, err := stmt.Exec( "研发中心")
+	res, err := stmt.Exec("研发中心")
 	CheckErr(err)
 	id, err := res.LastInsertId()
 	CheckErr(err)

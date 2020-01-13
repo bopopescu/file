@@ -1,9 +1,9 @@
 package main
+
 import (
 	"fmt"
 	"hsp/chapter06/fundemo01/utils"
 )
-
 
 func main() {
 
@@ -14,9 +14,8 @@ func main() {
 	var n1 float64 = 1.2
 	var n2 float64 = 2.3
 	var operator byte = '+'
-	result := utils.Cal(n1, n2 , operator) 
+	result := utils.Cal(n1, n2, operator)
 	fmt.Println("result~=", result)
-
 
 	//代码...
 	//代码...
@@ -27,9 +26,8 @@ func main() {
 	n1 = 4.5
 	n2 = 6.7
 	operator = '*'
-	result = utils.Cal(n1, n2 , operator)
+	result = utils.Cal(n1, n2, operator)
 	fmt.Printf("result~=%.2f", result)
 	// //..需求
-
 
 }

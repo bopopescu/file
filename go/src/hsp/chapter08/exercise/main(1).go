@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 	"math/rand"
@@ -8,8 +9,8 @@ import (
 func main() {
 
 	/*
-	定义二维数组，用于保存三个班，每个班五名同学成绩，
-	并求出每个班级平均分、以及所有班级平均分
+		定义二维数组，用于保存三个班，每个班五名同学成绩，
+		并求出每个班级平均分、以及所有班级平均分
 	*/
 
 	rand.Seed(time.Now().UnixNano())
@@ -37,12 +38,12 @@ func main() {
 		for j := 0; j < len(scores[i]); j++ {
 			sum += scores[i][j]
 		}
-		totalSum += sum 
-		fmt.Printf("第%d班级的总分为%v , 平均分%v\n", i+1, sum, 
-			sum / float64(len(scores[i])))
+		totalSum += sum
+		fmt.Printf("第%d班级的总分为%v , 平均分%v\n", i+1, sum,
+			sum/float64(len(scores[i])))
 	}
 
-	var allnum float32= 15
-	fmt.Printf("所有班级的总分为%v , 所有班级平均分%v\n", 
-		totalSum, totalSum / float64(allnum) )
+	var allnum float32 = 15
+	fmt.Printf("所有班级的总分为%v , 所有班级平均分%v\n",
+		totalSum, totalSum/float64(allnum))
 }

@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 	"hsp/chapter10/factory/model"

@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 	"strconv"
@@ -13,9 +14,9 @@ func main() {
 	// 说明
 	// 1. strconv.ParseBool(str) 函数会返回两个值 (value bool, err error)
 	// 2. 因为我只想获取到 value bool ,不想获取 err 所以我使用_忽略
-	b , _ = strconv.ParseBool(str)
+	b, _ = strconv.ParseBool(str)
 	fmt.Printf("b type %T  b=%v\n", b, b)
-	
+
 	var str2 string = "1234590"
 	var n1 int64
 	var n2 int
@@ -28,7 +29,6 @@ func main() {
 	var f1 float64
 	f1, _ = strconv.ParseFloat(str3, 64)
 	fmt.Printf("f1 type %T f1=%v\n", f1, f1)
-
 
 	//注意：
 	var str4 string = "hello"

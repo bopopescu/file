@@ -1,7 +1,9 @@
 package main
+
 import (
-	"fmt" 
+	"fmt"
 )
+
 func main() {
 
 	//有两个变量，a和b，要求将其进行交换，但是不允许使用中间变量，最终打印结果

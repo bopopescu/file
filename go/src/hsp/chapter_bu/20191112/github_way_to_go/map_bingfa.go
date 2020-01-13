@@ -16,7 +16,7 @@ type Ban struct {
 func NewBan(ctx context.Context) *Ban {
 	o := &Ban{visitIPs: make(map[string]time.Time)}
 	go func() {
-		ad:=1
+		ad := 1
 		timer := time.NewTimer(time.Minute * 1)
 		for {
 			select {
@@ -63,7 +63,7 @@ func main() {
 
 	wait := &sync.WaitGroup{}
 
-	fk:=1
+	fk := 1
 	wait.Add(1000 * 100)
 	for i := 0; i < 1000; i++ {
 		for j := 0; j < 100; j++ {
@@ -71,7 +71,7 @@ func main() {
 				defer wait.Done()
 				ip := fmt.Sprintf("192.168.1.%d", j)
 				fk++
-				fmt.Println(ip,fk)
+				fmt.Println(ip, fk)
 				if !ban.visit(ip) {
 					atomic.AddInt64(&success, 1)
 				}
@@ -82,7 +82,7 @@ func main() {
 	wait.Wait()
 
 	time.Sleep(1e9)
-	fmt.Println(time.Minute,time.Second)
+	fmt.Println(time.Minute, time.Second)
 	fmt.Println(fuck)
 	fmt.Println(time.Now())
 	fmt.Println(time.Now().Sub(fuck))

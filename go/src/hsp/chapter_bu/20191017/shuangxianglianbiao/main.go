@@ -22,8 +22,8 @@ func InsertHeroNode(head *HeroNode, newHeroNode *HeroNode) {
 		fmt.Println("assd123")
 
 		if temp.next == nil { //表示找到最后
-		fmt.Println("dsdasdas")
-		 break
+			fmt.Println("dsdasdas")
+			break
 		}
 
 		fmt.Println("assd")
@@ -31,8 +31,8 @@ func InsertHeroNode(head *HeroNode, newHeroNode *HeroNode) {
 	}
 
 	//3. 将 newHeroNode 加入到链表的最后
-		temp.next = newHeroNode
-		newHeroNode.pre = temp
+	temp.next = newHeroNode
+	newHeroNode.pre = temp
 
 }
 
@@ -47,7 +47,7 @@ func InsertHeroNode2(head *HeroNode, newHeroNode *HeroNode) {
 	//让插入的结点的 no，和 temp 的下一个结点的 no 比较
 	for {
 		if temp.next == nil { //说明到链表的最后
-		 break
+			break
 		} else if temp.next.no >= newHeroNode.no {
 			//说明 newHeroNode 就应该插入到 temp 后面
 			break
@@ -61,7 +61,7 @@ func InsertHeroNode2(head *HeroNode, newHeroNode *HeroNode) {
 		return
 	} else {
 		newHeroNode.next = temp.next //ok
-		newHeroNode.pre = temp//ok
+		newHeroNode.pre = temp       //ok
 		if temp.next != nil {
 			temp.next.pre = newHeroNode //ok }
 			temp.next = newHeroNode     //ok }
@@ -82,13 +82,13 @@ func DelHerNode(head *HeroNode, id int) {
 			break
 		}
 		temp = temp.next
- 
+
 	}
 	if flag { //找到, 删除
 		temp.next = temp.next.next //ok
-		 if temp.next != nil {
-			 temp.next.pre = temp
-		 }
+		if temp.next != nil {
+			temp.next.pre = temp
+		}
 	} else {
 		fmt.Println("sorry, 要删除的 id 不存在")
 

@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 )
@@ -6,10 +7,10 @@ import (
 func main() {
 	//二维数组的演示案例
 	/*
-	0 0 0 0 0 0
-	0 0 1 0 0 0
-	0 2 0 3 0 0
-	0 0 0 0 0 0
+		0 0 0 0 0 0
+		0 0 1 0 0 0
+		0 2 0 3 0 0
+		0 0 0 0 0 0
 	*/
 
 	//定义/声明二维数组
@@ -28,17 +29,16 @@ func main() {
 		}
 		fmt.Println()
 	}
-	
+
 	fmt.Println()
-	
+
 	var arr2 [2][10]int8 //以这个为例来分析arr2在内存的布局!!
 	arr2[1][1] = 10
 	fmt.Println(arr2)
-	fmt.Printf("arr2[111111111]的地址%p\n %p\n %p\n",&arr2,&arr2[0],&arr2[1])
+	fmt.Printf("arr2[111111111]的地址%p\n %p\n %p\n", &arr2, &arr2[0], &arr2[1])
 
-	var test int =323
+	var test int = 323
 	fmt.Println(&test)
-
 
 	var testMultiArr [3][3]int
 	fmt.Println(testMultiArr)
@@ -54,7 +54,7 @@ func main() {
 	fmt.Printf("arr2[1][0]的地址%p\n", &arr2[1][0])
 
 	fmt.Println()
-	arr3  := [2][3]int8{{1,2,3}, {4,5,127}}  //128以上就超出了    -128~127
+	arr3 := [2][3]int8{{1, 2, 3}, {4, 5, 127}} //128以上就超出了    -128~127
 	fmt.Println("arr3=", arr3)
 
 }

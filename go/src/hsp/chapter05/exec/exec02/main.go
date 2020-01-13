@@ -1,10 +1,11 @@
 package main
+
 import (
 	"fmt"
 	_ "math"
 )
 
-func main(){
+func main() {
 	//岳小鹏参加Golang考试，他和父亲岳不群达成承诺：
 	// 如果：
 	// 成绩为100分时，奖励一辆BMW；
@@ -19,55 +20,54 @@ func main(){
 	//3. 成绩从键盘输入 fmt.Scanln
 
 	/*
-	var score int
-	fmt.Println("请输入成绩:")
-	fmt.Scanln(&score)
+		var score int
+		fmt.Println("请输入成绩:")
+		fmt.Scanln(&score)
 
-	//多分支判断
-	if score == 100 {
-		fmt.Println("奖励一辆BMW")
-	} else if score > 80 && score <= 99 {
-		fmt.Println("奖励一台iphone7plus")
-	} else if score >= 60 && score <= 80 {
-		fmt.Println("奖励一个 iPad")
-	} else {
-		fmt.Println("什么都不奖励")
-	}
+		//多分支判断
+		if score == 100 {
+			fmt.Println("奖励一辆BMW")
+		} else if score > 80 && score <= 99 {
+			fmt.Println("奖励一台iphone7plus")
+		} else if score >= 60 && score <= 80 {
+			fmt.Println("奖励一个 iPad")
+		} else {
+			fmt.Println("什么都不奖励")
+		}
 
-	//使用陷阱.....只会输出ok1...
+		//使用陷阱.....只会输出ok1...
 
-	var n int = 10
-	if n > 9 {
-		fmt.Println("ok1") //输出 ok1
-	} else if  n > 6 {
-		fmt.Println("ok2")
-	} else if n > 3 {
-		fmt.Println("ok3")
-	} else {
-		fmt.Println("ok4")
-	} */
+		var n int = 10
+		if n > 9 {
+			fmt.Println("ok1") //输出 ok1
+		} else if  n > 6 {
+			fmt.Println("ok2")
+		} else if n > 3 {
+			fmt.Println("ok3")
+		} else {
+			fmt.Println("ok4")
+		} */
 
 	// var b bool = true
 	// if b == false { 	//如果写成 b = false; 能编译通过吗？如果能，结果是？
 	// 	fmt.Println("a")
 	// } else if b {
 	// 	fmt.Println("b") // b
-	// } else if !b { 
+	// } else if !b {
 	// 	fmt.Println("c")//c
 	// } else {
 	// 	fmt.Println("d")
 	// }
-	
 
 	//求ax2+bx+c=0方程的根。a,b,c分别为函数的参数，如果：b2-4ac>0，则有两个解；
-	// b2-4ac=0，则有一个解；b2-4ac<0，则无解； 
-	// 提示1：x1=(-b+sqrt(b2-4ac))/2a                            
+	// b2-4ac=0，则有一个解；b2-4ac<0，则无解；
+	// 提示1：x1=(-b+sqrt(b2-4ac))/2a
 	//        X2=(-b-sqrt(b2-4ac))/2a
 	// 提示2：math.Sqrt(num); 可以求平方根 需要引入 math包
 
 	//分析思路
 	//1. a,b,c 是三个float64
-	//2. 使用到给出的数学公式 
+	//2. 使用到给出的数学公式
 	//3. 使用到多分支
 	//4. 使用math.Squr方法 =》手册
 
@@ -88,7 +88,6 @@ func main(){
 	// } else {
 	// 	fmt.Println("无解...")
 	// }
-
 
 	// 大家都知道，男大当婚，女大当嫁。那么女方家长要嫁女儿，当然要提出一定的条件：
 	//高：180cm以上；富：财富1千万以上；帅：是。条件从控制台输入。
@@ -115,12 +114,10 @@ func main(){
 
 	if height > 180 && money > 1.0 && handsome {
 		fmt.Println("我一定要嫁给他!!!")
-	}else if height > 180 || money > 1.0 || handsome {
+	} else if height > 180 || money > 1.0 || handsome {
 		fmt.Println("嫁吧，比上不足，比下有余")
 	} else {
 		fmt.Println("不嫁....")
 	}
-
-
 
 }

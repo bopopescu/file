@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 	"math/rand"
@@ -23,27 +24,25 @@ func main() {
 		n := rand.Intn(100) + 1
 		fmt.Println("n=", n)
 		count++
-		if (n == 99) {
+		if n == 99 {
 			break //表示跳出for循环
 		}
 	}
 
 	fmt.Println("生成 99 一共使用了 ", count)
 
-
 	//这里演示一下指定标签的形式来使用 break
-	lable2: 
+lable2:
 	for i := 0; i < 4; i++ {
 		//lable1: // 设置一个标签
 		for j := 0; j < 10; j++ {
 			if j == 2 {
 				//break // break 默认会跳出最近的for循环
-				//break lable1 
+				//break lable1
 				break lable2 // j=0 j=1
 			}
-			fmt.Println("j=", j) 
+			fmt.Println("j=", j)
 		}
 	}
 
-	
 }

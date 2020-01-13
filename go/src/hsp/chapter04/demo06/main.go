@@ -1,7 +1,9 @@
 package main
+
 import (
-	"fmt" 
+	"fmt"
 )
+
 func main() {
 	//演示一把 & 和 *的使用
 
@@ -11,12 +13,12 @@ func main() {
 	var ptr *int = &a
 	fmt.Println("ptr 指向的值是=", *ptr)
 
-	var n int 
+	var n int
 	var i int = 10
 	var j int = 12
 	//传统的三元运算
 	//n = i > j ? i : j
-	if ( i > j ) {
+	if i > j {
 		n = i
 	} else {
 		n = j

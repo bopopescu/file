@@ -27,7 +27,7 @@ func main() {
 		}
 	}()
 
-	select {}//程序无限执行
+	select {} //程序无限执行
 }
 
 func proc() {

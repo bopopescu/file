@@ -2,23 +2,21 @@ package main
 
 import (
 	"database/sql"
-	"log"
 	"fmt"
-	_"github.com/go-sql-driver/mysql"
-
+	_ "github.com/go-sql-driver/mysql"
+	"log"
 )
 
-func doSomething(){
+func doSomething() {
 	panic("A Panic Running Error")
 }
 
-func clearTransaction(tx *sql.Tx){
+func clearTransaction(tx *sql.Tx) {
 	err := tx.Rollback()
-	if err != sql.ErrTxDone && err != nil{
+	if err != sql.ErrTxDone && err != nil {
 		log.Fatalln(err)
 	}
 }
-
 
 func main() {
 
@@ -35,7 +33,6 @@ func main() {
 	}
 
 	defer db.Close()
-
 
 	tx, err := db.Begin()
 	if err != nil {

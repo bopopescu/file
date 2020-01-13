@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 )
@@ -20,18 +21,18 @@ type AInterface interface {
 //如果需要实现AInterface,就需要将BInterface CInterface的方法都实现
 type Stu struct {
 }
+
 func (stu Stu) test01() {
 
 }
 func (stu Stu) test02() {
-	
+
 }
 func (stu Stu) test03() {
-	
+
 }
 
-type T  interface{
-
+type T interface {
 }
 
 func main() {
@@ -41,7 +42,7 @@ func main() {
 
 	var t T = stu //ok
 	fmt.Println(t)
-	var t2 interface{}  = stu
+	var t2 interface{} = stu
 	var num1 float64 = 8.8
 	t2 = num1
 	t = num1

@@ -16,10 +16,12 @@ type Emp struct {
 type EmpLink struct {
 	Head *Emp
 }
+
 //定义 hashtable ,含有一个链表数组
 type HashTable struct {
 	LinkArr [7]EmpLink
 }
+
 //方法待定..
 
 //1. 添加员工的方法, 保证添加时，编号从小到大
@@ -67,8 +69,6 @@ func (this *EmpLink) ShowLink(no int) {
 	fmt.Println() //换行处理
 }
 
-
-
 //给 HashTable 编写 Insert 雇员的方法.
 func (this *HashTable) Insert(emp *Emp) {
 	//使用散列函数，确定将该雇员添加到哪个链表
@@ -87,14 +87,14 @@ func (this *HashTable) HashFun(id int) int {
 	return id % 7 //得到一个值，就是对于的链表的下标
 }
 
-func (this *EmpLink) FindByid(id int) *Emp{
+func (this *EmpLink) FindByid(id int) *Emp {
 
 	cur := this.Head
 
 	for {
-		if cur!=nil && cur.Id==id{
+		if cur != nil && cur.Id == id {
 			return cur
-		}else if cur==nil{
+		} else if cur == nil {
 			break
 		}
 		cur = cur.Next
@@ -102,13 +102,13 @@ func (this *EmpLink) FindByid(id int) *Emp{
 	return nil
 }
 
-func (this *HashTable) findByid(id int) *Emp{
+func (this *HashTable) findByid(id int) *Emp {
 
-	linkno :=this.HashFun(id)
+	linkno := this.HashFun(id)
 	return this.LinkArr[linkno].FindByid(id)
 }
-func (this *Emp) showMe(){
-	fmt.Println(this.Id,"is now found")
+func (this *Emp) showMe() {
+	fmt.Println(this.Id, "is now found")
 }
 func main() {
 	key := ""
@@ -139,9 +139,9 @@ func main() {
 		case "find":
 			fmt.Scanln(&id)
 			emp := hashtable.findByid(id)
-			if emp!=nil{
+			if emp != nil {
 				emp.showMe()
-			}else{
+			} else {
 				fmt.Println("can not find id emp in hashtable")
 			}
 			//

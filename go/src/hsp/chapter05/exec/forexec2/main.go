@@ -1,7 +1,9 @@
 package main
+
 import "fmt"
-func main(){
-	
+
+func main() {
+
 	//1)统计3个班成绩情况，每个班有5名同学，
 	//求出各个班的平均分和所有班级的平均分[学生的成绩从键盘输入]
 
@@ -28,7 +30,7 @@ func main(){
 	var stuNum int = 5
 	var totalSum float64 = 0.0
 	var passCount int = 0
-	for j := 1; j <= classNum; j ++ {
+	for j := 1; j <= classNum; j++ {
 		sum := 0.0
 		for i := 1; i <= stuNum; i++ {
 			var score float64
@@ -42,11 +44,11 @@ func main(){
 			}
 		}
 
-		fmt.Printf("第%d个班级的平均分是%v\n", j, sum / float64(stuNum) )
+		fmt.Printf("第%d个班级的平均分是%v\n", j, sum/float64(stuNum))
 		//将各个班的总成绩累计到totalSum
 		totalSum += sum
 	}
 
-	fmt.Printf("各个班级的总成绩%v 所有班级平均分是%v\n", totalSum, totalSum / float64(stuNum * classNum))
+	fmt.Printf("各个班级的总成绩%v 所有班级平均分是%v\n", totalSum, totalSum/float64(stuNum*classNum))
 	fmt.Printf("及格人数为%v\n", passCount)
 }

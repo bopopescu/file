@@ -1,26 +1,22 @@
 package utils
 
 import (
-	"net"
-	"fmt"
 	"encoding/binary"
-	"errors"
 	"encoding/json"
+	"errors"
+	"fmt"
 	"hsp/chapter_bu/20190907/project/common/message"
-
+	"net"
 )
 
 //改成oop  结构体
 
 type Transfer struct {
 	Conn net.Conn
-	Buf [8096]byte
+	Buf  [8096]byte
 }
 
-
-
-
-func (this *Transfer)Readpkg() (mes message.Message, err error) {
+func (this *Transfer) Readpkg() (mes message.Message, err error) {
 	fmt.Println("阻塞读取中……")
 	//buf := make([]byte, 1024*4)
 
@@ -59,7 +55,7 @@ func (this *Transfer)Readpkg() (mes message.Message, err error) {
 
 }
 
-func (this *Transfer)WritePkg( data []byte) (err error) {
+func (this *Transfer) WritePkg(data []byte) (err error) {
 
 	var pkgLen uint32
 

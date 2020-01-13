@@ -5,36 +5,34 @@ import (
 	"time"
 )
 
-func say(){
-	for i:=0;i<10;i++{
-		time.Sleep(time.Second *1/2)
+func say() {
+	for i := 0; i < 10; i++ {
+		time.Sleep(time.Second * 1 / 2)
 		fmt.Println("are leijun ok")
 	}
 }
 
-
-func test(){
+func test() {
 
 	defer func() {
-		if err:=recover();err!=nil{
+		if err := recover(); err != nil {
 			fmt.Println(" goroutine  test() wrong")
 		}
 	}()
 
 	var mymap map[int]string
 	//mymap = make(map[int]string,10)
-	mymap[1]="asd"
+	mymap[1] = "asd"
 
- }
+}
 
-
-func main(){
+func main() {
 
 	go say()
 	go test()
 
-	for i:=0;i<10;i++{
-		time.Sleep(time.Second *1 /4  )
+	for i := 0; i < 10; i++ {
+		time.Sleep(time.Second * 1 / 4)
 		fmt.Println("are ttt ok")
 	}
 }

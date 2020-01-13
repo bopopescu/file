@@ -1,20 +1,21 @@
 package main
+
 import (
-	"fmt"
 	"bufio"
+	"fmt"
+	"io"
 	"os"
-	"io" 
 )
 
 func main() {
-	
+
 	//打开一个存在的文件，将原来的内容读出显示在终端，并且追加5句"hello,北京!"
 	//1 .打开文件已经存在文件, d:/abc.txt
 	filePath := "d:/abc.txt"
-	file, err := os.OpenFile(filePath, os.O_RDWR | os.O_APPEND, 0666)
+	file, err := os.OpenFile(filePath, os.O_RDWR|os.O_APPEND, 0666)
 	if err != nil {
 		fmt.Printf("open file err=%v\n", err)
-		return 
+		return
 	}
 	//及时关闭file句柄
 	defer file.Close()
@@ -29,7 +30,6 @@ func main() {
 		//显示到终端
 		fmt.Print(str)
 	}
-
 
 	//准备写入5句 "你好,尚硅谷!"
 	str := "hello,北京!\r\n" // \r\n 表示换行

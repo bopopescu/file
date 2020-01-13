@@ -5,102 +5,79 @@ import (
 	"time"
 )
 
+func raw(rawdata chan int) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-func raw(rawdata chan int){
-
-
-	for i:=1;i<=8000;i++{
-		rawdata<- i
+	for i := 1; i <= 8000; i++ {
+		rawdata <- i
 	}
 	close(rawdata)
 
 }
 
+func calprime22(rawdata chan int, dealdata chan int, endchan chan bool) {
 
-
-func calprime22(rawdata chan int,dealdata chan int,endchan chan bool){
-
-	for{
-		v,ok:=<-rawdata
-		if(ok){
-			if v%2==0{
-				dealdata<-v
+	for {
+		v, ok := <-rawdata
+		if ok {
+			if v%2 == 0 {
+				dealdata <- v
 
 			}
-		}else{
+		} else {
 			break
 		}
 	}
 
-	time.Sleep(time.Second*2)
-	endchan<-true
+	time.Sleep(time.Second * 2)
+	endchan <- true
 
 	//if(len(endchan)==4){
 	//	close(endchan)
 	//}
 
-
 }
 
+func calprime(rawdata chan int, dealdata chan int, endchan chan bool) {
 
-func calprime(rawdata chan int,dealdata chan int,endchan chan bool){
-
-	for{
-		v,ok:=<-rawdata
-		if(ok){
-			if v%2==0{
-				dealdata<-v
+	for {
+		v, ok := <-rawdata
+		if ok {
+			if v%2 == 0 {
+				dealdata <- v
 
 			}
-		}else{
+		} else {
 			break
 		}
 	}
 
-	endchan<-true
+	endchan <- true
 
 	//if(len(endchan)==4){
 	//	close(endchan)
 	//}
 
-
 }
 
+func main01() {
+	btime := time.Now().UnixNano()
 
-func main01(){
-	btime:=time.Now().UnixNano()
+	rawdata := make(chan int, 8000)
+	dealdata := make(chan int, 5000)
 
-	rawdata:= make(chan int ,8000)
-	dealdata:=make(chan int,5000)
-
-	for i:=1;i<=8000;i++{
-		rawdata<- i
+	for i := 1; i <= 8000; i++ {
+		rawdata <- i
 	}
 
 	close(rawdata)
-	for{
-		v,ok:=<-rawdata
-		if(ok){
-			if v%2==0{
-				dealdata<-v
+	for {
+		v, ok := <-rawdata
+		if ok {
+			if v%2 == 0 {
+				dealdata <- v
 
 			}
-		}else{
+		} else {
 			break
 		}
 	}
@@ -108,44 +85,41 @@ func main01(){
 
 	//for{
 
-			fmt.Println("asdasdasd",dealdata)
-			//for v:=range dealdata{
-			//	fmt.Println(v)
-			//}
-			//break
+	fmt.Println("asdasdasd", dealdata)
+	//for v:=range dealdata{
+	//	fmt.Println(v)
+	//}
+	//break
 
 	//}
-	etime:=time.Now().UnixNano()
-	fmt.Println(etime-btime)
+	etime := time.Now().UnixNano()
+	fmt.Println(etime - btime)
 
 }
 
+func main() {
+	btime := time.Now().UnixNano()
+	rawdata := make(chan int, 2000)
 
-func main(){
-	btime:=time.Now().UnixNano()
-	rawdata:= make(chan int ,2000)
+	dealdata := make(chan int, 5000)
 
-	dealdata:=make(chan int,5000)
-
-	endchan :=make(chan bool,4)
+	endchan := make(chan bool, 4)
 	go raw(rawdata)
-	go calprime(rawdata,dealdata,endchan)
-	go calprime(rawdata,dealdata,endchan)
-	go calprime(rawdata,dealdata,endchan)
-	go calprime22(rawdata,dealdata,endchan)
+	go calprime(rawdata, dealdata, endchan)
+	go calprime(rawdata, dealdata, endchan)
+	go calprime(rawdata, dealdata, endchan)
+	go calprime22(rawdata, dealdata, endchan)
 
-
-
-	times:=1
-	for{
+	times := 1
+	for {
 		abc := len(endchan)
 		times++
 
-		fmt.Println(abc,"---",times,"----",time.Now().UnixNano())
-		if abc==4{
+		fmt.Println(abc, "---", times, "----", time.Now().UnixNano())
+		if abc == 4 {
 			close(dealdata)
-			fmt.Println("asdasdasd",dealdata)
-			for v:=range dealdata{
+			fmt.Println("asdasdasd", dealdata)
+			for v := range dealdata {
 				fmt.Println(v)
 			}
 			fmt.Println(123)
@@ -153,7 +127,7 @@ func main(){
 		}
 	}
 
-	etime:=time.Now().UnixNano()
+	etime := time.Now().UnixNano()
 
-	fmt.Println(etime-btime)
+	fmt.Println(etime - btime)
 }

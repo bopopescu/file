@@ -13,7 +13,7 @@ func main() {
 	for i := 0; i < 10; i++ {
 		wg.Add(1)
 		go func(num int, close <-chan struct{}) {
-			fmt.Println("begin",num)
+			fmt.Println("begin", num)
 			defer wg.Done()
 			<-close
 			fmt.Println(num)
@@ -28,7 +28,6 @@ func main() {
 }
 
 func WaitTimeout(wg *sync.WaitGroup, timeout time.Duration) bool {
-
 
 	// 要求手写代码
 

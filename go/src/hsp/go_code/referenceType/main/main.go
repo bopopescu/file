@@ -6,7 +6,7 @@ import (
 	"go_code/referenceType/utils"
 )
 
-func main(){ 
+func main() {
 
-	fmt.Println("访问外部变量",utils.Name)
+	fmt.Println("访问外部变量", utils.Name)
 }

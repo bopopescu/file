@@ -4,9 +4,8 @@ import (
 	"fmt"
 )
 
-
 // 家庭收支项目
-func main(){
+func main() {
 
 	// 接受用户输入的选项
 	key := ""
@@ -31,8 +30,8 @@ func main(){
 		case "4":
 			loop = false
 		}
-		
-		if loop != true{
+
+		if loop != true {
 			break
 		}
 	}

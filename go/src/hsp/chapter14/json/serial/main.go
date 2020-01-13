@@ -1,28 +1,27 @@
 package main
+
 import (
-	"fmt"
 	"encoding/json"
+	"fmt"
 )
 
 //定义一个结构体
 type Monster struct {
-	Name string `json:"monster_name"` //反射机制
-	Age int `json:"monster_age"`
+	Name     string `json:"monster_name"` //反射机制
+	Age      int    `json:"monster_age"`
 	Birthday string //....
-	Sal float64
-	Skill string
+	Sal      float64
+	Skill    string
 }
-
-
 
 func testStruct() {
 	//演示
 	monster := Monster{
-		Name :"牛魔王",
-		Age : 500 ,
-		Birthday : "2011-11-11",
-		Sal : 8000.0,
-		Skill : "牛魔拳",
+		Name:     "牛魔王",
+		Age:      500,
+		Birthday: "2011-11-11",
+		Sal:      8000.0,
+		Skill:    "牛魔拳",
 	}
 
 	//将monster 序列化
@@ -72,7 +71,7 @@ func testSlice() {
 	m2 = make(map[string]interface{})
 	m2["name"] = "tom"
 	m2["age"] = "20"
-	m2["address"] = [2]string{"墨西哥","夏威夷"}
+	m2["address"] = [2]string{"墨西哥", "夏威夷"}
 	slice = append(slice, m2)
 
 	//将切片进行序列化操作
@@ -82,7 +81,7 @@ func testSlice() {
 	}
 	//输出序列化后的结果
 	fmt.Printf("slice 序列化后=%v\n", string(data))
-	
+
 }
 
 //对基本数据类型序列化，对基本数据类型进行序列化意义不大
@@ -102,6 +101,6 @@ func main() {
 	//演示将结构体, map , 切片进行序列号
 	testStruct()
 	testMap()
-	testSlice()//演示对切片的序列化
-	testFloat64()//演示对基本数据类型的序列化
+	testSlice()   //演示对切片的序列化
+	testFloat64() //演示对基本数据类型的序列化
 }

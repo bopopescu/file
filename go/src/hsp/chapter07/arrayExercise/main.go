@@ -1,4 +1,5 @@
-package main 
+package main
+
 import (
 	"fmt"
 	"math/rand"
@@ -32,7 +33,7 @@ func main() {
 	//3. 然后从第二个元素开始循环比较，如果发现有更大，则交换
 
 	fmt.Println()
-	var intArr [6]int = [...]int {1, -1, 9, 90, 11, 9000}
+	var intArr [6]int = [...]int{1, -1, 9, 90, 11, 9000}
 	maxVal := intArr[0]
 	maxValIndex := 0
 
@@ -51,7 +52,7 @@ func main() {
 	//2. 求出和sum
 	//3. 求出平均值
 	//代码
-	var intArr2 [5]int = [...]int {1, -1, 9, 90, 12}
+	var intArr2 [5]int = [...]int{1, -1, 9, 90, 12}
 	sum := 0
 	for _, val := range intArr2 {
 		//累计求和
@@ -59,8 +60,7 @@ func main() {
 	}
 
 	//如何让平均值保留到小数.
-	fmt.Printf("sum=%v 平均值=%v \n\n", sum, float64(sum) / float64(len(intArr2)))
-
+	fmt.Printf("sum=%v 平均值=%v \n\n", sum, float64(sum)/float64(len(intArr2)))
 
 	//要求：随机生成五个数，并将其反转打印
 	//思路
@@ -68,32 +68,27 @@ func main() {
 	//2. 当我们得到随机数后，就放到一个数组 int数组
 	//3. 反转打印 , 交换的次数是  len / 2, 倒数第一个和第一个元素交换, 倒数第2个和第2个元素交换
 
-	var intArr3 [5]int 
+	var intArr3 [5]int
 	//为了每次生成的随机数不一样，我们需要给一个seed值
 	len := len(intArr3)
-	
+
 	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < len; i++ {
 		intArr3[i] = rand.Intn(100) //  0<=n<100
 	}
 
-
-
-	fmt.Println("交换前~=", intArr3,time.Now().UnixNano(),time.Now().Unix())
-	//反转打印 , 交换的次数是  len / 2, 
+	fmt.Println("交换前~=", intArr3, time.Now().UnixNano(), time.Now().Unix())
+	//反转打印 , 交换的次数是  len / 2,
 	//倒数第一个和第一个元素交换, 倒数第2个和第2个元素交换
-	temp := 0  //做一个临时变量
-	for i := 0; i < len / 2; i++ {
-		temp = intArr3[len - 1 - i]  
-		intArr3[len - 1 - i] = intArr3[i]
+	temp := 0 //做一个临时变量
+	for i := 0; i < len/2; i++ {
+		temp = intArr3[len-1-i]
+		intArr3[len-1-i] = intArr3[i]
 		intArr3[i] = temp
 	}
 
 	fmt.Println("交换后~=", intArr3)
 
-	fmt.Printf("%v\n type is %T\n for check isarray",intArr3,intArr3)
+	fmt.Printf("%v\n type is %T\n for check isarray", intArr3, intArr3)
 
-
-
-	}
-
+}

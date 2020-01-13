@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 )
@@ -12,10 +13,8 @@ func main() {
 	intArr[1] = 20
 	intArr[2] = 30
 	fmt.Println(intArr)
-	fmt.Printf("intArr的地址=%p intArr[0] 地址%p intArr[1] 地址%p intArr[2] 地址%p\n", 
+	fmt.Printf("intArr的地址=%p intArr[0] 地址%p intArr[1] 地址%p intArr[2] 地址%p\n",
 		&intArr, &intArr[0], &intArr[1], &intArr[2])
-
-
 
 	//从终端循环输入5个成绩，保存到float64数组,并输出.
 	// var score [5]float64
@@ -42,18 +41,18 @@ func main() {
 	var numArr02 = [3]int{5, 6, 7}
 	fmt.Println("numArr02=", numArr02)
 	//这里的 [...] 是规定的写法
-	var numArr03 = [...]int{8, 9, 10,11}
+	var numArr03 = [...]int{8, 9, 10, 11}
 	fmt.Println("numArr03=", numArr03)
 
-	var numArr04 = [...]int{1: 800, 0: 900, 2:999}
+	var numArr04 = [...]int{1: 800, 0: 900, 2: 999}
 	fmt.Println("numArr04=", numArr04)
 	fmt.Println("strSlice cap=", cap(numArr04)) // ?
 
 	//类型推导
-	strArr05 := [...]string{1: "tom", 0: "jack", 2:"mary"}
+	strArr05 := [...]string{1: "tom", 0: "jack", 2: "mary"}
 	fmt.Println("strArr05=", strArr05)
 
-	var arr [3][3]int = [3][3]int{{1,2,3},{2,3,4},{3,3,3}}
+	var arr [3][3]int = [3][3]int{{1, 2, 3}, {2, 3, 4}, {3, 3, 3}}
 
 	fmt.Println(arr)
-	}
+}

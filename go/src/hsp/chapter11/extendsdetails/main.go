@@ -7,7 +7,7 @@ import (
 
 type A struct {
 	Name string
-	age int
+	age  int
 }
 
 func (fuck *A) who() {
@@ -23,7 +23,7 @@ func (a *A) hello() {
 
 type B struct {
 	A
-	Name string 
+	Name string
 }
 
 func (b *B) SayOk() {
@@ -48,9 +48,9 @@ func main() {
 	var b B
 	b.Name = "jack" // ok
 	b.A.Name = "scott"
-	b.age = 100  //ok
-	b.SayOk()  // B SayOk  jack
+	b.age = 100 //ok
+	b.SayOk()   // B SayOk  jack
 	b.A.SayOk() //  A SayOk scott
-	b.hello() //  A hello ? "jack" 还是 "scott"
+	b.hello()   //  A hello ? "jack" 还是 "scott"
 
 }

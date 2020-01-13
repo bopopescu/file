@@ -1,4 +1,5 @@
-package main 
+package main
+
 import "fmt"
 import "encoding/json"
 
@@ -9,11 +10,12 @@ type B struct {
 	Num int
 }
 
-type Monster struct{
-	Name string `json:"name"` // `json:"name"` 就是 struct tag
-	Age int `json:"age"`
+type Monster struct {
+	Name  string `json:"name"` // `json:"name"` 就是 struct tag
+	Age   int    `json:"age"`
 	Skill string `json:"skill"`
 }
+
 func main() {
 	var a A
 	var b B
@@ -25,15 +27,13 @@ func main() {
 	//1. 创建一个Monster变量
 	monster := Monster{"牛魔王", 500, "芭蕉扇~"}
 
-	jsonstr,_ := json.Marshal(monster)
+	jsonstr, _ := json.Marshal(monster)
 
-
-	 //sdd := json.Unmarshal(jsonstr,[]interface{})
+	//sdd := json.Unmarshal(jsonstr,[]interface{})
 	//
 	//fmt.Println(sdd)
 
 	fmt.Println(string(jsonstr))
-
 
 	fmt.Println(monster)
 

@@ -1,13 +1,14 @@
 package main
-import ( 
+
+import (
 	"fmt"
-	//为了使用utils.go文件的变量或者函数，我们需要先引入该model包 
+	//为了使用utils.go文件的变量或者函数，我们需要先引入该model包
 	"hsp/chapter03/demo04/model"
 )
 
 //变量使用的注意事项
 func main() {
-	
+
 	//该区域的数据值可以在同一类型范围内不断变化
 	var i int = 10
 	i = 30

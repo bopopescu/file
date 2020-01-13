@@ -42,20 +42,18 @@ func ShowMenu() {
 }
 
 //保持服务端通讯
-func serverProcessmes(conn net.Conn){
+func serverProcessmes(conn net.Conn) {
 
-
-	tf:=&utils.Transfer{
-		Conn:conn,
+	tf := &utils.Transfer{
+		Conn: conn,
 	}
 
-	for{
+	for {
 		fmt.Println("客户端阻塞读取中")
-		mes,err :=tf.Readpkg()
+		mes, err := tf.Readpkg()
 
-		fmt.Println(mes,err)
+		fmt.Println(mes, err)
 
 	}
-
 
 }

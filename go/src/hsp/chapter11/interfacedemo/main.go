@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 )
@@ -6,21 +7,21 @@ import (
 //声明/定义一个接口
 type Usb interface {
 	//声明了两个没有实现的方法
-	Start() 
+	Start()
 	Stop()
 }
 
 //声明/定义一个接口
 type Usb2 interface {
 	//声明了两个没有实现的方法
-	Start() 
+	Start()
 	Stop()
 	Test()
 }
 
 type Phone struct {
-
 }
+
 //让Phone 实现 Usb接口的方法
 func (p Phone) Start() {
 	fmt.Println("手机开始工作。。。")
@@ -32,9 +33,10 @@ func (p Phone) Stop() {
 func (p Phone) Stop2() {
 	fmt.Println("手机停止工作2。。。")
 }
-type Camera struct {
 
+type Camera struct {
 }
+
 //让Camera 实现   Usb接口的方法
 func (c Camera) Start() {
 	fmt.Println("相机开始工作~~~。。。")
@@ -43,10 +45,8 @@ func (c Camera) Stop() {
 	fmt.Println("相机停止工作。。。")
 }
 
-
 //计算机
 type Computer struct {
-
 }
 
 //编写一个方法Working 方法，接收一个Usb接口类型变量

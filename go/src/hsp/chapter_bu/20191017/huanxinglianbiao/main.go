@@ -67,9 +67,6 @@ func DelCatNode(head *CatNode, id int) *CatNode {
 		return head
 	}
 
-
-
-
 	//将 helper 定位到链表最后   TODO  here is the keyoint
 	for {
 		if helper.next == head {
@@ -77,7 +74,6 @@ func DelCatNode(head *CatNode, id int) *CatNode {
 		}
 		helper = helper.next
 	}
-
 
 	//如果有两个包含两个以上结点
 	flag := true

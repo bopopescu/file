@@ -4,11 +4,12 @@ import (
 	"fmt"
 	"sync"
 )
+
 type query func(string) string
 
 func exec(name string, vs ...query) string {
-	ch := make(chan string,10)
-	wg:=sync.WaitGroup{}
+	ch := make(chan string, 10)
+	wg := sync.WaitGroup{}
 	wg.Add(4)
 	fn := func(i int) {
 		ch <- vs[i](name)
@@ -23,15 +24,13 @@ func exec(name string, vs ...query) string {
 	wg.Wait()
 	close(ch)
 
-
 	wg.Add(1)
-
 
 	fmt.Println(2132)
 	go func() {
 		wg.Done()
 
-		for o:=range ch{
+		for o := range ch {
 
 			fmt.Println(o)
 		}
@@ -41,7 +40,7 @@ func exec(name string, vs ...query) string {
 	}()
 	wg.Wait()
 
-//time.Sleep(1e9)
+	//time.Sleep(1e9)
 	return ""
 	//return <-ch
 }

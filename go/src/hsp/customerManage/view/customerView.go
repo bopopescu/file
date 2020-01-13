@@ -2,18 +2,17 @@ package main
 
 import (
 	"fmt"
-	"hsp/customerManage/service"
 	"hsp/customerManage/model"
+	"hsp/customerManage/service"
 )
 
 type customerView struct {
 
 	//定义必要字段
-	key string //接收用户输入...
-	loop bool  //表示是否循环的显示主菜单
+	key  string //接收用户输入...
+	loop bool   //表示是否循环的显示主菜单
 	//增加一个字段customerService
 	customerService *service.CustomerService
-
 }
 
 //显示所有的客户信息
@@ -60,9 +59,9 @@ func (this *customerView) add() {
 	}
 }
 
-func (this *customerView) doup(index int,id int) {
+func (this *customerView) doup(index int, id int) {
 	fmt.Println("---------------------修改客户---------------------")
-	fmt.Println("index=>",index)
+	fmt.Println("index=>", index)
 	fmt.Println("姓名:")
 	name := ""
 	fmt.Scanln(&name)
@@ -82,7 +81,7 @@ func (this *customerView) doup(index int,id int) {
 	//注意: id号，没有让用户输入，id是唯一的，需要系统分配
 	customer := model.NewCustomer2(name, gender, age, phone, email)
 	//调用
-	if this.customerService.DoUpdate(customer,index,id) {
+	if this.customerService.DoUpdate(customer, index, id) {
 		fmt.Println("---------------------修改完成---------------------")
 	} else {
 		fmt.Println("---------------------修改失败---------------------")
@@ -98,13 +97,12 @@ func (this *customerView) update() {
 		return //放弃修改操作
 	}
 
-
-	var res,index = this.customerService.Update(id)
-	if(res ){
-		this.doup(index,id)
+	var res, index = this.customerService.Update(id)
+	if res {
+		this.doup(index, id)
 		fmt.Println("---------------------开始修改---------------------")
 
-	}else{
+	} else {
 		fmt.Println("---------------------修改失败，输入的id号不存在----")
 
 	}
@@ -134,7 +132,7 @@ func (this *customerView) delete() {
 	}
 }
 
-//退出软件 
+//退出软件
 func (this *customerView) exit() {
 
 	fmt.Println("确认是否退出(Y/N)：")
@@ -157,7 +155,7 @@ func (this *customerView) exit() {
 func (this *customerView) mainMenu() {
 
 	for {
-		
+
 		fmt.Println("-----------------客户信息管理软件-----------------")
 		fmt.Println("                 1 添 加 客 户")
 		fmt.Println("                 2 修 改 客 户")
@@ -168,22 +166,22 @@ func (this *customerView) mainMenu() {
 		this.key = ""
 		fmt.Scanln(&this.key)
 		switch this.key {
-			case "1" :
-				fmt.Println(this.key)
-				this.add()
-			case "2" :
-				fmt.Println("修 改 客 户")
-				this.update()
-			case "3" :
-				this.delete()
-			case "4" :
-				this.list()
-			case "5" :
-				this.exit()
-			case "" :
-				fmt.Println("你妹数计入")
-			default :
-				fmt.Println("你的输入有误，请重新输入...")
+		case "1":
+			fmt.Println(this.key)
+			this.add()
+		case "2":
+			fmt.Println("修 改 客 户")
+			this.update()
+		case "3":
+			this.delete()
+		case "4":
+			this.list()
+		case "5":
+			this.exit()
+		case "":
+			fmt.Println("你妹数计入")
+		default:
+			fmt.Println("你的输入有误，请重新输入...")
 		}
 
 		if !this.loop {
@@ -194,13 +192,11 @@ func (this *customerView) mainMenu() {
 	fmt.Println("你退出了客户关系管理系统...")
 }
 
-
-
 func main() {
 	//在main函数中，创建一个customerView,并运行显示主菜单..
 	customerView := customerView{
-		key : "",
-		loop : true,
+		key:  "",
+		loop: true,
 	}
 	//这里完成对customerView结构体的customerService字段的初始化
 	customerView.customerService = service.NewCustomerService()
