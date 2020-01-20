@@ -1,13 +1,15 @@
 package client
 
 import (
-	"github.com/thehappymouse/ccmouse/crawler/engine"
-	"github.com/thehappymouse/ccmouse/crawler_distributed/config"
-	"github.com/thehappymouse/ccmouse/crawler_distributed/worker"
+	"thehappymouse/ccmouse/crawler/engine"
+	"thehappymouse/ccmouse/crawler_distributed/config"
+	"thehappymouse/ccmouse/crawler_distributed/worker"
 	"net/rpc"
 )
 
 func CreateProcessor(clientChan chan *rpc.Client) (engine.Processor)  {
+
+
 	return func(request engine.Request) (engine.ParseResult, error) {
 		var sReq = worker.SerializeRequest(request)
 		var sResult worker.ParseResult

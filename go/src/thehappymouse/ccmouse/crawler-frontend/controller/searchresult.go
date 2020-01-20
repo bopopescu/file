@@ -9,11 +9,11 @@ import (
 	"reflect"
 
 	"regexp"
-	"github.com/thehappymouse/ccmouse/crawler-frontend/view"
+	"thehappymouse/ccmouse/crawler-frontend/view"
 	"gopkg.in/olivere/elastic.v5"
-	"github.com/thehappymouse/ccmouse/crawler-frontend/model"
-	"github.com/thehappymouse/ccmouse/crawler_distributed/config"
-	"github.com/thehappymouse/ccmouse/crawler/engine"
+	"thehappymouse/ccmouse/crawler-frontend/model"
+	"thehappymouse/ccmouse/crawler_distributed/config"
+	"thehappymouse/ccmouse/crawler/engine"
 )
 
 type SearchResultHandler struct {

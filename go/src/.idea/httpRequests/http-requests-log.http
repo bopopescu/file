@@ -4,6 +4,36 @@ Content-Type: application/json
 
 {  "test1":"test1" , "url":"111" , "fuck":"you"}
 
+<> 2020-01-17T115008.200.json
+
+###
+
+GET http://localhost:9200/test/_search?=&q=冰&pretty=
+Accept: application/json
+Content-Type: application/json
+
+{  "test1":"test1" , "url":"111" , "fuck":"you"}
+
+<> 2020-01-17T114955.200.json
+
+###
+
+GET http://localhost:9200/test/type/_search?=&q=冰&pretty=
+Accept: application/json
+Content-Type: application/json
+
+{  "test1":"test1" , "url":"111" , "fuck":"you"}
+
+<> 2020-01-17T114950.200.json
+
+###
+
+GET http://localhost:9200/test/type/_search?=&q=冰&pretty=
+Accept: application/json
+Content-Type: application/json
+
+{  "test1":"test1" , "url":"111" , "fuck":"you"}
+
 <> 2020-01-10T045441.200.json
 
 ###

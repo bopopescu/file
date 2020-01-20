@@ -3,7 +3,7 @@ package engine
 import (
 	"fmt"
 
-	"github.com/thehappymouse/ccmouse/crawler/fetcher"
+	"thehappymouse/ccmouse/crawler/fetcher"
 	"github.com/rs/zerolog/log"
 )
 

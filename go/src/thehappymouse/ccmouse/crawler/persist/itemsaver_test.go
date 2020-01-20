@@ -2,13 +2,13 @@ package persist
 
 import (
 	"testing"
-	"github.com/thehappymouse/ccmouse/crawler/model"
+	"thehappymouse/ccmouse/crawler/model"
 	//"gopkg.in/olivere/elastic.v5"
 	"github.com/olivere/elastic"
 	"context"
 	"encoding/json"
-	_"github.com/thehappymouse/go-utils"
-	"github.com/thehappymouse/ccmouse/crawler/engine"
+	_"thehappymouse/go-utils"
+	"thehappymouse/ccmouse/crawler/engine"
 )
 
 func TestSave(t *testing.T) {

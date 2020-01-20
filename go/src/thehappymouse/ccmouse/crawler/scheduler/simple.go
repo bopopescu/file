@@ -1,6 +1,6 @@
 package scheduler
 
-import "github.com/thehappymouse/ccmouse/crawler/engine"
+import "thehappymouse/ccmouse/crawler/engine"
 
 // 简单的并发处理
 // 所有工作协程，共用一个输入通道

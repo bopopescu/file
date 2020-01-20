@@ -1,4 +1,4 @@
-module github.com/thehappymouse/go-utils
+module thehappymouse/go-utils
 
 go 1.12
 

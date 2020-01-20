@@ -4,7 +4,7 @@ import (
 
 "regexp"
 
-"github.com/thehappymouse/ccmouse/crawler/engine"
+"thehappymouse/ccmouse/crawler/engine"
 
 )
 

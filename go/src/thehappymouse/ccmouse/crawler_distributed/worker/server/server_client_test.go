@@ -2,10 +2,10 @@ package main
 
 import (
 	"testing"
-	"ccmouse/crawler_distributed/rpcsupport"
-	"ccmouse/crawler_distributed/worker"
+	"thehappymouse/ccmouse/crawler_distributed/rpcsupport"
+	"thehappymouse/ccmouse/crawler_distributed/worker"
 	"time"
-	"ccmouse/crawler_distributed/config"
+	"thehappymouse/ccmouse/crawler_distributed/config"
 	"fmt"
 )
 
@@ -16,7 +16,11 @@ func TestCrawService(t *testing.T) {
 		rpcsupport.ServeRpc(host, worker.CrawlService{})
 	}()
 	time.Sleep(time.Second)
+
+
 	client, err := rpcsupport.NewClient(host)
+
+
 	if err != nil {
 		panic(err)
 	}

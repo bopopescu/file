@@ -1,7 +1,7 @@
 package parser
 
 import (
-	"github.com/thehappymouse/ccmouse/crawler/engine"
+	"thehappymouse/ccmouse/crawler/engine"
 	"fmt"
 	"regexp"
 )

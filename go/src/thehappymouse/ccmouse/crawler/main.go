@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/thehappymouse/ccmouse/crawler/engine"
-	"github.com/thehappymouse/ccmouse/crawler/persist"
-	"github.com/thehappymouse/ccmouse/crawler/scheduler"
-	"github.com/thehappymouse/ccmouse/crawler/zhengai/parser"
+	"thehappymouse/ccmouse/crawler/engine"
+	"thehappymouse/ccmouse/crawler/persist"
+	"thehappymouse/ccmouse/crawler/scheduler"
+	"thehappymouse/ccmouse/crawler/zhengai/parser"
 )
 
 // 单机，并发

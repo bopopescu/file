@@ -10,7 +10,7 @@ import (
 
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
-	"github.com/thehappymouse/ccmouse/crawler/engine"
+	"thehappymouse/ccmouse/crawler/engine"
 )
 
 var (

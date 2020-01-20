@@ -2,10 +2,10 @@ package main
 
 import (
 	"log"
-	"github.com/thehappymouse/ccmouse/crawler_distributed/rpcsupport"
+	"thehappymouse/ccmouse/crawler_distributed/rpcsupport"
 	"fmt"
-	"github.com/thehappymouse/ccmouse/crawler_distributed/config"
-	"github.com/thehappymouse/ccmouse/crawler_distributed/worker"
+	"thehappymouse/ccmouse/crawler_distributed/config"
+	"thehappymouse/ccmouse/crawler_distributed/worker"
 	"flag"
 )
 

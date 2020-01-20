@@ -2,8 +2,8 @@ package persist
 
 import (
 	"context"
-	"github.com/thehappymouse/ccmouse/crawler/engine"
-	_"github.com/thehappymouse/go-utils"
+	"thehappymouse/ccmouse/crawler/engine"
+	_"thehappymouse/go-utils"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"
 	//"gopkg.in/olivere/elastic.v5"

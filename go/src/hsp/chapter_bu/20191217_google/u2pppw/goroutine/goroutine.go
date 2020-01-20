@@ -25,9 +25,11 @@ func main() {
 		//	}
 		//}()
 	}
+	fmt.Println(123)
 
 	time.Sleep(time.Millisecond) //TODO  为何会死循环  跳不出  交不出控制权？
 
+	fmt.Println(123321)
 	fmt.Println(a)
 	//for i := 0; i < 1000; i++ {
 	//	go func(i2 int) {

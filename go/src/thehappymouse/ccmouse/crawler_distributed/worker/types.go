@@ -1,9 +1,9 @@
 package worker
 
 import (
-	"github.com/thehappymouse/ccmouse/crawler/engine"
+	"thehappymouse/ccmouse/crawler/engine"
 	"github.com/pkg/errors"
-	"github.com/thehappymouse/ccmouse/crawler/zhengai/parser"
+	"thehappymouse/ccmouse/crawler/zhengai/parser"
 	"github.com/rs/zerolog/log"
 )
 

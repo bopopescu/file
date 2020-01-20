@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"regexp"
 
-	"github.com/thehappymouse/ccmouse/crawler/engine"
-	"github.com/thehappymouse/ccmouse/crawler/model"
+	"thehappymouse/ccmouse/crawler/engine"
+	"thehappymouse/ccmouse/crawler/model"
 )
 
 var   regexs = map[string]*regexp.Regexp{

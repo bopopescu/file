@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 	"io/ioutil"
-	"github.com/thehappymouse/ccmouse/crawler/model"
-	"github.com/thehappymouse/ccmouse/crawler/engine"
+	"thehappymouse/ccmouse/crawler/model"
+	"thehappymouse/ccmouse/crawler/engine"
 )
 
 
