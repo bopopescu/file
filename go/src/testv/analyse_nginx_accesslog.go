@@ -1,4 +1,4 @@
-package main
+package testv
 
 import (
 	"flag"
@@ -56,7 +56,7 @@ func init() {
 	log.SetLevel( logrus.DebugLevel )
 }
 
-func main() {
+func main2() {
 	// 获取参数
 	logFilePath := flag.String( "logFilePath", "/Users/pangee/Public/nginx/logs/dig.log", "log file path" )
 	routineNum := flag.Int( "routineNum", 5, "consumer numble by goroutine" )

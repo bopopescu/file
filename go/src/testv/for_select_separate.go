@@ -1,11 +1,11 @@
-package main
+package testv
 
 import (
 	"fmt"
 	"time"
 )
 
-func main() {
+func main3() {
 
 	fmt.Println("begin")
 	select {

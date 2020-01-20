@@ -1,4 +1,4 @@
-package main
+package testv
 
 import (
 	"fmt"
@@ -23,8 +23,9 @@ func GetTime2( logTime, timeType string ) string {
 	return strconv.FormatInt( t.Unix(), 10 )
 }
 
-func main() {
+func main5() {
 
+	Abc()
 	fmt.Println(GetTime2("","day"))
 	fmt.Println(GetTime2("","min"))
 

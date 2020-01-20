@@ -1,11 +1,11 @@
-package main
+package testv
 
 import (
 	"fmt"
 	"time"
 )
 
-func main() {
+func main6() {
 
 	fmt.Println(6666)
 
@@ -16,4 +16,9 @@ func main() {
 
 	fmt.Println(123)
 	time.Sleep(4e9)
+}
+
+
+func Abc(){
+	fmt.Println(123)
 }

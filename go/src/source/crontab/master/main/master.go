@@ -2,7 +2,7 @@ package main
 
 import (
 	"runtime"
-	"github.com/owenliang/crontab/master"
+	"source/crontab/master"
 	"fmt"
 	"flag"
 	"time"

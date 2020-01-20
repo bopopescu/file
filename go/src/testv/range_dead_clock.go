@@ -1,11 +1,10 @@
-package main
+package testv
 
 import (
 	"fmt"
-	"strings"
 )
 
-func main() {
+func main4() {
 
 	test := make(chan int,3)
 	test<-1
