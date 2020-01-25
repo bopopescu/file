@@ -14,8 +14,9 @@ import (
 type appHandler func(writer http.ResponseWriter,
 	request *http.Request) error
 
-func errWrapper(handler appHandler) func(http.ResponseWriter,
-	*http.Request) {
+func errWrapper(handler appHandler) http.HandlerFunc {
+//func errWrapper(handler appHandler) func(http.ResponseWriter,
+//	*http.Request) {
 
 	return func(writer http.ResponseWriter,
 		request *http.Request) {

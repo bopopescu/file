@@ -1,7 +1,7 @@
 package worker
 
 import (
-	"github.com/owenliang/crontab/common"
+	"source/crontab/common"
 	"time"
 	"fmt"
 )
@@ -55,7 +55,7 @@ func (scheduler *Scheduler) TryStartJob(jobPlan *common.JobSchedulePlan) {
 
 	// 执行的任务可能运行很久, 1分钟会调度60次，但是只能执行1次, 防止并发！
 
-	// 如果任务正在执行，跳过本次调度
+	// 如果任务正在执行，跳过本次调度 //todo 分布式的多机器呢  应该在下面的excuter里面
 	if jobExecuteInfo, jobExecuting = scheduler.jobExecutingTable[jobPlan.Job.Name]; jobExecuting {
 		// fmt.Println("尚未退出,跳过执行:", jobPlan.Job.Name)
 		return
@@ -89,14 +89,15 @@ func (scheduler *Scheduler) TrySchedule() (scheduleAfter time.Duration) {
 	// 当前时间
 	now = time.Now()
 
-	// 遍历所有任务
+	// 遍历所有任务  todo  遍历很快！
 	for _, jobPlan = range scheduler.jobPlanTable {
+
 		if jobPlan.NextTime.Before(now) || jobPlan.NextTime.Equal(now) {
 			scheduler.TryStartJob(jobPlan)
 			jobPlan.NextTime = jobPlan.Expr.Next(now) // 更新下次执行时间
 		}
 
-		// 统计最近一个要过期的任务时间
+		// 统计  最近   一个要过期的任务时间
 		if nearTime == nil || jobPlan.NextTime.Before(*nearTime) {
 			nearTime = &jobPlan.NextTime
 		}
@@ -153,20 +154,33 @@ func (scheduler *Scheduler) scheduleLoop() {
 
 	// 定时任务common.Job
 	for {
-		select {
+		select {//todo 注意 任务变化频率低哦  主要还是第二个 .C
+		//todo 没有default 意味着会阻塞 这个 select
+
+		//TODO 监听变化和结果的两个case后有没有必要调度任务？  变化的有 因为任务定时点改了  要重新计算
+		//TODO 所以结果有没有必要呢？？
 		case jobEvent = <- scheduler.jobEventChan:	//监听任务变化事件
 			// 对内存中维护的任务列表做增删改查
 			scheduler.handleJobEvent(jobEvent)
 		case <- scheduleTimer.C:	// 最近的任务到期了
+			fmt.Println("do nothing 还是阻塞？？?  （do nothing 退出selelct）  i think it is do nothing 源代码这里没有这一行 ")
 		case jobResult = <- scheduler.jobResultChan: // 监听任务执行结果
 			scheduler.handleJobResult(jobResult)
 		}
+
 		// 调度一次任务
 		scheduleAfter = scheduler.TrySchedule()
+
 		// 重置调度间隔
 		scheduleTimer.Reset(scheduleAfter)
 	}
 }
+
+
+
+
+
+
 
 // 推送任务变化事件
 func (scheduler *Scheduler) PushJobEvent(jobEvent *common.JobEvent) {

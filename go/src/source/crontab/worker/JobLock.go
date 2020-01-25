@@ -3,7 +3,7 @@ package worker
 import (
 	"github.com/coreos/etcd/clientv3"
 	"context"
-	"github.com/owenliang/crontab/common"
+	"source/crontab/common"
 )
 
 // 分布式锁(TXN事务)

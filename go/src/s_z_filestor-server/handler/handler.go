@@ -65,7 +65,9 @@ func Uploadhandler(w http.ResponseWriter, r *http.Request) {
 		}
 
 		log.Println("write ok ")
+		r.ParseForm()
 
+		fmt.Println(r.Form)
 
 		Meta.Mod(meta)
 
@@ -106,6 +108,7 @@ func GetimgHandler(w http.ResponseWriter,r *http.Request){
 
 	del :=r.Form.Get("del")
 
+	fmt.Println(r.Form)
 	if del=="1"{
 		delete(Meta.Filemetas,fmeta.Filesha1)
 

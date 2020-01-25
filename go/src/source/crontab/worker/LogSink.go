@@ -2,7 +2,7 @@ package worker
 
 import (
 	"github.com/mongodb/mongo-go-driver/mongo"
-	"github.com/owenliang/crontab/common"
+	"source/crontab/common"
 	"context"
 	"github.com/mongodb/mongo-go-driver/mongo/clientopt"
 	"time"
@@ -48,6 +48,18 @@ func (logSink *LogSink) writeLoop() {
 							logSink.autoCommitChan <- batch
 						}
 					}(logBatch),
+					////TODO 上面注释是原始的  是否一样效果？？？   不行哦
+					// TODO 闭包上下文
+					////TODO 所以  必须要以参数的形式传进来！！！！
+
+
+					// TODO 其实我感觉也可以  可能是因为指针？
+					//TODO 但是要这么想  如果 autoCommitChan的元素 有多个的话 应该就有问题了
+					//TODO 会是同样的数据吧  同样的变量
+
+					//func() {
+					//	logSink.autoCommitChan <- logBatch
+					//},
 				)
 			}
 

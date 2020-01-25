@@ -22,3 +22,16 @@ func HTTPInterceptor(h http.HandlerFunc) http.HandlerFunc {
 			h(w, r)
 		})
 }
+
+
+func mytestBlocker(handlerFunc http.HandlerFunc) http.HandlerFunc {
+
+
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+
+	})
+		//these two are same  !
+	return func(w http.ResponseWriter, r *http.Request) {
+
+	}
+}

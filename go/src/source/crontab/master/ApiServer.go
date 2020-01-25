@@ -1,6 +1,7 @@
 package master
 
 import (
+	"fmt"
 	"net/http"
 	"net"
 	"time"
@@ -179,9 +180,11 @@ func handleJobLog(resp http.ResponseWriter, req *http.Request) {
 		limit = 20
 	}
 
-	if logArr, err = G_logMgr.ListLog(name, skip, limit); err != nil {
-		goto ERR
-	}
+	fmt.Print(name,skip,limit)
+	//
+	//if logArr, err = G_logMgr.ListLog(name, skip, limit); err != nil {
+	//	goto ERR
+	//}
 
 	// 正常应答
 	if bytes, err = common.BuildResponse(0, "success", logArr); err == nil {

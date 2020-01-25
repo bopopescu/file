@@ -4,7 +4,7 @@ import (
 	"github.com/coreos/etcd/clientv3"
 	"time"
 	"context"
-	"github.com/owenliang/crontab/common"
+	"source/crontab/common"
 	"github.com/coreos/etcd/mvcc/mvccpb"
 )
 
@@ -49,6 +49,8 @@ func (jobMgr *JobMgr) watchJobs() (err error) {
 			G_scheduler.PushJobEvent(jobEvent)
 		}
 	}
+
+
 
 	// 2, 从该revision向后监听变化事件
 	go func() { // 监听协程

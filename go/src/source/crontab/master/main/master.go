@@ -26,6 +26,8 @@ func initEnv() {
 }
 
 func main() {
+	fmt.Println(123)
+	return
 	var (
 		err error
 	)
@@ -36,20 +38,22 @@ func main() {
 	// 初始化线程
 	initEnv()
 
+
 	// 加载配置
 	if err = master.InitConfig(confFile); err != nil {
 		goto ERR
 	}
+
 
 	// 初始化服务发现模块
 	if err = master.InitWorkerMgr(); err != nil {
 		goto ERR
 	}
 
-	// 日志管理器
-	if err =master.InitLogMgr(); err != nil {
-		goto ERR
-	}
+	//// 日志管理器
+	//if err =master.InitLogMgr(); err != nil {
+	//	goto ERR
+	//}
 
 	//  任务管理器
 	if err = master.InitJobMgr(); err != nil {

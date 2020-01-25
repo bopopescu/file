@@ -93,6 +93,7 @@ func GetUserInfo(username string) (User, error) {
 
 	// 执行查询的操作
 	err = stmt.QueryRow(username).Scan(&user.Username, &user.SignupAt)
+
 	if err != nil {
 		return user, err
 	}
