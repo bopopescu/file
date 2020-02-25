@@ -4,6 +4,14 @@ Content-Type: application/json
 
 {  "test1":"test1" , "url":"111" , "fuck":"you"}
 
+###
+
+GET http://localhost:9200/test/type/_search?=&q=冰&pretty=
+Accept: application/json
+Content-Type: application/json
+
+{  "test1":"test1" , "url":"111" , "fuck":"you"}
+
 <> 2020-01-17T115008.200.json
 
 ###

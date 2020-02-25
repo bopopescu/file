@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"flag"
 	"time"
+
 )
 
 var (
@@ -16,7 +17,7 @@ var (
 func initArgs() {
 	// master -config ./master.json -xxx 123 -yyy ddd
 	// master -h
-	flag.StringVar(&confFile, "config", "./master.json", "指定master.json")
+	flag.StringVar(&confFile, "config", "source/crontab/master/main/master.json", "指定master.json")
 	flag.Parse()
 }
 
@@ -26,8 +27,8 @@ func initEnv() {
 }
 
 func main() {
-	fmt.Println(123)
-	return
+	//fmt.Println(123)
+	//return
 	var (
 		err error
 	)
