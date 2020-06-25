@@ -18,6 +18,8 @@ func download(r Retriever) string {
 	return r.Get(url)
 }
 
+
+
 type Poster interface {
 	Post(url string,
 		form map[string]string) string
@@ -43,6 +45,19 @@ func session(s RetrieverPoster) string {
 	return s.Get(url)
 }
 
+func inspect(r Retriever) {
+	fmt.Println("Inspecting", r)
+	fmt.Printf(" > Type:%T Value:%v\n", r, r)
+	fmt.Print(" > Type switch: ")
+	switch v := r.(type) {
+	case *mock.Retriever:
+		fmt.Println("Contents:", v.Contents)
+	case *real.Retriever:
+		fmt.Println("UserAgent:", v.UserAgent)
+	}
+	fmt.Println()
+}
+
 func main() {
 
 	var r Retriever
@@ -52,11 +67,17 @@ func main() {
 	r = &mockRetriever
 	inspect(r)
 
+
+
+
 	r = &real.Retriever{
 		UserAgent: "Mozilla/5.0",
 		TimeOut:   time.Minute,
 	}
 	inspect(r)
+
+
+
 
 	// Type assertion
 	if mockRetriever, ok := r.(*mock.Retriever); ok {
@@ -71,15 +92,4 @@ func main() {
 	fmt.Println(session(&mockRetriever))
 }
 
-func inspect(r Retriever) {
-	fmt.Println("Inspecting", r)
-	fmt.Printf(" > Type:%T Value:%v\n", r, r)
-	fmt.Print(" > Type switch: ")
-	switch v := r.(type) {
-	case *mock.Retriever:
-		fmt.Println("Contents:", v.Contents)
-	case *real.Retriever:
-		fmt.Println("UserAgent:", v.UserAgent)
-	}
-	fmt.Println()
-}
+

@@ -10,14 +10,17 @@ import (
 )
 
 func tryDefer() {
-	for i := 0; i < 100; i++ {
+	for i := 0; i < 10; i++ {
 		defer fmt.Println(i)
 		if i == 5 {
 
+			fmt.Println(123)
+
 			//panic("offuoi")
+
 			// Uncomment p anic to see
 			// how it works with defer
-			// panic("printed too many")
+			//panic("printed too many")
 		}
 	}
 }
@@ -40,9 +43,14 @@ func writeFile(filename string) {
 				pathError.Op,
 				pathError.Path,
 				pathError.Err)
+
+			fmt.Println("test open ",err,ok)
 		}
-		return
+		//return
 	}
+
+
+
 	defer file.Close()
 
 	writer := bufio.NewWriter(file)
@@ -50,7 +58,7 @@ func writeFile(filename string) {
 
 	f := fib.Fibonacci()
 
-	for i := 0; i < 200; i++ {
+	for i := 0; i < 10; i++ {
 		fmt.Fprintln(writer, f())
 	}
 }
@@ -59,7 +67,7 @@ func main() {
 	tryDefer()
 
 	fmt.Println(666)
-	writeFile("fi2b1111.txt")
+	writeFile("fib231.txt")
 	fmt.Println(777)
 
 }

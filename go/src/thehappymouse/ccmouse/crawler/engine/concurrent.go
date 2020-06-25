@@ -11,14 +11,17 @@ import (
 type ConcurrentEngine struct {
 	MaxWorkerCount int
 	Scheduler      Scheduler
-	ItemChan       chan Item
 	RequestWorker Processor
+	ItemChan       chan Item
+
 }
 type Processor func(request Request) (ParseResult, error)
+
 
 type Scheduler interface {
 	Submit(request Request)
 	GetWorkerChan() chan Request
+
 
 	Run()
 	Ready

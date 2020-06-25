@@ -2,7 +2,7 @@ package persist
 
 import (
 	"thehappymouse/ccmouse/crawler/engine"
-	"gopkg.in/olivere/elastic.v5"
+	"github.com/olivere/elastic"
 	"thehappymouse/ccmouse/crawler/persist"
 	"log"
 )

@@ -118,12 +118,18 @@ func main2() {
 // HBase 劣势：列簇需要声明清楚
 func dataStorage( storageChannel chan storageBlock, redisPool *pool.Pool) {
 	for block := range storageChannel {
+
+
 		prefix := block.counterType + "_"
 
 		// 逐层添加，加洋葱皮的过程
 		// 维度： 天-小时-分钟
 		// 层级： 定级-大分类-小分类-终极页面
 		// 存储模型： Redis  SortedSet
+
+		var stringSlice []string
+		stringSlice = make([]string,12)
+		stringSlice = append(stringSlice,"sd")
 		setKeys := []string{
 			prefix+"day_"+getTime(block.unode.unTime, "day"),
 			prefix+"hour_"+getTime(block.unode.unTime, "hour"),

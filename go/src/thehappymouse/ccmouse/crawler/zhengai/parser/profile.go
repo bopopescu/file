@@ -23,7 +23,7 @@ var   regexs = map[string]*regexp.Regexp{
 }
 var idUrlRe = regexp.MustCompile(`http://album.zhenai.com/u/([\d]+)`)
 
-func ParseProfile(contents []byte, url, name string) engine.ParseResult {
+func  ParseProfile(contents []byte, url, name string) engine.ParseResult {
 	rs := engine.ParseResult{}
 
 	profile := model.Profile{Name: name}

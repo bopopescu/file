@@ -15,7 +15,7 @@ func main() {
 	fmt.Println()
 
 	for i, ch := range s { // ch is a rune
-		fmt.Printf("(%d %X) ", i, ch)
+		fmt.Printf("(%d -- %X) ", i, ch)
 	}
 	fmt.Println()
 
@@ -25,16 +25,26 @@ func main() {
 	bytes := []byte(s)
 	fmt.Println("bts", bytes)
 	for len(bytes) > 0 {
+		fmt.Println()
+
 		fmt.Println("lenis", len(bytes))
 		ch, size := utf8.DecodeRune(bytes)
 		fmt.Println(ch, "----", size)
 		bytes = bytes[size:]
-		fmt.Printf("%c ", ch)
+		fmt.Printf("%c 】】】】】", ch)
+		fmt.Println()
 	}
 	fmt.Println()
 
 	for i, ch := range []rune(s) {
 		fmt.Printf("(%d %c) ", i, ch)
 	}
+
+	fmt.Printf("( %c) ", 32596)
+	fmt.Printf("( %c) ", 32597)
+	fmt.Printf("( %c) ", 32598)
+	fmt.Printf("( %c) ", 32599)
+	fmt.Printf("( %c) ", 32600)
+
 	fmt.Println()
 }

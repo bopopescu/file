@@ -11,15 +11,24 @@ import (
 	//"github.com/sirupsen/logrus"
 )
 
+type userError interface {
+	error
+	//Message() string
+}
+
 type appHandler func(writer http.ResponseWriter,
 	request *http.Request) error
 
+
+//is Dji ipoed
 func errWrapper(handler appHandler) http.HandlerFunc {
 //func errWrapper(handler appHandler) func(http.ResponseWriter,
 //	*http.Request) {
 
 	return func(writer http.ResponseWriter,
 		request *http.Request) {
+
+
 		// panic  保护程序panic
 		defer func() {
 			if r := recover(); r != nil {
@@ -30,6 +39,8 @@ func errWrapper(handler appHandler) http.HandlerFunc {
 					http.StatusInternalServerError)
 			}
 		}()
+
+
 
 		err := handler(writer, request)
 
@@ -43,6 +54,7 @@ func errWrapper(handler appHandler) http.HandlerFunc {
 
 			// user error
 			fmt.Println(123)
+
 			if userErr, ok := err.(userError); ok {
 				fmt.Println(ok)
 
@@ -71,10 +83,7 @@ func errWrapper(handler appHandler) http.HandlerFunc {
 	}
 }
 
-type userError interface {
-	error
-	//Message() string
-}
+
 
 func main() {
 	http.HandleFunc("/",
@@ -89,9 +98,12 @@ func main() {
 }
 
 func testFuckHandleWithhttp() {
-	http.HandleFunc("/fuck123", func(writer http.ResponseWriter,
+	http.HandleFunc("/fuck123",
+		func(writer http.ResponseWriter,
 		request *http.Request) {
-		fmt.Fprintf(writer, "Hellofuck ohshit,"+request.URL.Path[1:])
+
+			//can only  one  may  superfulous 多余
+		//fmt.Fprintf(writer, "Hellofuck ohshit,"+request.URL.Path[1:])
 
 		http.Error(writer, "er", http.StatusInternalServerError)
 

@@ -9,6 +9,7 @@ import (
 	"strings"
 )
 
+//转化二进制
 func convertToBin(n int) string {
 	result := ""
 	for ; n > 0; n /= 2 {
@@ -20,6 +21,7 @@ func convertToBin(n int) string {
 	return result
 }
 
+//打印文件
 func printFile(filename string) {
 	file, err := os.Open(filename)
 	if err != nil {
@@ -29,6 +31,7 @@ func printFile(filename string) {
 	printFileContents(file)
 }
 
+//打印文件内容
 func printFileContents(reader io.Reader) {
 	scanner := bufio.NewScanner(reader)
 
@@ -56,7 +59,7 @@ func main() {
 	)
 
 	fmt.Println("abc.txt contents:")
-	printFile("basic/branch/abc.txt")
+	printFile("hsp/chapter_bu/20191217_google/u2pppw/basic/branch/abc.txt")
 
 	fmt.Println("printing a string:")
 	s := `abc"d"

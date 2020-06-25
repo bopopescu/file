@@ -27,13 +27,16 @@ func main(){
 	log.Warn().Msg("dsa")
 
 	//resp, err := http.Get("http://www.zhenai.com/zhenghun")
-	resp, err := http.Get("https://www.clearloveuzi.cn/archives/113.html")
+	resp, err := http.Get("https://www.clearloveuzi.cn/2020/04/11/144.html")
 
 	if err!=nil{
 		panic(err)
 	}
 
-	fmt.Println(resp,err)
+	fmt.Println(resp,"hey eva of 21century",err)
+
+
+	fmt.Println("aaaaaaaaddddddddddaaaaaaaaaaaaaa")
 	defer resp.Body.Close()
 
 	if resp.StatusCode == http.StatusOK{
@@ -46,6 +49,7 @@ func main(){
 		//自动检查 编码类型
 		//
 		bodyreader :=bufio.NewReader(resp.Body)
+
 		charset1:=determineEncoding(bodyreader)
 
 		reader := transform.NewReader(bodyreader, charset1.NewDecoder())

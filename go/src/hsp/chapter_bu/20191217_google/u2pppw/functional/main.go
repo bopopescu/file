@@ -13,6 +13,8 @@ type intGen func() int
 
 //实现read 接口  for Reader io.Reader
 func (g intGen) Read(p []byte) (n int, err error) {
+
+
 	next := g()
 	if next > 100000000000 {
 		return 0, io.EOF

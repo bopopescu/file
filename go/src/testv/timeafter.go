@@ -3,12 +3,12 @@ package testv
 import (
 	"fmt"
 	"time"
+
 )
 
 func main6() {
 
 	fmt.Println(6666)
-
 
 	time.AfterFunc(3*time.Second, func() {
 		fmt.Print(888)

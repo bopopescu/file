@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
+	"time"
 
 	//"time"
 	"sync"
-	"time"
 )
 
 var myMap = make(map[int]int, 10)
@@ -20,6 +20,7 @@ func calJc(n int) int {
 		res *= i
 	}
 	lock.Lock()
+	//互斥锁处理公共变量  myMap   切片 数组  map chan
 	myMap[n] = res
 	lock.Unlock()
 	return res
@@ -29,16 +30,20 @@ func calJc(n int) int {
 func main() {
 
 	//200 个协程
-	for i := 1; i <= 200; i++ {
+	for i := 1; i <= 20; i++ {
 		go calJc(i)
 	}
 
+
+
 	//todo 如果不休眠  则主线程退出  协程也退出
-	time.Sleep(time.Second * 10)
+	time.Sleep(time.Second * 2)
 
 	// todo 如果不休眠  则主线程退出  协程也退出
 
 	//todo为了避免资源竞争
+
+
 	lock.Lock()
 	for i, v := range myMap {
 

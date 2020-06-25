@@ -32,7 +32,7 @@ func main() {
 		fmt.Println(err)
 	} else {
 		fmt.Printf("%s\n", contents)
-		fmt.Println(contents)
+		fmt.Println(contents,"this is bytes string of the file contents")
 	}
 
 	fmt.Println(

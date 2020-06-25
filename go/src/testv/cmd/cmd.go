@@ -43,6 +43,7 @@ func main() {
 	ctx, cancel = context.WithCancel(context.TODO())
 
 
+	//go func 执行shell定时任务脚本 by exec包
 	go func() {
 		cmd = exec.CommandContext(ctx, "/bin/zsh", "-c", "sleep 2;echo 2;ls -al;pwd")
 
@@ -59,14 +60,17 @@ func main() {
 	}()
 
 
+	fmt.Println("now type")
 
-	time.Sleep(1e9)
+	time.Sleep(3e9)  //时间长于睡眠时间  但是chan无缓冲  所以上面的 333 会同时打
+	//time.Sleep(1e9)   //时间短于cmd的睡眠时间  res 是 signal killed
 	cancel()
 
 	res ,ok :=<-cmdchan
 
 
-	fmt.Println(ok)
+	fmt.Println(ok,"fucl")
+	fmt.Println()
 	fmt.Printf("%+v",res)
 
 	}

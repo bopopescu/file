@@ -1,3 +1,13 @@
+GET https://demo-muc.tingsonglaw.com/user/getGiftByType?typeid=2?=&q=冰&pretty=
+Accept: application/json
+Content-Type: application/json
+
+{  "test1":"test1" , "url":"111" , "fuck":"you"}
+
+<> 2020-02-27T105436.200.html
+
+###
+
 GET http://localhost:9200/test/type/_search?=&q=冰&pretty=
 Accept: application/json
 Content-Type: application/json

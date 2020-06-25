@@ -1,15 +1,16 @@
 package main
 
 import (
-	"os/exec"
 	"context"
-	"time"
 	"fmt"
+	"os/exec"
+	"time"
 )
 
 type result struct {
 	err error
 	output []byte
+	thetime time.Time
 }
 
 func main() {
@@ -36,7 +37,7 @@ func main() {
 			output []byte
 			err error
 		)
-		cmd = exec.CommandContext(ctx, "/bin/zsh", "-c", "sleep 2;echo hello;")
+		cmd = exec.CommandContext(ctx, "/bin/zsh", "-c", "sleep 3;echo hello;")
 
 		// 执行任务, 捕获输出
 		output, err = cmd.CombinedOutput()
@@ -45,18 +46,25 @@ func main() {
 		resultChan <- &result{
 			err: err,
 			output: output,
+			thetime:time.Now(),
 		}
 	}()
 
-	// 继续往下走
-	time.Sleep(1 * time.Second)
 
+	fmt.Println("go",time.Now())
+	// 继续往下走
+
+
+
+	time.Sleep(1 * time.Second)
+	//
 	// 取消上下文
 	cancelFunc()
 
 	// 在main协程里, 等待子协程的退出，并打印任务执行结果
 	res = <- resultChan
+	cancelFunc()
 
 	// 打印任务执行结果
-	fmt.Println(res.err, string(res.output))
+	fmt.Println(res.err, string(res.output),res.thetime,"\n",time.Now())
 }

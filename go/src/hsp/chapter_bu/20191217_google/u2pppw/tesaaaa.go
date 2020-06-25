@@ -12,7 +12,7 @@ func main(){
 fmt.Println(a)
 
 
-	b:= make([][][]int,10)
+	b:= make([][]int,10)
 	for i,v:=range b{
 		fmt.Println(i,v)
 	}

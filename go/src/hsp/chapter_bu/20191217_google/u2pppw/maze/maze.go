@@ -73,6 +73,8 @@ func walk(maze [][]int,
 				continue
 			}
 
+
+
 			val, ok = next.at(steps)
 			if !ok || val != 0 {
 				continue
@@ -93,7 +95,42 @@ func walk(maze [][]int,
 	return steps
 }
 
+
+type tryme struct{
+	protected int
+	private  string
+	public []int
+	__construct [][]byte
+	__destruct [][]int //数字切片的切片
+
+	themap map[int]string
+
+}
+func tryMe(){
+
+	var tryMeClass tryme
+
+	intSlice := make([]int,2)
+	byteSlice := make([][]byte,2)
+	intSlicesSlice := make([][]int,2)
+
+	themaps :=make(map[int]string,2)
+
+	//make slice chan map
+	tryMeClass  = tryme{
+		1,"pr",intSlice,byteSlice,intSlicesSlice,
+		themaps}
+
+	fmt.Println(tryMeClass)
+
+}
+
+
 func main() {
+
+	tryMe()
+
+	//return
 	maze := readMaze("maze/maze.in")
 
 	steps := walk(maze, point{0, 0},

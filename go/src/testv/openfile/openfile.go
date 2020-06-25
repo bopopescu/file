@@ -18,8 +18,8 @@ func main() {
 
 	log.SetOutput(file)
 
-	fmt.Print(file,e,*f)
+	fmt.Print(file,e,7666,*f)
 
 	log.Println("fuck")
-	//file.Write([]byte("askuy\naskuy\naskuy\naskuy\n"))
+	file.Write([]byte("askuy\naskuy\naskuy\naskuy\n"))
 }

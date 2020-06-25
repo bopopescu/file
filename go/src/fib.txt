@@ -18,3 +18,19 @@
 2584
 4181
 6765
+2020/05/26 11:09:58.060 [M]  this is emergency 
+2020/05/26 11:09:58.060 [A]  this is alert 
+2020/05/26 11:09:58.060 [C]  this is critical 
+2020/05/26 11:09:58.060 [E]  this is error 
+2020/05/26 11:09:58.060 [W]  this is warning 
+2020/05/26 11:09:58.060 [N]  this is notice 
+2020/05/26 11:09:58.060 [I]  this is informational 
+2020/05/26 11:09:58.060 [D]  this is debug 
+2020/05/26 11:10:18.324 [M] [log.go:10]  this is emergency 
+2020/05/26 11:10:18.324 [A] [log.go:11]  this is alert 
+2020/05/26 11:10:18.324 [C] [log.go:12]  this is critical 
+2020/05/26 11:10:18.324 [E] [log.go:13]  this is error 
+2020/05/26 11:10:18.324 [W] [log.go:14]  this is warning 
+2020/05/26 11:10:18.324 [N] [log.go:15]  this is notice 
+2020/05/26 11:10:18.324 [I] [log.go:16]  this is informational 
+2020/05/26 11:10:18.324 [D] [log.go:17]  this is debug 

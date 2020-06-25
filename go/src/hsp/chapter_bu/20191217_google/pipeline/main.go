@@ -70,6 +70,8 @@ func Merge(chan1, chan2 <-chan int) <-chan int {
 
 		for ok1 || ok2 {
 			//fmt.Println(ok1,ok2,v1,v2)
+			//如果只有 v1  或者  v1 和 v2 都有 但是v1<v2 那么 v1入结果列
+			//一般来讲  v1 和v2都是有的  如果只有1者  表示另一个chan已全部处理进入结果列
 			if !ok2 || (ok1 && v1 <= v2) {
 				out <- v1
 				famous = fmt.Sprintf("v1  is %d", v1)

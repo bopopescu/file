@@ -28,15 +28,9 @@ func div(a, b int) (q, r int) {
 	return a / b, a % b
 }
 
-func apply(op func(int, int) int, a, b int) int {
-	p := reflect.ValueOf(op).Pointer()
-	opName := runtime.FuncForPC(p).Name()
-	fmt.Printf("Calling function %s with args "+
-		"(%d, %d)\n", opName, a, b)
 
-	return op(a, b)
-}
 
+//聚合
 func sum(numbers ...int) int {
 	fmt.Println(numbers)
 	s := 0
@@ -46,9 +40,22 @@ func sum(numbers ...int) int {
 	return s
 }
 
+//swap 交换
 func swap(a, b int) (int, int) {
 	return b, a
 }
+
+
+
+func apply(op func(int, int) int, a, b int) int {
+	p := reflect.ValueOf(op).Pointer()
+	opName := runtime.FuncForPC(p).Name()
+	fmt.Printf("Calling function %s with args "+
+		"(%d, %d)\n", opName, a, b)
+
+	return op(a, b)
+}
+
 
 func main() {
 	fmt.Println("Error handling")

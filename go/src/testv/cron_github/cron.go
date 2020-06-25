@@ -21,12 +21,15 @@ func main() {
 	fmt.Println()
 	now:=time.Now()
 	next := expression.Next(now)
-	fmt.Println(now,next)
+	next2 := expression.Next(next)
+
+	fmt.Println(now,"\n",next,"\n",next2)
 
 
 
 	time.AfterFunc(next.Sub(now), func() {
-		fmt.Println("miaoji",next)
+		fmt.Println()
+		fmt.Println("miaoji",next,"\n",time.Now())
 	})
 
 
