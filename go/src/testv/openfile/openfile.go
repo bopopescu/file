@@ -14,7 +14,7 @@ func main() {
 
 	flag.Parse()
 
-	file, e := os.OpenFile(*f, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0644)
+	file, e := os.OpenFile(*f, os.O_CREATE|os.O_RDWR|os.O_APPEND, 0644)
 
 	log.SetOutput(file)
 
