@@ -42,6 +42,7 @@
     <mapping directory="$PROJECT_DIR$/github.com/grpc/grpc-go" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/github.com/hashicorp/consul" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/github.com/hashicorp/go-version" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/influxdata/influxdb" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/github.com/iris-contrib/blackfriday" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/github.com/iris-contrib/jade" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/github.com/iris-contrib/pongo2" vcs="Git" />
