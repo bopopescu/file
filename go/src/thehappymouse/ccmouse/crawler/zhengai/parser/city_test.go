@@ -10,6 +10,8 @@ func TestParseCity(t *testing.T) {
 	if err != nil {
 		panic(err)
 	}
+
+
 	results := ParseCity(body, "")
 
 	var expectedUrls = []string{

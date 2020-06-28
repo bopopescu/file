@@ -25,7 +25,7 @@ func work(ctx context.Context, ch chan bool) {
 			return
 		default:
 			logg.Println(`上班!`)
-			time.Sleep(2 * time.Second)
+			time.Sleep(1 * time.Second)
 		}
 	}
 }
@@ -35,6 +35,8 @@ func main() {
 	logg = log.New(os.Stdout, "", log.Ltime)
 	ctx, cancel := context.WithDeadline(context.Background(), time.Now().Add(5*time.Second))
 	go work(ctx, ch)
+
+
 	time.Sleep(10 * time.Second)
 	//取消函数：当cancel被调用时,context.WithDeadline设置的时间超过了，关闭ctx.Done通道。
 	cancel()

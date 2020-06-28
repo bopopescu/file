@@ -20,6 +20,8 @@ func main() {
 	fmt.Println("dial succ", conn)
 
 	defer conn.Close()
+
+
 	reader := bufio.NewReader(os.Stdin)
 
 	for {
