@@ -1,1 +1,0 @@
-module github.com/douyu/jupiter/tools/jupiter

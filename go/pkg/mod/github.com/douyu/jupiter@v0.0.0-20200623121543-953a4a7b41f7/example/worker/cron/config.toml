@@ -1,4 +1,0 @@
-[jupiter.cron.test]
-    withSeconds = false
-    concurrentDelay= "10s"
-    immediatelyRun = false
